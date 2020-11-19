@@ -1,3 +1,16 @@
+
+/* All Pages */
+#navlogo {
+    width: 150px;
+    height: 45px;
+    align-self: left;
+}
+/*Footer*/
+.foot {
+    text-align: center;
+}
+/*/All pages*/
+
 /* Hero page */
 .hero {
     display: flex;
@@ -15,25 +28,25 @@
 h1 {
     font-style: normal;
     font-weight: bold;
-    color: #eee;
+    color: #FF8000;
     font-size: 11vmin;
     letter-spacing: 0.03em;
     line-height: 1;
-    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.8);
-    margin-bottom: 650px;
+    text-shadow: 5px 5px 0px #642516, 7px 7px 0px #04D7F8;
+    margin-bottom: 600px;
 }
 
 /* Buttons on Hero */
 #button1 {
-    background: #098191;
+    background: #04D7F8;
     transition: background ease .25s;
-    border-radius: 5px;
+    border-radius: 25px;
     display: inline-block;
     border: none;
     padding: 0.75rem 1.5rem;
     margin: 0;
     text-decoration: none;
-    color: #ffffff;
+    color: #000;
     font-size: 1.2rem;
     cursor: pointer;
     text-align: center;
@@ -46,7 +59,7 @@ h1 {
 }
 
 button:hover {
-    background: #63b6b8;
+    background: #FF8021;
 }
 
 button:focus {
@@ -55,15 +68,15 @@ button:focus {
 }
 
 #button2 {
-    background: #098191;
+    background: #04D7F8;
     transition: background ease .25s;
-    border-radius: 5px;
+    border-radius: 25px;
     display: inline-block;
     border: none;
     padding: 0.75rem 1.5rem;
     margin: 0;
     text-decoration: none;
-    color: #ffffff;
+    color: #000;
     font-size: 1.2rem;
     cursor: pointer;
     text-align: center;
@@ -76,7 +89,7 @@ button:focus {
 }
 
 button:hover {
-    background: #63b6b8;
+    background: #FF8021;;
 }
 
 button:focus {
@@ -86,18 +99,6 @@ button:focus {
 
 /* /Button */
 /* /Hero page */
-/* All Pages */
-#navlogo {
-    width: 150px;
-    height: 45px;
-    align-self: left;
-}
-/*Footer*/
-.foot {
-    text-align: center;
-}
-/*/All pages*/
-
 
 /*About*/
 .about-img {
@@ -122,6 +123,14 @@ button:focus {
 
   /*/Our work*/
 
+  /*Get involved*/
+
+  /*/Get involved*/
+
+  /*Publications*/
+
+  /*/Publications*/
+
   /*Resources*/
   .resources-img {
     margin-top: -50px;
@@ -130,3 +139,8 @@ button:focus {
     background: url('../img/photos/5th-anniversary-aztec-dance.jpeg');
     background-size: cover;
   }
+/*/Publications*/
+
+/*Store*/
+
+/*/Store*/
