@@ -19,6 +19,10 @@ a.active.nav-link {
 .navbar-text:hover {
     color: #642516
 }
+.navbar-toggler {
+    background-color: #ff8000;
+    border: solid 1px #642516;
+}
 /*Footer*/
 .foot {
     text-align: center;
@@ -49,9 +53,6 @@ h1 {
     letter-spacing: 0.03em;
     line-height: 1;
     text-shadow: 5px 5px 0px #642516, 7px 7px 0px #04D7F8;
-    }
-    .hero-text {
-        margin-bottom: 600px;
     }
 
 /* Buttons on Hero */
@@ -128,8 +129,7 @@ button:focus {
 .about-img {
     margin-top: -50px;
     width: 100%;
-    height: 740px;
-    background: url('../img/photos/language-justice-training.jpeg');
+    /*background: url('../img/photos/language-justice-training.jpeg');*/
     background-size: cover;
   }
 
