@@ -19,10 +19,34 @@
 </head>
 
 <body>
+  <!-- Modal -->
+<div class="modal fade" id="donationModal" tabindex="-1" aria-labelledby="donationModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Donation Form</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-dialog modal-dialog-scrollable">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam odio nostrum suscipit, tempore, reprehenderit nihil expedita ipsa iure odit similique quae perferendis nam facilis id sint sed ipsum earum minus?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel odio culpa nesciunt cumque facilis voluptas tempore quisquam necessitatibus nisi. Provident sapiente velit aspernatur id labore illo ducimus voluptatibus quas error.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Donate</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--/Modal-->
+<!--Required for Facebook widget-->
   <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="um9mhvJN"></script>
   <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="um9mhvJN"></script>
+<!--/FB widget requirement-->
 <!--Navbar-->
 <nav class="navbar navbar-fluid navbar-expand-lg fixed-top">
 <!-- Button for toggling the visibility of the menu -->
@@ -68,7 +92,10 @@
 <!--/Tabs-->
 <!--Donate-->
 <div class="justify-content-end no-wrap"></div>
-<a href="#" class="btn btn-danger justify-content-end" role="button">Donate!</a>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#donationModal">
+  Donate!
+</button>
 </div>
 <!--/Donate-->
     </nav>
@@ -87,12 +114,18 @@
                     <p class="text-white font-weight-bold" style="background: rgba(0, 0, 0, 0.5);">Some more Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, dolor voluptatum! Consequatur libero enim necessitatibus ex amet nostrum vel hic, natus, voluptatibus aspernatur consectetur rem molestiae pariatur, voluptatum minima fugit.</p>
                   </div>
                   <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-                      <form>
-                          <div class="form-row">
-                              <div class="col-12 col-md-9 mb-2 mb-md-0"><input class="form-control form-control-lg" type="email" placeholder="Enter your email..."></div>
-                              <div class="col-12 col-md-3"><button class="btn btn-primary button1 btn-lg" type="submit">Sign up!</button></div>
-                          </div>
+                    <div>
+                      <form action="https://hq.salsalabs.com/save" method="POST">
+                      <input type="hidden" name="organization_KEY" value="6190">
+                      <input type="hidden" name="chapter_KEY" value="1627">
+                      <input type="hidden" name="object" value="supporter">
+                      <input type="hidden" name="Receive_Email" value="1">
+                      <input class="form-control" type="text" id="email" name="Email" placeholder="Enter Your Email">
+                      <style>.memberCode{display:none;}</style>
+                      <div class="memberCode"> Optional Member Code <input name="first_name_949" value=""></div>
+                      <input type="Submit" value="Send me updates">
                       </form>
+                      </div>
                   </div>
               </div>
           </div>
