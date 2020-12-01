@@ -41,6 +41,12 @@
   </div>
 </div>
 <!--/Modal-->
+<!--Function for Wordpress to work
+<?php 
+define('WP_USE_THEMES', false);
+require('blog/wp-blog-header.php');
+?>
+-->
 <!--Required for Facebook widget-->
   <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="um9mhvJN"></script>
@@ -141,6 +147,20 @@
       <br>
       <div class="container">
           <div class="row">
+            <!--
+Add wordpress loop here, like this.
+<?php 
+$number_of_posts = 3;
+$args = array( 'numberposts' => $number_of_posts );
+$recent_posts = wp_get_recent_posts( $args );
+foreach( $recent_posts as $recent_post ){
+echo "<span>".$recent_post['post_date']."</span> <br>";
+echo "<h3>".$recent_post['post_title']."</h3>";
+echo  "<p>".$recent_post['post_content']."</p>
+<br><br>";
+}
+?>
+-->
               <div class="col-sm-4">
                   <h6 style="text-align: center;">Lorem Ipsum</h6>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam dolor ipsa nobis deleniti ullam perferendis, suscipit voluptas asperiores alias explicabo adipisci quisquam earum nulla amet doloribus tenetur error ratione! Blanditiis.
@@ -428,7 +448,7 @@
                   <li><a href="#">Vivamus facilisis lorem nec ligula rutrum, eget bibendum risus bibendum.</a>
                   </li>
                 </ul>
-                <a href="#" class="btn btn-info float-right">Read more</a>
+                <a href="pages/news-eng.html" class="btn btn-info float-right">Read more</a>
             </div>
         </div>
         <div class="row no-gutters">
@@ -447,7 +467,7 @@
                   <li><a href="#">Vivamus facilisis lorem nec ligula rutrum, eget bibendum risus bibendum.</a>
                   </li>
                 </ul>
-                <a href="#" class="btn btn-info float-right">Read more</a>
+                <a href="pages/press-eng.html" class="btn btn-info float-right">Read more</a>
             </div>
         </div>
         <div class="row no-gutters">

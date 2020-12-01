@@ -6,7 +6,7 @@
 }
 .navbar {
     background-color: #04D7F8;
-    color: #FF8000
+    color: #FF8000 !important;
 }
 a.active.nav-link {
     background-color: #04D7F8 !important;
