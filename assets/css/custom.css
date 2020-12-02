@@ -31,7 +31,6 @@ a.active.nav-link {
     font-weight: bold;
     font-size: 16px;
     padding: 50px;
-    margin-top: 50px;
   }
   
   .footer .footer-left,
@@ -297,8 +296,8 @@ button:focus {
 
 .staff {
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
 }
   /*/About*/
 
@@ -317,7 +316,9 @@ button:focus {
   /*/Get involved*/
 
   /*Publications*/
-
+.sidebar-content {
+margin-top: 100px;
+}
   /*/Publications*/
 
   /*Resources*/

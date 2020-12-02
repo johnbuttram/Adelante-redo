@@ -5,3 +5,5 @@ $('nav').on("click",function(){
 $(".nav").click(function(){
     $(".collapse").collapse('toggle');
   });
+
+  

@@ -79,22 +79,19 @@ require('blog/wp-blog-header.php');
       <a class="nav-link active navbar-text" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link navbar-text" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="profile" aria-selected="false">About</a>
+      <a class="nav-link navbar-text" id="staff-tab" data-toggle="tab" href="#staff" role="tab" aria-controls="staff" aria-selected="false">Staff & Board</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link navbar-text" id="our-work-tab" data-toggle="tab" href="#our-work" role="tab" aria-controls="messages" aria-selected="false">Our Work</a>
+      <a class="nav-link navbar-text" id="our-work-tab" data-toggle="tab" href="#our-work" role="tab" aria-controls="our-work" aria-selected="false">Our Work</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link navbar-text" id="get-involved-tab" data-toggle="tab" href="#get-involved" role="tab" aria-controls="settings" aria-selected="false">Get Involved</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link navbar-text" id="publications-tab" data-toggle="tab" href="#publications" role="tab" aria-controls="settings" aria-selected="false">Publications</a>
+        <a class="nav-link navbar-text" id="publications-tab" data-toggle="tab" href="#publications" role="tab" aria-controls="publications" aria-selected="false">Media & Press</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link navbar-text" id="resources-tab" data-toggle="tab" href="#resources" role="tab" aria-controls="settings" aria-selected="false">Resources</a>
+        <a class="nav-link navbar-text" id="resources-tab" data-toggle="tab" href="#resources" role="tab" aria-controls="resources" aria-selected="false">Resources</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link navbar-text" id="store-tab" data-toggle="tab" href="#store" role="tab" aria-controls="settings" aria-selected="false">Store</a>
+        <a class="nav-link navbar-text" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact us</a>
       </li>
   </ul>
 <!--/Tabs-->
@@ -116,7 +113,7 @@ require('blog/wp-blog-header.php');
           <div class="container">
               <div class="row">
                   <div class="col-xl-9 mx-auto">
-                      <h1 class="mb-5">Welcome ipsum</h1>
+                      <h1 class="mb-5">Welcome</h1>
                   </div>
                   <div class="col-md-6 mx-auto">
                     <p class="text-white font-weight-bold" style="background: rgba(0, 0, 0, 0.5);">Some more Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, dolor voluptatum! Consequatur libero enim necessitatibus ex amet nostrum vel hic, natus, voluptatibus aspernatur consectetur rem molestiae pariatur, voluptatum minima fugit.</p>
@@ -188,23 +185,19 @@ echo  "<p>".$recent_post['post_content']."</p>
     <br>
     <div class="container">
         <div class="row">
-             <div class="col-sm-4">
-              <h6 style="text-align: justify;">Follow us on Instagram!</h6>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, accusamus porro, quibusdam quos neque voluptatum quasi nobis excepturi voluptate illo temporibus obcaecati! Modi neque voluptas deserunt consectetur fugit architecto unde.
-              </div>
-            <div class="col-sm-4">
+            <div class="col-sm-6">
               <h6 style="text-align: justify;">Follow us on Twitter!</h6>
-              <a class="twitter-timeline" data-width="375" data-height="300" data-theme="dark" href="https://twitter.com/AdelanteAlabama?ref_src=twsrc%5Etfw">Tweets by AdelanteAlabama</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              <a class="twitter-timeline" data-width="" data-height="300" data-theme="dark" href="https://twitter.com/AdelanteAlabama?ref_src=twsrc%5Etfw">Tweets by AdelanteAlabama</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
               </div>
-              <div class="col-sm-4">
+              <div class="col-sm-6">
                 <h6 style="text-align: justify;">Like us on Facebook!</h6>
                 <div class="fb-page" 
                 data-href="https://www.facebook.com/adelantealabama" 
                 data-tabs="timeline" 
-                data-width="300" 
+                data-width="" 
                 data-height="300" 
                 data-small-header="true" 
-                data-adapt-container-width="false" 
+                data-adapt-container-width="true" 
                 data-hide-cover="true" 
                 data-show-facepile="false">
                 <blockquote cite="https://www.facebook.com/adelantealabama" 
@@ -215,107 +208,112 @@ echo  "<p>".$recent_post['post_content']."</p>
                 </div>
         </div>
     </div>
+    <div class="divider py-1 bg-dark"><hr></div>
   </section>
-    <hr>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6"><img class="img-fluid contact-img" src="../img/photos/5th-anniversary-aztec-dance.jpeg"></img-fluid></div>
-        <div class="col-lg-6" style="text-align: center;">
-          <h3>Contact Us</h3>
-          <p><i class="omsc-icon fa fa-map-marker omsc-icon-color-theme omsc-with-border omsc-border-color-theme"></i> 2104 Chapel Hill Rd, Hoover, AL 35216<br>
-          <i class="omsc-icon fa fa-phone omsc-icon-color-theme omsc-with-border omsc-border-color-theme"></i> (205) 317-1481</p>
-          <h3>Hours</h3>
-          <p><strong>Monday:</strong>&nbsp;9am – 5pm</p>
-          <p><strong>Tuesday:</strong>&nbsp;9am – 8pm</p>
-          <p><strong>Wednesday: </strong>9am – 5pm</p>
-          <p><strong>Thursday</strong>: Open for Appointments Only</p>
-          <p><strong>Friday:&nbsp;</strong>Open for Appointments Only</p>
-          <p><strong>Saturday &amp;</strong>&nbsp;<strong>Sunday: </strong>Closed, unless special event</p>
-          </div>
-
-      </div>
-    </div>
-</div>
-<!--/Home-->
-<!--About-->
-<div class="tab-pane" id="about" role="tabpanel" aria-labelledby="about-tab">
-    <section class="features-icons bg-light text-center">
-        <img src="../img/photos/language-justice-training.jpeg" class="img-fluid about-img">
-        <br>
-        <div class="container">
+     <div class="container">
+       <hr>
+       <div class="row">
+         <div class="col-12"><h2 style="text-align: center;">Mission and Values</h2></div>
+       </div>
             <div class="row">
                 <div class="col-sm-6">
                   <h2>Mission</h2>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora ea hic aliquid omnis non quisquam eveniet nam blanditiis voluptatem doloremque debitis iure quia nulla aliquam neque fugit, illo velit expedita?</p>
+                  <p>Adelante Alabama Worker Center unites low-wage and immigrant workers and their families in the Birmingham area to defend our rights, promote our dignity, and pursue justice for all.</p>
                 </div>
                 <div class="col-sm-6">
-                  <h2>Values</h2>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et reprehenderit, consequatur libero voluptates maxime praesentium vero. Debitis facilis ad sapiente quaerat, itaque veritatis. Nam numquam aspernatur laborum eveniet quod provident!</p>
+                  <h2>Vision</h2>
+                  <p>We envision a multiracial worker-led movement for justice, dignity and human rights that lifts up the voices of the most vulnerable and excluded workers, and welcomes individuals of all races, ethnicities, genders, ages, sexualities, beliefs, and immigration statuses. We strive to move our communities forward (adelante) to a world where immigrants, people of color, and all working-class families are respected and safe at work, in the streets, and where they live.</p>
                 </div>
             </div>
         </div>
     </section>
-    <div class="divider py-1 bg-dark"><hr></div>
-<section class="bg-dark text-white text-center">
+</div>
+<!--/Home-->
+<!--Staff-->
+<div class="tab-pane" id="staff" role="tabpanel" aria-labelledby="staff-tab">
+    <section class="features-icons bg-light text-center">
+        <br>
+         <div class="container">
+            <div class="row">
+              <div class="col-12"><h2>Staff</h2></div>
+            </div>
+          </div>
+          <div class="container px-5 py-5">
+          <div class="row">
+          <div class="col mx-1"><img src="../img/staff/Isaac-headshot.jpeg" class="staff" alt="Portrait of Isaac">
+            <p><strong>Isaac Guazo Estrada</strong></p>
+            <p>(he/him/his)</p>
+            <p><b>Economic Justice Organizer</b></p>
+          </div>
+          <div class="col mx-1"><img src="../img/staff/Resha-headshot.jpeg" class="staff" alt="Portrait of Resha">
+            <p><strong>Resha Swanson</strong></p>
+            <p>(she/her/ella)</p>
+            <p><b>Policy & Communications Coordinator</b></p></div>
+          <div class="col mx-1"><img src="../img/staff/Jessica-headshot.jpeg" class="staff" alt="Portrait of Jessica">
+            <p><strong>Jessica Vosburgh</strong></p>
+            <p>(she/her/ella)</p>
+            <p><b>Executive Director</b></p></div>
+          <div class="col mx-1"><img src="../img/staff/Victoria-headshot.jpeg" class="staff" alt="Portrait of Victoria">
+            <p><strong>Victoria Siciliano</strong></p>
+            <p>(she/her/ella)</p>
+            <p><b>Director of Administration and Fundraising</b></p></div>
+            <div class="col mx-1"><img src="../img/staff/Miriam-headshot.jpeg" class="staff" alt="Portrait of Victoria">
+              <p><strong>Miriam Nava</strong></p>
+              <p>(she/her/ella)</p>
+              <p><b>Membership Coordinator</b></p></div>
+          </div>
+        </div>
+        </section>
+<section class="bg-dark text-white text-center" style="margin-top: -125px;">
   <div class="container">
+    <div class="row">
+      <div class="col-12"><h2><strong>Board Members</strong></h2>
+      <p>Adelante is driven and led by our members.<br>
+        Our majority-member Board of Directors reflects our commitment to grassroots work, led by directly impacted people. 
+      </p>  
+      </div>
+    </div>
     <div class="row">
       <div class="col-12"><h2>Board of Directors</h2></div>
+      <div class="col-sm-12"><img src="../img/photos/Board.jpg" class="img-fluid no-gutters" style="height: 400px; margin-bottom: 25px;">
+      </div>
     </div>
   </div>
   <div class="container">
   <div class="row">
-  <div class="col-sm-3"><img src="../img/fake/b-o-d-1.jfif" class="b-o-d" alt="thispersondoesnotexist">
-    <p><strong>Not A. Person</strong></p>
-    <p><b>Lorem Ipsum</b></p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat neque ut dolore quis ex incidunt, hic sapiente rerum labore cupiditate assumenda officiis eveniet pariatur a repellat expedita animi nobis accusantium!</p>
+  <div class="col-sm-6">
+<h2 style="text-align: center;">Board of Directors&nbsp;2020-2021</h2>
+<p style="text-align: center;">
+  <strong>Fernanda Godinez*</strong><br>
+<strong>Jesica Tellez*</strong><br>
+<strong>Marcos Baltazar*</strong><br>
+<strong>Julia Calderón*</strong><br>
+<strong>Marisol Aguilar *</strong><br>
+<strong>Jean Hernández</strong><br>
+Jean is the Latino Outreach Coordinator at AIDS Alabama.<br>
+<b>John Maddox</b><br>
+Associate Professor of Spanish and African American Studies at the University of Alabama at Birmingam</p><br>
+<em>*Adelante member</em></p>    
   </div>
-  <div class="col-sm-3"><img src="../img/fake/b-o-d-2.jfif" class="b-o-d" alt="thispersondoesnotexist">
-    <p><strong>Not A. Person</strong></p>
-    <p><b>Lorem Ipsum</b></p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat neque ut dolore quis ex incidunt, hic sapiente rerum labore cupiditate assumenda officiis eveniet pariatur a repellat expedita animi nobis accusantium!</p>
-  </div>
-  <div class="col-sm-3"><img src="../img/fake/b-o-d-3.jfif" class="b-o-d" alt="thispersondoesnotexist">
-    <p><strong>Not A. Person</strong></p>
-    <p><b>Lorem Ipsum</b></p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat neque ut dolore quis ex incidunt, hic sapiente rerum labore cupiditate assumenda officiis eveniet pariatur a repellat expedita animi nobis accusantium!</p></div>
-  <div class="col-sm-3"><img src="../img/fake/b-o-d-4.jfif" class="b-o-d" alt="thispersondoesnotexist">
-    <p><strong>Not A. Person</strong></p>
-    <p><b>Lorem Ipsum</b></p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat neque ut dolore quis ex incidunt, hic sapiente rerum labore cupiditate assumenda officiis eveniet pariatur a repellat expedita animi nobis accusantium!</p></div>
-  </div>
-</div>
-</section>
-<hr>
-<section class="text-center">
-  <div class="container">
-    <div class="row">
-      <div class="col-12"><h2>Staff</h2></div>
-    </div>
-  </div>
-  <div class="container">
-  <div class="row">
-  <div class="col-sm-3"><img src="../img/staff/Isaac-headshot.jpeg" class="staff" alt="Portrait of Isaac">
-    <p><strong>Isaac Guazo Estrada</strong></p>
-    <p>(he/him/his)</p>
-    <p><b>Economic Justice Organizer</b></p>
-  </div>
-  <div class="col-sm-3"><img src="../img/staff/Resha-headshot.jpeg" class="staff" alt="Portrait of Resha">
-    <p><strong>Resha Swanson</strong></p>
-    <p>(she/her/ella)</p>
-    <p><b>Policy & Communications Coordinator</b></p></div>
-  <div class="col-sm-3"><img src="../img/staff/Jessica-headshot.jpeg" class="staff" alt="Portrait of Jessica">
-    <p><strong>Jessica Vosburgh</strong></p>
-    <p>(she/her/ella)</p>
-    <p><b>Executive Director</b></p></div>
-  <div class="col-sm-3"><img src="../img/staff/Victoria-headshot.jpeg" class="staff" alt="Portrait of Victoria">
-    <p><strong>Victoria Siciliano</strong></p>
-    <p>(she/her/ella)</p>
-    <p><b>Director of Administration and Fundraising</b></p></div>
-  </div>
+  <div class="col-sm-6">
+<h2 style="text-align: center;"><strong>Previous Board Members:</strong></h2>
+<p style="text-align: center;">Yazmín Contreras<br>
+Cesar Mata<br>
+Remedios Perez<br>
+Helen Rivas<br>
+Karla Pesquera<br>
+Benjamín Tzompaxtle Itehua<br>
+Dr. Carlos Alemán<br>
+Lily Andrews<br>
+Miguel Carpizo Ituarte<br>
+Scott Douglas<br>
+Rosa Gutierrez<br>
+Stan Johnson<br>
+Pastor Tommy Morgan</p>    
 </div>
 </section>
     </div>
-<!--/About-->
+<!--/Staff-->
 <!--Our Work-->
 <div class="tab-pane" id="our-work" role="tabpanel" aria-labelledby="our-work-tab">
     <section class="features-icons bg-light text-center">
@@ -411,318 +409,118 @@ echo  "<p>".$recent_post['post_content']."</p>
         </section>
 </div>
 <!--/Our Work-->
-
-<!--Get Involved-->
-<div class="tab-pane" id="get-involved" role="tabpanel" aria-labelledby="get-involved-tab">
-   <section class="features-icons bg-light text-center">
-<div class="container">
-    <div class="row">
-    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
-        <h2>Volunteer</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aperiam magnam, laboriosam laudantium repellat, ut voluptates explicabo saepe perferendis iste odio, delectus amet blanditiis. Illo mollitia tenetur voluptatem architecto ipsum!</p>
-</div>
-<div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
-  <h2>Join our team</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt rem libero veritatis ex porro non similique voluptates odio voluptatibus modi laborum, qui quasi aliquam, laudantium quas voluptatum animi unde quisquam!</p>
-</div>
-</div>
-</div>
-</div>
-<!--/Get Involved-->
 <!--Publications-->
-<div class="tab-pane" id="publications" role="tabpanel" aria-labelledby="publications-tab">   <section class="showcase">
-    <div class="container-fluid p-0">
-        <div class="row no-gutters">
-            <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image:url(&quot;../img/photos/family-at-kermes.jpeg&quot;);"><span></span></div>
-            <div class="col-lg-6 my-auto order-lg-1 showcase-text">
-                <h2>In The News</h2>
-                <ul class="lead mb-0 no-wrap">
-                  <li><a href="#">Quisque ullamcorper erat a est feugiat suscipit.</a>
-                  </li>
-                  <li><a href="#">Donec ultricies augue eu lectus sollicitudin, nec porttitor sem fermentum.</a>
-                  </li>
-                  <li><a href="#">Donec suscipit libero ut velit tristique, in viverra mauris placerat.</a>
-                  </li>
-                  <li><a href="#">Integer cursus felis id ante consequat maximus.</a>
-                  </li>
-                  <li><a href="#">Vivamus facilisis lorem nec ligula rutrum, eget bibendum risus bibendum.</a>
-                  </li>
-                </ul>
-                <a href="pages/news-eng.html" class="btn btn-info float-right">Read more</a>
-            </div>
-        </div>
-        <div class="row no-gutters">
-            <div class="col-lg-6 text-white showcase-img" style="background-image:url(&quot;../img/photos/nueva-esperanza.jpeg&quot;);"><span></span></div>
-            <div class="col-lg-6 my-auto order-lg-1 showcase-text">
-                <h2>Press Releases</h2>
-                <ul class="lead mb-0 no-wrap">
-                  <li><a href="#">Quisque ullamcorper erat a est feugiat suscipit.</a>
-                  </li>
-                  <li><a href="#">Donec ultricies augue eu lectus sollicitudin, nec porttitor sem fermentum.</a>
-                  </li>
-                  <li><a href="#">Donec suscipit libero ut velit tristique, in viverra mauris placerat.</a>
-                  </li>
-                  <li><a href="#">Integer cursus felis id ante consequat maximus.</a>
-                  </li>
-                  <li><a href="#">Vivamus facilisis lorem nec ligula rutrum, eget bibendum risus bibendum.</a>
-                  </li>
-                </ul>
-                <a href="pages/press-eng.html" class="btn btn-info float-right">Read more</a>
-            </div>
-        </div>
-        <div class="row no-gutters">
-            <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image:url(&quot;../img/photos/poetry-night.jpeg&quot;);"><span></span></div>
-            <div class="col-lg-6 my-auto order-lg-1 showcase-text">
-                <h2>Research Reports</h2>
-                <p class="lead mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi similique assumenda ab at in officia delectus sed laudantium! Blanditiis eaque porro, aliquam ad eos ipsam accusantium tenetur facere aut aperiam?</p>
-                <a href="#" class="btn btn-info float-right">Read more</a>
-            </div>
-        </div>
-        <div class="row no-gutters">
-            <div class="col-lg-6 order-lg-1 text-white showcase-img" style="background-image:url(&quot;../img/photos/aplauso-y-medio.jpeg&quot;);"><span></span></div>
-            <div class="col-lg-6 my-auto order-lg-1 showcase-text">
-                <h2>Annual Reports</h2>
-                <p class="lead mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint aliquid ipsam quis doloribus quibusdam consectetur quasi debitis modi vero minima delectus repellat illo, architecto sit eveniet alias atque mollitia? Perferendis?</p>
-                <a href="#" class="btn btn-info float-right">Read more</a>
-            </div>
-        </div>
+<div class="tab-pane" id="publications" role="tabpanel" aria-labelledby="publications-tab">   
+
+  <div class="row">
+    <div class="col-3">
+      <div class="nav navbar flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical"   style="margin-top: 102px; margin-bottom: 0; right: 50px; border: solid 4px;">
+        <a class="nav-link active" id="v-pills-press-tab" data-toggle="pill" href="#v-pills-press" role="tab" aria-controls="v-pills-press" aria-selected="true">Press Releases</a>
+        <a class="nav-link" id="v-pills-news-tab" data-toggle="pill" href="#v-pills-news" role="tab" aria-controls="v-pills-news" aria-selected="false">In The News</a>
+        <a class="nav-link" id="v-pills-tv-tab" data-toggle="pill" href="#v-pills-tv" role="tab" aria-controls="v-pills-tv" aria-selected="false">T.V. & Video</a>
+      </div>
     </div>
-</section>
+    <div class="col-9">
+      <div class="tab-content" id="v-pills-tabContent">
+        <div class="tab-pane fade show active sidebar-content" id="v-pills-press" role="tabpanel" aria-labelledby="v-pills-home-tab">
+          <h2>Press Releases</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, asperiores totam! Asperiores, quaerat numquam aperiam, velit fuga cupiditate excepturi unde atque veritatis ut ab magnam! Iusto nostrum quidem molestiae voluptatem!</p>
+        </div>
+        <div class="tab-pane fade sidebar-content" id="v-pills-news" role="tabpanel" aria-labelledby="v-pills-news-tab">
+          <h2>In The News</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum saepe sunt ducimus repellendus tenetur. Neque reprehenderit fugiat nihil dolor, debitis culpa nostrum quae modi possimus ut omnis a eius fugit.</p>
+        </div>
+        <div class="tab-pane fade sidebar-content" id="v-pills-tv" role="tabpanel" aria-labelledby="v-pills-tv-tab">
+          <h2>T.V. & Videos</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quisquam debitis porro eum earum ab similique temporibus, labore nemo sint blanditiis, fugiat nobis delectus, sit dolorem sequi voluptatem nulla praesentium!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
 </div>
+
+
 <!--/Publications-->
 <!--Resources-->
 <div class="tab-pane" id="resources" role="tabpanel" aria-labelledby="resources-tab">
-    <section class="features-icons bg-light text-center">
-      <img src="../img/photos/5th-anniversary-aztec-dance.jpeg" class="img-fluid resources-img">
-        <br>
-        <div class="container">
-          <div class="row">
-            <div class="col-12"><h2>Worker's Rights</h2></div>
-          </div>
-        </div>
-        <br>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <h3>Know Your Rights</h3>
-                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta nam quae voluptatum impedit laboriosam corporis ex dolorum? Accusamus quod, reiciendis, porro iste perferendis sapiente beatae incidunt repudiandae expedita optio repellat!</p>
-                  </div>                
-                <div class="col-sm-4">
-                      <h3>Videos</h3>
-                        <p>Insert Video Player</p>
-                    </div>
-            </div>
-        </div>
-        </section>
-        <div class="divider py-1 bg-dark"><hr></div>
-        <section class="bg-dark text-white text-center">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-            <h2>Detention</h2>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <h3>Know Your Rights</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta nam quae voluptatum impedit laboriosam corporis ex dolorum? Accusamus quod, reiciendis, porro iste perferendis sapiente beatae incidunt repudiandae expedita optio repellat!</p>
-              </div>                
-            <div class="col-sm-4">
-                  <h3>Videos</h3>
-                    <p>Insert Video Player</p>
-                </div>
-        </div>
-    </div>
-        </section>
-        <hr>
-        <section class="bg-light text-center">
-          <div class="container">
-            <div class="row">
-            <div class="col-12">
-            <h2>Legal Resources</h2>
-          </div>
-        </div>
-      </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-6">
-                <h3>Community Resources</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur facilis, sit suscipit voluptatem voluptas nostrum necessitatibus eius ab deserunt optio esse, provident inventore libero eveniet, enim voluptatibus iure harum! Similique!</p>
-              </div>
-              <div class="col-sm-6">
-                <h3>Local Attorneys</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit quis id atque vero ad, quas perferendis asperiores earum tempora non, reprehenderit repudiandae sequi quod mollitia natus ipsam! Obcaecati, dolore blanditiis?</p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <div class="divider py-1 bg-dark"><hr></div>
-        <section class="bg-dark text-white text-center">
-          <div class="container"><div class="row"><div class="col-12">
-            <h2>COVID-19</h2>
-          </div>
-        </div>
-      </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-6">
-                <h3>Organizers & Advocats</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur facilis, sit suscipit voluptatem voluptas nostrum necessitatibus eius ab deserunt optio esse, provident inventore libero eveniet, enim voluptatibus iure harum! Similique!</p>
-              </div>
-              <div class="col-sm-6">
-                <h3>Training & Facilitation</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit quis id atque vero ad, quas perferendis asperiores earum tempora non, reprehenderit repudiandae sequi quod mollitia natus ipsam! Obcaecati, dolore blanditiis?</p>
-              </div>
-            </div>
-          </div>
-        </section>
-</div>
-<!--/Resources-->
-<!--Store-->
-<div class="tab-pane" id="store" role="tabpanel" aria-labelledby="store-tab">
-    <br>
-    <br>
-    <br>
-    <div class="container">
 
-        <div class="row">
-    
-          <div class="col-lg-3">
-    
-            <h1 class="my-4" style="color: #000;">Adel<br>ante.</h1>
-            <div class="list-group">
-              <a href="#" class="list-group-item">Shirts</a>
-              <a href="#" class="list-group-item">Hoodies</a>
-              <a href="#" class="list-group-item">Sweaters</a>
-            </div>
-    
-          </div>
-          <!-- /.col-lg-3 -->
-    
-          <div class="col-lg-9">
-    
-            <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-              </ol>
-              <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                  <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="Third slide">
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-    
-            <div class="row">
-    
-              <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card h-100">
-                  <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                  <div class="card-body">
-                    <h4 class="card-title">
-                      <a href="#">Item One</a>
-                    </h4>
-                    <h5>$24.99</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-                  </div>
-                  </div>
-              </div>
-    
-              <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card h-100">
-                  <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                  <div class="card-body">
-                    <h4 class="card-title">
-                      <a href="#">Item Two</a>
-                    </h4>
-                    <h5>$24.99</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
-                  </div>
-                </div>
-              </div>
-    
-              <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card h-100">
-                  <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                  <div class="card-body">
-                    <h4 class="card-title">
-                      <a href="#">Item Three</a>
-                    </h4>
-                    <h5>$24.99</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-                  </div>
-                </div>
-              </div>
-    
-              <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card h-100">
-                  <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                  <div class="card-body">
-                    <h4 class="card-title">
-                      <a href="#">Item Four</a>
-                    </h4>
-                    <h5>$24.99</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-                  </div>
-                </div>
-              </div>
-    
-              <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card h-100">
-                  <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                  <div class="card-body">
-                    <h4 class="card-title">
-                      <a href="#">Item Five</a>
-                    </h4>
-                    <h5>$24.99</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
-                  </div>
-                </div>
-              </div>
-    
-              <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card h-100">
-                  <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                  <div class="card-body">
-                    <h4 class="card-title">
-                      <a href="#">Item Six</a>
-                    </h4>
-                    <h5>$24.99</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-                  </div>
-                </div>
-              </div>
-    
-            </div>
-            <!-- /.row -->
-    
-          </div>
-          <!-- /.col-lg-9 -->
-    
-        </div>
-        <!-- /.row -->
-    
+  <div class="row">
+    <div class="col-3">
+      <div class="nav navbar flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical"   style="margin-top: 102px; margin-bottom: 0; right: 50px; border: solid 4px;">
+        <a class="nav-link active" id="v-pills-kyr-tab" data-toggle="pill" href="#v-pills-kyr" role="tab" aria-controls="v-pills-kyr" aria-selected="true">Know Your Rights</a>
+        <a class="nav-link" id="v-pills-publications-tab" data-toggle="pill" href="#v-pills-publications" role="tab" aria-controls="v-pills-publications" aria-selected="false">Publications</a>
+        <a class="nav-link" id="v-pills-covid-tab" data-toggle="pill" href="#v-pills-covid" role="tab" aria-controls="v-pills-covid" aria-selected="false">COVID-19</a>
+        <a class="nav-link" id="v-pills-community-tab" data-toggle="pill" href="#v-pills-community" role="tab" aria-controls="v-pills-community" aria-selected="false">Community</a>
       </div>
-      <!-- /.container -->
+    </div>
+    <div class="col-9">
+      <div class="tab-content" id="v-pills-tabContent">
+        <div class="tab-pane fade show active sidebar-content" id="v-pills-kyr" role="tabpanel" aria-labelledby="v-pills-kyr-tab">
+          <h2>Know Your Rights</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, asperiores totam! Asperiores, quaerat numquam aperiam, velit fuga cupiditate excepturi unde atque veritatis ut ab magnam! Iusto nostrum quidem molestiae voluptatem!</p>
+        </div>
+        <div class="tab-pane fade sidebar-content" id="v-pills-publications" role="tabpanel" aria-labelledby="v-pills-publications-tab">
+          <h2>Publications</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum saepe sunt ducimus repellendus tenetur. Neque reprehenderit fugiat nihil dolor, debitis culpa nostrum quae modi possimus ut omnis a eius fugit.</p>
+        </div>
+        <div class="tab-pane fade sidebar-content" id="v-pills-covid" role="tabpanel" aria-labelledby="v-pills-covid-tab">
+          <h2>COVID-19</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quisquam debitis porro eum earum ab similique temporibus, labore nemo sint blanditiis, fugiat nobis delectus, sit dolorem sequi voluptatem nulla praesentium!</p>
+        </div>
+        <div class="tab-pane fade sidebar-content" id="v-pills-community" role="tabpanel" aria-labelledby="v-pills-community-tab">
+          <h2>Community</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quisquam debitis porro eum earum ab similique temporibus, labore nemo sint blanditiis, fugiat nobis delectus, sit dolorem sequi voluptatem nulla praesentium!</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
 </div>
-<!--/Store-->
+
+<!--/Resources-->
+<!--Contact us-->
+<div class="tab-pane" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+  <section class="bg-light text-center">
+    <div class="container">
+      <div class="row" style="margin-top: 110px;">
+        <div class="col-lg-6"><img class="img-fluid contact-img" src="../img/photos/5th-anniversary-aztec-dance.jpeg"></img-fluid></div>
+        <div class="col-lg-6" style="text-align: center;">
+          <h3>Contact Us</h3>
+          <p><i class="omsc-icon fa fa-map-marker omsc-icon-color-theme omsc-with-border omsc-border-color-theme"></i> 2104 Chapel Hill Rd, Hoover, AL 35216<br>
+          <i class="omsc-icon fa fa-phone omsc-icon-color-theme omsc-with-border omsc-border-color-theme"></i> (205) 317-1481</p>
+          <h3>Hours</h3>
+          <p><strong>Monday:</strong>&nbsp;9am – 5pm</p>
+          <p><strong>Tuesday:</strong>&nbsp;9am – 8pm</p>
+          <p><strong>Wednesday: </strong>9am – 5pm</p>
+          <p><strong>Thursday</strong>: Open for Appointments Only</p>
+          <p><strong>Friday:&nbsp;</strong>Open for Appointments Only</p>
+          <p><strong>Saturday &amp;</strong>&nbsp;<strong>Sunday: </strong>Closed, unless special event</p>
+          </div>
+      </div>
+    </div>
+  </section>
+<section class="bg-dark text-white">
+  <div class="container">
+    <div class="row">
+<div class="col-6">
+<p><a href="https://goo.gl/maps/yFcfQ9tcDRSBM35d9" target="_blank"><i class="fa fa-map-marker"></i></a> 2104 Chapel Hill Rd, Hoover, AL 35216</p>
+<p><a href="tel:2053171481" target="_blank"><i class="fa fa-phone"></i></a> (205) 317-1481</p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3331.0571568663486!2d-86.8007197!3d33.395673!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88892275bdd02d67%3A0x3672cca73087adec!2sAdelante%20Alabama%20Worker%20Center!5e0!3m2!1sen!2sus!4v1606918434228!5m2!1sen!2sus" width="550" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
+<div class="col-6">
+  Get in touch form
+</div>
+ </div>
+ </div>
+</section>
+</div>
+</div>
+<!--/Contact us-->
 <!--Footer-->
 <footer class="footer">
   <div class="footer-left col-md-4 col-sm-6">
