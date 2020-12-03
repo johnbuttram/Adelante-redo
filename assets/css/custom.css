@@ -274,8 +274,23 @@ button:focus {
 /* /Button */
 /* /Hero page */
 /*Home*/
-.contact-img {
-    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+.mission {
+  width: autox;
+  height: 350px;
+ overflow:hidden;
+ position:relative;
+}
+
+.mission img {
+
+  position: absolute;
+  left:-10000%; right: -10000%; 
+  top: -10000%; bottom: -10000%;
+  margin: auto auto;
+  min-width: 1000%;
+  min-height: 1000%;
+  -webkit-transform:scale(0.1);
+  transform: scale(0.1);
 }
 
 /*/Home*/
@@ -330,6 +345,11 @@ margin-top: 100px;
   }
 /*/Publications*/
 /*Contact us*/
+
+.contact-img {
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
 .map-responsive{
 
   overflow:hidden;
