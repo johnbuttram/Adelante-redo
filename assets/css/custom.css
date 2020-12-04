@@ -314,6 +314,11 @@ button:focus {
     width: 150px;
     height: 150px;
 }
+.fb-page, 
+.fb-page span, 
+.fb-page span iframe[style] { 
+    width: 100% !important; 
+}
   /*/About*/
 
   /*Our work*/
