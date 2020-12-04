@@ -74,27 +74,24 @@ require('blog/wp-blog-header.php');
           </a>
 <!--/Brand-->
 <!-- Nav tabs -->
-<ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
+<ul class="nav nav-tabs justify-content-center nav-js" id="myTab" role="tablist">
     <li class="nav-item">
       <a class="nav-link active navbar-text" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link navbar-text" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="profile" aria-selected="false">About</a>
+      <a class="nav-link navbar-text" id="staff-tab" data-toggle="tab" href="#staff" role="tab" aria-controls="staff" aria-selected="false">Staff & Board</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link navbar-text" id="our-work-tab" data-toggle="tab" href="#our-work" role="tab" aria-controls="messages" aria-selected="false">Our Work</a>
+      <a class="nav-link navbar-text" id="our-work-tab" data-toggle="tab" href="#our-work" role="tab" aria-controls="our-work" aria-selected="false">Our Work</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link navbar-text" id="get-involved-tab" data-toggle="tab" href="#get-involved" role="tab" aria-controls="settings" aria-selected="false">Get Involved</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link navbar-text" id="publications-tab" data-toggle="tab" href="#publications" role="tab" aria-controls="settings" aria-selected="false">Publications</a>
+        <a class="nav-link navbar-text" id="publications-tab" data-toggle="tab" href="#publications" role="tab" aria-controls="publications" aria-selected="false">Media & Press</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link navbar-text" id="resources-tab" data-toggle="tab" href="#resources" role="tab" aria-controls="settings" aria-selected="false">Resources</a>
+        <a class="nav-link navbar-text" id="resources-tab" data-toggle="tab" href="#resources" role="tab" aria-controls="resources" aria-selected="false">Resources</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link navbar-text" id="store-tab" data-toggle="tab" href="#store" role="tab" aria-controls="settings" aria-selected="false">Store</a>
+        <a class="nav-link navbar-text" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact us</a>
       </li>
   </ul>
 <!--/Tabs-->
@@ -116,7 +113,7 @@ require('blog/wp-blog-header.php');
           <div class="container">
               <div class="row">
                   <div class="col-xl-9 mx-auto">
-                      <h1 class="mb-5">Welcome ipsum</h1>
+                      <h1 class="mb-5">Welcome</h1>
                   </div>
                   <div class="col-md-6 mx-auto">
                     <p class="text-white font-weight-bold" style="background: rgba(0, 0, 0, 0.5);">Some more Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, dolor voluptatum! Consequatur libero enim necessitatibus ex amet nostrum vel hic, natus, voluptatibus aspernatur consectetur rem molestiae pariatur, voluptatum minima fugit.</p>
@@ -148,7 +145,7 @@ require('blog/wp-blog-header.php');
       <div class="container">
           <div class="row">
             <!--
-Add wordpress loop here, like this.
+Add wordpress loop here, like this. probably a col-12 situation but who knows?
 <?php 
 $number_of_posts = 3;
 $args = array( 'numberposts' => $number_of_posts );
@@ -188,23 +185,19 @@ echo  "<p>".$recent_post['post_content']."</p>
     <br>
     <div class="container">
         <div class="row">
-             <div class="col-sm-4">
-              <h6 style="text-align: justify;">Follow us on Instagram!</h6>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, accusamus porro, quibusdam quos neque voluptatum quasi nobis excepturi voluptate illo temporibus obcaecati! Modi neque voluptas deserunt consectetur fugit architecto unde.
-              </div>
-            <div class="col-sm-4">
+            <div class="col-sm-6">
               <h6 style="text-align: justify;">Follow us on Twitter!</h6>
-              <a class="twitter-timeline" data-width="375" data-height="300" data-theme="dark" href="https://twitter.com/AdelanteAlabama?ref_src=twsrc%5Etfw">Tweets by AdelanteAlabama</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+              <a class="twitter-timeline" data-width="" data-height="300" data-theme="dark" href="https://twitter.com/AdelanteAlabama?ref_src=twsrc%5Etfw">Tweets by AdelanteAlabama</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
               </div>
-              <div class="col-sm-4">
+              <div class="col-sm-6">
                 <h6 style="text-align: justify;">Like us on Facebook!</h6>
                 <div class="fb-page" 
                 data-href="https://www.facebook.com/adelantealabama" 
                 data-tabs="timeline" 
-                data-width="300" 
+                data-width="" 
                 data-height="300" 
                 data-small-header="true" 
-                data-adapt-container-width="false" 
+                data-adapt-container-width="true" 
                 data-hide-cover="true" 
                 data-show-facepile="false">
                 <blockquote cite="https://www.facebook.com/adelantealabama" 
@@ -215,107 +208,120 @@ echo  "<p>".$recent_post['post_content']."</p>
                 </div>
         </div>
     </div>
+    <div class="divider py-1 bg-dark"><hr></div>
   </section>
-    <hr>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6"><img class="img-fluid contact-img" src="../img/photos/5th-anniversary-aztec-dance.jpeg"></img-fluid></div>
-        <div class="col-lg-6" style="text-align: center;">
-          <h3>Contact Us</h3>
-          <p><i class="omsc-icon fa fa-map-marker omsc-icon-color-theme omsc-with-border omsc-border-color-theme"></i> 2104 Chapel Hill Rd, Hoover, AL 35216<br>
-          <i class="omsc-icon fa fa-phone omsc-icon-color-theme omsc-with-border omsc-border-color-theme"></i> (205) 317-1481</p>
-          <h3>Hours</h3>
-          <p><strong>Monday:</strong>&nbsp;9am – 5pm</p>
-          <p><strong>Tuesday:</strong>&nbsp;9am – 8pm</p>
-          <p><strong>Wednesday: </strong>9am – 5pm</p>
-          <p><strong>Thursday</strong>: Open for Appointments Only</p>
-          <p><strong>Friday:&nbsp;</strong>Open for Appointments Only</p>
-          <p><strong>Saturday &amp;</strong>&nbsp;<strong>Sunday: </strong>Closed, unless special event</p>
-          </div>
-
-      </div>
-    </div>
-</div>
-<!--/Home-->
-<!--About-->
-<div class="tab-pane" id="about" role="tabpanel" aria-labelledby="about-tab">
-    <section class="features-icons bg-light text-center">
-        <img src="../img/photos/language-justice-training.jpeg" class="img-fluid about-img">
-        <br>
-        <div class="container">
+     <div class="container">
+       <hr>
+       <div class="row">
+         <div class="col-12"><h2 style="text-align: center;">Mission and Values</h2></div>
+       </div>
             <div class="row">
                 <div class="col-sm-6">
                   <h2>Mission</h2>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora ea hic aliquid omnis non quisquam eveniet nam blanditiis voluptatem doloremque debitis iure quia nulla aliquam neque fugit, illo velit expedita?</p>
+                  <p>Adelante Alabama Worker Center unites low-wage and immigrant workers and their families in the Birmingham area to defend our rights, promote our dignity, and pursue justice for all.</p>
                 </div>
-                <div class="col-sm-6">
-                  <h2>Values</h2>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et reprehenderit, consequatur libero voluptates maxime praesentium vero. Debitis facilis ad sapiente quaerat, itaque veritatis. Nam numquam aspernatur laborum eveniet quod provident!</p>
+                <div class="col-sm-6 mission img">
+                  <img src="../img/photos/nueva-esperanza.jpeg" class="img=-fluid" style="height: 350px; object-fit: contain;">
+                </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6 mission img">
+                    <img src="../img/photos/language-justice-training.jpeg" class="img-fluid" style="object-fit: contain;">
+                </div>
+                <div class="col-sm-6">  
+                  <h2>Vision</h2>
+                  <p>We envision a multiracial worker-led movement for justice, dignity and human rights that lifts up the voices of the most vulnerable and excluded workers, and welcomes individuals of all races, ethnicities, genders, ages, sexualities, beliefs, and immigration statuses. We strive to move our communities forward (adelante) to a world where immigrants, people of color, and all working-class families are respected and safe at work, in the streets, and where they live.</p>
                 </div>
             </div>
         </div>
     </section>
-    <div class="divider py-1 bg-dark"><hr></div>
-<section class="bg-dark text-white text-center">
+</div>
+<!--/Home-->
+<!--Staff-->
+<div class="tab-pane" id="staff" role="tabpanel" aria-labelledby="staff-tab">
+    <section class="features-icons bg-light text-center">
+        <br>
+         <div class="container">
+            <div class="row">
+              <div class="col-12"><h2>Staff</h2></div>
+            </div>
+          </div>
+          <div class="container px-5 py-5">
+          <div class="row">
+          <div class="col mx-1"><img src="../img/staff/Isaac-headshot.jpeg" class="staff" alt="Portrait of Isaac">
+            <p><strong>Isaac Guazo Estrada</strong></p>
+            <p>(he/him/his)</p>
+            <p><b>Economic Justice Organizer</b></p>
+          </div>
+          <div class="col mx-1"><img src="../img/staff/Resha-headshot.jpeg" class="staff" alt="Portrait of Resha">
+            <p><strong>Resha Swanson</strong></p>
+            <p>(she/her/ella)</p>
+            <p><b>Policy & Communications Coordinator</b></p></div>
+          <div class="col mx-1"><img src="../img/staff/Jessica-headshot.jpeg" class="staff" alt="Portrait of Jessica">
+            <p><strong>Jessica Vosburgh</strong></p>
+            <p>(she/her/ella)</p>
+            <p><b>Executive Director</b></p></div>
+          <div class="col mx-1"><img src="../img/staff/Victoria-headshot.jpeg" class="staff" alt="Portrait of Victoria">
+            <p><strong>Victoria Siciliano</strong></p>
+            <p>(she/her/ella)</p>
+            <p><b>Director of Administration and Fundraising</b></p></div>
+            <div class="col mx-1"><img src="../img/staff/Miriam-headshot.jpeg" class="staff" alt="Portrait of Victoria">
+              <p><strong>Miriam Nava</strong></p>
+              <p>(she/her/ella)</p>
+              <p><b>Membership Coordinator</b></p></div>
+          </div>
+        </div>
+        </section>
+<section class="bg-dark text-white text-center" style="margin-top: -125px;">
   <div class="container">
+    <div class="row">
+      <div class="col-12"><h2><strong>Board Members</strong></h2>
+      <p>Adelante is driven and led by our members.<br>
+        Our majority-member Board of Directors reflects our commitment to grassroots work, led by directly impacted people. 
+      </p>  
+      </div>
+    </div>
     <div class="row">
       <div class="col-12"><h2>Board of Directors</h2></div>
+      <div class="col-sm-12"><img src="../img/photos/Board.jpg" class="img-fluid no-gutters" style="height: 400px; margin-bottom: 25px;">
+      </div>
     </div>
   </div>
   <div class="container">
   <div class="row">
-  <div class="col-sm-3"><img src="../img/fake/b-o-d-1.jfif" class="b-o-d" alt="thispersondoesnotexist">
-    <p><strong>Not A. Person</strong></p>
-    <p><b>Lorem Ipsum</b></p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat neque ut dolore quis ex incidunt, hic sapiente rerum labore cupiditate assumenda officiis eveniet pariatur a repellat expedita animi nobis accusantium!</p>
+  <div class="col-sm-6">
+<h2 style="text-align: center;">Board of Directors&nbsp;2020-2021</h2>
+<p style="text-align: center;">
+  <strong>Fernanda Godinez*</strong><br>
+<strong>Jesica Tellez*</strong><br>
+<strong>Marcos Baltazar*</strong><br>
+<strong>Julia Calderón*</strong><br>
+<strong>Marisol Aguilar *</strong><br>
+<strong>Jean Hernández</strong><br>
+Jean is the Latino Outreach Coordinator at AIDS Alabama.<br>
+<b>John Maddox</b><br>
+Associate Professor of Spanish and African American Studies at the University of Alabama at Birmingam</p><br>
+<em>*Adelante member</em></p>    
   </div>
-  <div class="col-sm-3"><img src="../img/fake/b-o-d-2.jfif" class="b-o-d" alt="thispersondoesnotexist">
-    <p><strong>Not A. Person</strong></p>
-    <p><b>Lorem Ipsum</b></p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat neque ut dolore quis ex incidunt, hic sapiente rerum labore cupiditate assumenda officiis eveniet pariatur a repellat expedita animi nobis accusantium!</p>
-  </div>
-  <div class="col-sm-3"><img src="../img/fake/b-o-d-3.jfif" class="b-o-d" alt="thispersondoesnotexist">
-    <p><strong>Not A. Person</strong></p>
-    <p><b>Lorem Ipsum</b></p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat neque ut dolore quis ex incidunt, hic sapiente rerum labore cupiditate assumenda officiis eveniet pariatur a repellat expedita animi nobis accusantium!</p></div>
-  <div class="col-sm-3"><img src="../img/fake/b-o-d-4.jfif" class="b-o-d" alt="thispersondoesnotexist">
-    <p><strong>Not A. Person</strong></p>
-    <p><b>Lorem Ipsum</b></p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat neque ut dolore quis ex incidunt, hic sapiente rerum labore cupiditate assumenda officiis eveniet pariatur a repellat expedita animi nobis accusantium!</p></div>
-  </div>
-</div>
-</section>
-<hr>
-<section class="text-center">
-  <div class="container">
-    <div class="row">
-      <div class="col-12"><h2>Staff</h2></div>
-    </div>
-  </div>
-  <div class="container">
-  <div class="row">
-  <div class="col-sm-3"><img src="../img/staff/Isaac-headshot.jpeg" class="staff" alt="Portrait of Isaac">
-    <p><strong>Isaac Guazo Estrada</strong></p>
-    <p>(he/him/his)</p>
-    <p><b>Economic Justice Organizer</b></p>
-  </div>
-  <div class="col-sm-3"><img src="../img/staff/Resha-headshot.jpeg" class="staff" alt="Portrait of Resha">
-    <p><strong>Resha Swanson</strong></p>
-    <p>(she/her/ella)</p>
-    <p><b>Policy & Communications Coordinator</b></p></div>
-  <div class="col-sm-3"><img src="../img/staff/Jessica-headshot.jpeg" class="staff" alt="Portrait of Jessica">
-    <p><strong>Jessica Vosburgh</strong></p>
-    <p>(she/her/ella)</p>
-    <p><b>Executive Director</b></p></div>
-  <div class="col-sm-3"><img src="../img/staff/Victoria-headshot.jpeg" class="staff" alt="Portrait of Victoria">
-    <p><strong>Victoria Siciliano</strong></p>
-    <p>(she/her/ella)</p>
-    <p><b>Director of Administration and Fundraising</b></p></div>
-  </div>
+  <div class="col-sm-6">
+<h2 style="text-align: center;"><strong>Previous Board Members:</strong></h2>
+<p style="text-align: center;">Yazmín Contreras<br>
+Cesar Mata<br>
+Remedios Perez<br>
+Helen Rivas<br>
+Karla Pesquera<br>
+Benjamín Tzompaxtle Itehua<br>
+Dr. Carlos Alemán<br>
+Lily Andrews<br>
+Miguel Carpizo Ituarte<br>
+Scott Douglas<br>
+Rosa Gutierrez<br>
+Stan Johnson<br>
+Pastor Tommy Morgan</p>    
 </div>
 </section>
     </div>
-<!--/About-->
+<!--/Staff-->
 <!--Our Work-->
 <div class="tab-pane" id="our-work" role="tabpanel" aria-labelledby="our-work-tab">
     <section class="features-icons bg-light text-center">
@@ -411,318 +417,393 @@ echo  "<p>".$recent_post['post_content']."</p>
         </section>
 </div>
 <!--/Our Work-->
-
-<!--Get Involved-->
-<div class="tab-pane" id="get-involved" role="tabpanel" aria-labelledby="get-involved-tab">
-   <section class="features-icons bg-light text-center">
-<div class="container">
-    <div class="row">
-    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
-        <h2>Volunteer</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aperiam magnam, laboriosam laudantium repellat, ut voluptates explicabo saepe perferendis iste odio, delectus amet blanditiis. Illo mollitia tenetur voluptatem architecto ipsum!</p>
-</div>
-<div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
-  <h2>Join our team</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt rem libero veritatis ex porro non similique voluptates odio voluptatibus modi laborum, qui quasi aliquam, laudantium quas voluptatum animi unde quisquam!</p>
-</div>
-</div>
-</div>
-</div>
-<!--/Get Involved-->
 <!--Publications-->
-<div class="tab-pane" id="publications" role="tabpanel" aria-labelledby="publications-tab">   <section class="showcase">
-    <div class="container-fluid p-0">
-        <div class="row no-gutters">
-            <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image:url(&quot;../img/photos/family-at-kermes.jpeg&quot;);"><span></span></div>
-            <div class="col-lg-6 my-auto order-lg-1 showcase-text">
-                <h2>In The News</h2>
-                <ul class="lead mb-0 no-wrap">
-                  <li><a href="#">Quisque ullamcorper erat a est feugiat suscipit.</a>
-                  </li>
-                  <li><a href="#">Donec ultricies augue eu lectus sollicitudin, nec porttitor sem fermentum.</a>
-                  </li>
-                  <li><a href="#">Donec suscipit libero ut velit tristique, in viverra mauris placerat.</a>
-                  </li>
-                  <li><a href="#">Integer cursus felis id ante consequat maximus.</a>
-                  </li>
-                  <li><a href="#">Vivamus facilisis lorem nec ligula rutrum, eget bibendum risus bibendum.</a>
-                  </li>
-                </ul>
-                <a href="pages/news-eng.html" class="btn btn-info float-right">Read more</a>
-            </div>
-        </div>
-        <div class="row no-gutters">
-            <div class="col-lg-6 text-white showcase-img" style="background-image:url(&quot;../img/photos/nueva-esperanza.jpeg&quot;);"><span></span></div>
-            <div class="col-lg-6 my-auto order-lg-1 showcase-text">
-                <h2>Press Releases</h2>
-                <ul class="lead mb-0 no-wrap">
-                  <li><a href="#">Quisque ullamcorper erat a est feugiat suscipit.</a>
-                  </li>
-                  <li><a href="#">Donec ultricies augue eu lectus sollicitudin, nec porttitor sem fermentum.</a>
-                  </li>
-                  <li><a href="#">Donec suscipit libero ut velit tristique, in viverra mauris placerat.</a>
-                  </li>
-                  <li><a href="#">Integer cursus felis id ante consequat maximus.</a>
-                  </li>
-                  <li><a href="#">Vivamus facilisis lorem nec ligula rutrum, eget bibendum risus bibendum.</a>
-                  </li>
-                </ul>
-                <a href="pages/press-eng.html" class="btn btn-info float-right">Read more</a>
-            </div>
-        </div>
-        <div class="row no-gutters">
-            <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image:url(&quot;../img/photos/poetry-night.jpeg&quot;);"><span></span></div>
-            <div class="col-lg-6 my-auto order-lg-1 showcase-text">
-                <h2>Research Reports</h2>
-                <p class="lead mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi similique assumenda ab at in officia delectus sed laudantium! Blanditiis eaque porro, aliquam ad eos ipsam accusantium tenetur facere aut aperiam?</p>
-                <a href="#" class="btn btn-info float-right">Read more</a>
-            </div>
-        </div>
-        <div class="row no-gutters">
-            <div class="col-lg-6 order-lg-1 text-white showcase-img" style="background-image:url(&quot;../img/photos/aplauso-y-medio.jpeg&quot;);"><span></span></div>
-            <div class="col-lg-6 my-auto order-lg-1 showcase-text">
-                <h2>Annual Reports</h2>
-                <p class="lead mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint aliquid ipsam quis doloribus quibusdam consectetur quasi debitis modi vero minima delectus repellat illo, architecto sit eveniet alias atque mollitia? Perferendis?</p>
-                <a href="#" class="btn btn-info float-right">Read more</a>
-            </div>
-        </div>
+<!--PR Modal-->
+<div class="modal fade" id="prModal" tabindex="-1" aria-labelledby="prModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="prModal">Previous Press Releases</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-dialog modal-dialog-scrollable modal-lg">
+        <ul>
+          <li>October 24, 2019: <a href="http://adelantealabama.org/wp-content/uploads/2015/07/Press-Statement-Ade-2.pdf">Petition Filed to Demand Release of Black Immigrant Incarcerated for Almost a Decade</a></li>
+          <li>September 19, 2019:&nbsp;<a href="http://adelantealabama.org/wp-content/uploads/2019/09/19-09-18-Marocs-Juan-Released.pdf">Labor Rights Activist and Adelante Board Member Returns Home after Nearly One Month in ICE Detention</a></li>
+          <li>August 22, 2019:&nbsp;<a href="http://adelantealabama.org/wp-content/uploads/2019/09/19-08-22-Marcos-Baltazar-Release.pdf">Member of Adelante’s Board of Directors Detained by ICE</a></li>
+          <li>August 8, 2019:&nbsp;<a href="http://adelantealabama.org/wp-content/uploads/2019/09/19-08-08-Mississippi-ICE-Raids.pdf">Adelante Alabama Worker Center Responds to ICE Terrorism</a></li>
+          <li>October 17, 2018: <a href="http://www.alabamaappleseed.org/news/groups-call-for-investigation-into-potential-violations-of-federal-law-by-alabama-sheriffs-with-federal-detention-contracts-who-convert-jail-food-funds-to-personal-use/">Groups Call for Investigation Into Potential Violations of Federal Law by Alabama Sheriffs with Federal Detention Contracts who Convert Jail Food Funds to Personal Use </a>(with Alabama Appleseed)</li>
+          <li>July 31, 2018: <a href="https://mailchi.mp/cair/press-conference-at-birmingham-city-hall">Sixteen Coalition Groups, Faith and Civic Leaders to Hold Press Conference to Call on Mayor Woodfin to Take Action on Proposed “Trust and Public Safety” Order</a> (with CAIR-Alabama)</li>
+          <li>December 6, 2017:&nbsp;<a href="https://www.citizen.org/media/press-releases/immigrant-and-civil-rights-groups-sue-homeland-security-failing-disclose-memo">Immigrant and Civil Rights Groups Sue Homeland Security for Failing to Disclose Memo Recommending Closure of Notorious Alabama Detention Facility</a></li>
+          <li>September 15, 2017:&nbsp;<a href="http://adelantealabama.org/wp-content/uploads/2015/07/Adelante-Gardendale-ADVISORY-9-15-17.pdf">Local Residents and Civil Rights Advocates Gather to Denounce Racial Profiling of Latinos in Gardendale Courthouse, Demand Information on City’s Collusion with Immigration Agency</a></li>
+          <li>September 6, 2017:&nbsp;<a href="http://adelantealabama.org/wp-content/uploads/2015/07/17-9-6-Adelante-DACA-Statement.pdf">Adelante Reacts to Trump Administration’s DACA Announcement</a></li>
+          <li>June 29, 2017:&nbsp;<a href="http://adelantealabama.org/wp-content/uploads/2015/07/17-6-29-March-for-Sanctuary-Press-Release.pdf">Civil and Immigrant Rights Defenders March For Sanctuary in Downtown Birmingham</a></li>
+          <li>November 9, 2016: <a href="http://adelantealabama.org/wp-content/uploads/2015/07/16-11-9-Adelante-Trump-Press-Statement.pdf">Adelante Statement on Trump’s Election: “We Are Ready For This”</a>; en español: <a href="http://adelantealabama.org/wp-content/uploads/2015/07/16-11-9-Adelante-Trump-Press-Statement_Spanish.pdf">Adelante Reacciona a la Elección de Trump: “Estamos Listos Para Esto”</a></li>
+          <li>September 8, 2016: <a href="http://shutdownetowah.org/wp-content/uploads/2015/07/PressReleaseEtowahSuper-MemoFOIA.pdf">Community Members Urge the Department of Homeland Security to Release a Crucial Document on Systemic Civil Rights Violations at the Etowah County Immigrant Detention Center</a></li>
+          <li>June 23, 2016: <a href="http://adelantealabama.org/wp-content/uploads/2015/07/BREAKING-Adelante-Reacts-to-US-v.-Texas.pdf">Adelante Reacts to Supreme Court’s 4-4 Split in US v. Texas</a>; en español:&nbsp;<a href="http://adelantealabama.org/wp-content/uploads/2015/07/BREAKING-Adelante-Reacts-to-US-v.-Texas_espanol.pdf">Adelante Reacciona al Empate de la Corte Suprema en US v. Texas</a></li>
+          <li>June 17, 2016:&nbsp;<a href="http://adelantealabama.org/wp-content/uploads/2015/07/PressReleaseDiazetalWageTheftLawsuit.pdf">Workers File Suit To Recover Stolen Wages From Abusive Boss, Hold Corporate Employers Accountable</a></li>
+          <li>April 1, 2016: <a href="http://shutdownetowah.org/wp-content/uploads/2015/07/NoMoreDeathsPressRelease-2016-04-01.pdf">Activists From Around The Country Descend on Etowah’s Detention Center Demanding Closure</a></li>
+          <li>July 24, 2015: <a href="http://shutdownetowah.org/wp-content/uploads/2015/07/2015-07-24_Etowah-Sign-On-Press-Release-FINAL.pdf" target="_blank" rel="noopener noreferrer">Prominent Anti-Detention Groups Join Local Charitable, Religious, and Community Organizations in Calling for Closure and Investigation of Etowah Immigration Jail</a></li>
+          <li>June 9, 2015: <a href="http://adelantealabama.org/wp-content/uploads/2015/07/Adelante_Disabled-Migrants-PRESS-RELEASE-2015.06.09.pdf">Honduran Migrants Who Have Lost Limbs to the Train Known as ‘The Beast’ Visit Birmingham on Their Way to Seek Audience with President</a></li>
+          <li>May 27, 2015: <a href="http://adelantealabama.org/wp-content/uploads/2015/07/ACIJ-Adelante-Tuskegee-Press-Release-UPDATED-May-27.pdf">Tuskegee Becomes First City in Alabama to Enact Immigrant TRUST Policy, Rejects Entanglement with Immigration Enforcement</a></li>
+          </ul>        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
     </div>
-</section>
+  </div>
 </div>
-<!--/Publications-->
+<!--/PR Modal-->
+<div class="tab-pane" id="publications" role="tabpanel" aria-labelledby="publications-tab">   
+  <div class="row">
+    <div class="col-sm-3" style="margin-top: 25px;">
+      <div class="nav navbar flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical"   style="margin-top: 102px; margin-bottom: 0; right: 50px; border: solid 4px;">
+        <a class="nav-link active" id="v-pills-press-tab" data-toggle="pill" href="#v-pills-press" role="tab" aria-controls="v-pills-press" aria-selected="true">Press Releases</a>
+        <a class="nav-link" id="v-pills-news-tab" data-toggle="pill" href="#v-pills-news" role="tab" aria-controls="v-pills-news" aria-selected="false">In The News</a>
+        <a class="nav-link" id="v-pills-tv-tab" data-toggle="pill" href="#v-pills-tv" role="tab" aria-controls="v-pills-tv" aria-selected="false">T.V. & Video</a>
+      </div>
+    </div>
+    <div class="col-sm-8">
+      <!--PR Tab-->
+      <div class="tab-content" id="v-pills-tabContent">
+        <div class="tab-pane fade show active sidebar-content" id="v-pills-press" role="tabpanel" aria-labelledby="v-pills-home-tab">
+          <h2>Press Releases</h2>
+          <br> 
+          <em>For media inquiries, email info@adelantealabama.org or call (205) 317-1481.</em>
+          <br>
+          <br>
+          <h3><a href="http://adelantealabama.org/wp-content/uploads/2015/07/20-11-07-Biden-Presidency.pdf">Adelante Statement on Biden’s Election</a></h3>
+            <p>November 7, 2020</p>
+            <p>“Now that the election is over, Biden needs to prove himself. During his Vice Presidency,
+              millions of people were deported – that’s more than under Trump. We’ve seen administrations
+              under both Republicans and Democrats make promises about overhauling the immigration
+              system and in both circumstances we’ve seen those promises evaporate after election day.”
+              </p>
+              <hr>
+              <h3><a href="http://adelantealabama.org/wp-content/uploads/2015/07/20-04-29-ICE-COVID-release-AL-Petition-Filed.pdf">Medically Vulnerable Immigrants Seek Emergency Release from ICE Detention in Alabama
+              </a></h3>
+              <p>April 19, 2020</p>
+              <p>Late yesterday, Adelante Alabama Worker Center, the Center
+                for Constitutional Rights, and the National Immigration Project of the National Lawyers Guild
+                (NIP-NLG) filed an emergency petition and temporary restraining order for the release of
+                medically vulnerable people currently held in Immigration and Customs Enforcement (ICE)
+                detention. The filing seeks the release of 18 people being detained in Unit 9 of the Etowah
+                County Detention Center in Gadsden, Alabama, and cites their severe risk of contracting the
+                novel coronavirus COVID-19 and developing life-threatening symptoms. Other medically
+                vulnerable immigrants have filed petitions for release in other states, with courts ordering
+                releases from other ICE detention centers. The filings in each case warn that the near-certainty of
+                coronavirus outbreaks in these facilities renders the continued detention of these individuals a
+                potential death sentence for a civil immigration violation.                
+                </p>
+                <hr>
+                <h3><a href="http://adelantealabama.org/wp-content/uploads/2020/04/20-04-15-Press-Release-FreeThemAll-Campaign-Launch-corrected.pdf">Jefferson County Sheriff Refuses to Release COVID-19 Plan, Advocates Respond with #FreeThemAll Campaign
+                </a></h3>
+                <p>April 15, 2020</p>
+                <p>Despite pressure from advocates, the Jefferson County Sheriff’s Department,
+                  headed by Mark Pettway, refused to publicize its plans for protecting inmates in the two county jails from
+                  a COVID-19 outbreak.
+                  A letter was sent to the Sheriff last week, spearheaded by Adelante Alabama Worker Center and cosigned by thirteen other Birmingham organizations. It called on Sheriff Pettway to release everyone from
+                  Jefferson County Jails, starting with those most vulnerable to the novel COVID-19 virus because of age
+                  or pre-existing conditions.
+                  </p>
+                  <hr>
+                  <h3><a href="http://adelantealabama.org/wp-content/uploads/2015/07/20-04-14-Press-Release-Launch-Colwal-FINAL-ENG.pdf">Adelante Launches COVID-19 Fund for Local Workers Excluded from Government Relief
+                  </a></h3>
+                  <p>April 14, 2020</p>
+                  <p>Today, Birmingham-based worker and immigrant rights organization
+                    Adelante Alabama Worker Center is launching the Colwal Fund for Excluded Workers. The fund
+                    will provide direct support in the form of a one-time $500 cash grant to eligible low-wage
+                    workers in the Birmingham area who have been adversely affected by the COVID-19 pandemic,
+                    yet excluded from Congress’ stimulus bill and state economic relief programs.
+                    </p>
+                    <hr>
+                    <h3><a href="https://www.freedomforimmigrants.org/news/2019/12/19/immigrant-rights-advocates-celebrate-reinstated-visitation-program-at-etowah-detention-center-following-public-pressure-amp-cease-and-desist-letter">Immigrant Rights Advocates Celebrate Reinstated Visitation at Etowah Detention Center Following Public Pressure & Cease and Desist Letter
+                    </a></h3>
+                    <p>December 19, 2019</p>
+                    <p>In response to a letter addressed to Etowah County Sheriff Jonathon Horton signed by 62 community organizations and a cease and desist letter issued by Freedom for Immigrants on behalf of the Etowah Visitation Project, visitation has resumed at the Etowah Detention Center. 
+                      </p>
+                      <button type="button" class="btn btn-info pull-right" data-toggle="modal" data-target="#prModal" style="margin-bottom: 10px;">
+                        Previous ->
+                      </button>                      
+        </div>
+        <!--End PR tab-->
+        <!--In the News modal-->
+        <div class="modal fade" id="newsModal" tabindex="-1" aria-labelledby="newsModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="newsModal">Previous News Stories</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-dialog modal-dialog-scrollable modal-lg">
+                <ul>
+                  <li>AL.com: “<a href="https://www.al.com/news/2020/05/i-am-scared-of-dying-in-here-lawsuit-demands-release-of-18-immigrants-from-alabama-ice-facility.html">‘I am scared of dying in here’: Lawsuit demands release of 18 immigrants from Alabama ICE facility </a>“, May 4, 2020</li>
+                  <li>Common Dreams: <a href="https://www.commondreams.org/newswire/2020/04/29/medically-vulnerable-immigrants-seek-emergency-release-ice-detention-alabama">“Medically Vulnerable Immigrants Seek Emergency Release from ICE Detention in Alabama,”</a><br>
+                  April 29, 2020</li>
+                  <li>ABC 33/40: <a href="https://abc3340.com/news/local/missing-man-reported-in-cherokee-county">“Detained immigrants file for release citing increased risk of COVID-19 in Gadsden prison”</a> April 29, 2020</li>
+                  <li>NPR Marketplace:&nbsp;<a href="https://www.marketplace.org/2020/04/17/washington-relief-packages-leave-out-many-domestic-workers/">“Washington relief packages leave out many domestic workers,”</a>&nbsp;April 17, 2020</li>
+                  <li>The Intercept: “<a href="https://theintercept.com/2020/04/12/coronavirus-ice-detention-jail-alabama/?fbclid=IwAR3A6twiAaJK1Lr_bBt_6wdw469buYmvi5AhKMlQ7RTVkVkVUsJV1qAMoYY">Burials are cheaper than deportations: Virus unleashes terror in a troubled ICE detention center</a>,”April 12, 2020</li>
+                  <li>AL.com: “<a href="https://www.al.com/news/2020/02/undocumented-alabamian-savors-rare-victory-in-immigration-court.html?fbclid=IwAR3i2Ot0d-K0-IrPlz5_dHlo87DQXvHyrS2Hdn1cR7J59V8rVC9tQOmjTD8">Undocumented Alabamian savors rare victory in immigration court</a>,” February 16, 2020</li>
+                  <li>Nevada Current: “<a href="https://www.nevadacurrent.com/2020/02/11/lv-marshals-break-up-protest-on-steps-of-city-hall/">LV marshals break up protest on steps of city hall</a>,” February 11, 2020</li>
+                  <li>Shadowproof: “<a href="https://shadowproof.com/2019/12/17/ice-retaliates-activists-visitation-program-detention-alabama/">ICE retaliates against immigrants rights activists by suspending visitation program in Alabama</a>,” December 17, 2019</li>
+                  <li>WVTM13: “<a href="https://www.wvtm13.com/article/father-and-son-return-to-alabama-on-bond-after-ice-detention/29156789">Father and son return to Alabama on bond after ICE detention</a>,” September 20, 2019</li>
+                  <li>AL.com: “<a href="https://www.al.com/news/2019/09/birmingham-residents-released-from-ice-custody-on-bond.html">Birmingham residents released from ICE custody on bond</a>,” September 19, 2019</li>
+                  <li>AL.com: “<a href="https://www.al.com/news/2019/09/whats-randall-woodfin-hiding.html">What’s Randall Woodfin hiding?</a>,” September 6, 2019</li>
+                  <li>
+                  <div>AL.com: “<a href="https://www.al.com/news/2019/08/gofundme-account-set-up-for-detained-immigrant-activist.html">GoFundMe account set up for detained immigrant activist</a>,” August 30, 2019</div>
+                  </li>
+                  <li>
+                  <div>CBS 42: “<a href="https://www.cbs42.com/top-stories/adelante-alabama-worker-center-push-for-release-of-board-member-detained-by-ice/">Adelante Alabama Worker Center push for release of board member detained by ICE</a>,” August 28, 2019</div>
+                  </li>
+                  <li>
+                  <div>WBHM: “<a href="https://wbhm.org/2019/group-protests-detention-two-immigrants/">Group Protests Detention of Two Immigrants</a>,” August 28, 2019</div>
+                  </li>
+                  <li>
+                  <div>AL.com: “<a href="https://www.al.com/news/2019/08/adelante-demands-ice-release-board-member-and-son.html">Adelante demands ICE release board member and son</a>,” August 27, 2019</div>
+                  </li>
+                  <li>AL.com: “<a href="https://www.al.com/opinion/2019/08/johnson-detention-of-immigrants-rights-group-board-member-brings-national-shame-home.html">Johnson: Detention of immigrants rights group board member brings national shame home</a>,” August 26, 2019</li>
+                  <li>VICE News: “<a href="https://www.vice.com/en_us/article/ywady5/ice-keeps-arresting-prominent-immigration-activists-they-think-theyre-being-targeted">ICE Keeps Arresting Prominent Immigration Activists. They Think They’re Being Targeted.</a>” August 24, 2019</li>
+                  <li>The Gadsden Times: “<a href="https://www.gadsdentimes.com/news/20190823/marchers-protest-ice-detention-of-aawc-board-member-son">Marchers protest ICE detention of AAWC board member, son</a>,” August 23, 2019</li>
+                  <li>WBRC6: “<a href="https://www.wbrc.com/2019/08/23/immigration-advocates-protest-gadsden-against-labor-leader-arrest/">Immigration advocates protest in Gadsden against labor leader arrest</a>,” August 23, 2019</li>
+                  <li>
+                  <div>AL.com: “<a href="https://www.al.com/news/2019/08/protesters-call-for-release-of-detained-alabama-immigrant-rights-group-board-member.html">Protesters call for release of detained Alabama immigrant rights group board member</a>,” August 23, 2019</div>
+                  </li>
+                  <li>WVTM13: “<a href="https://www.wvtm13.com/article/alabama-immigration-rights-group-board-member-detained-by-ice-officials/28790957#">Alabama immigration rights group board member detained by ICE officials</a>,” August 22, 2019</li>
+                  <li>
+                  <div>AL.com: “<a href="https://www.al.com/news/2019/08/board-member-of-alabama-immigrant-rights-group-detained-by-ice.html">Board member of Alabama immigrant rights group detained by ICE</a>,” August 22, 2019</div>
+                  </li>
+                  <li>Daily Beast: “<a href="https://www.thedailybeast.com/deported-to-death-this-is-what-it-means-to-go-back-to-somalia">Deported to Death: What It Means to ‘Go Back’ to Somalia</a>, ” August 9, 2019</li>
+                  <li>
+                  <div>AL.com: “<a href="https://www.al.com/news/2019/08/alabama-groups-helping-mississippi-immigrants-affected-by-raids.html">Alabama groups helping Mississippi immigrants affected by raids</a>,” August 9, 2019</div>
+                  </li>
+                  <li>WMC5: “<a href="https://www.wmcactionnews5.com/2019/07/17/memphis-based-journalist-holds-news-conference-after-being-released-ice-custody/">Memphis-based journalist Manuel Duran talks about the 15 months he spent in ICE custody</a>,” July 17, 2019</li>
+                  <li>CBS42: “<a href="https://www.cbs42.com/top-stories/alabama-advocacy-groups-concerned-over-ice-raids/">Alabama advocacy groups concerned over ICE raids</a>,” July 15, 2019</li>
+                  <li>The Hill: “<a href="https://thehill.com/latino/452818-reporter-manuel-duran-released-from-ice-custody">Reporter Manuel Duran released from ICE custody</a>,” July 12, 2019</li>
+                  <li>Souther Poverty Law Center: “<a href="https://www.splcenter.org/news/2019/07/11/manuel-duran-journalist-who-reported-ice-freed-detention">Manuel Duran, journalist who reported on ICE, freed from detention</a>,” July 11, 2019</li>
+                  <li>Knight Center for Journalism in the Americas: “<a href="https://knightcenter.utexas.edu/blog/00-21035-court-orders-case-reopened-salvadoran-journalist-detained-us-more-one-year">Court orders case reopened for Salvadoran journalist detained in U.S. for more than one year</a>,” July 10, 2019</li>
+                  <li>The Brown Daily Herald: “<a href="http://www.browndailyherald.com/2019/04/11/u-fli-event-spotlights-detention-infrastructure-u-s/">U-FLi event spotlights detention infrastructure in the U.S.</a>,” April 11, 2019</li>
+                  <li>AL.com: “<a href="https://www.al.com/news/2019/04/tennessee-journalist-now-an-ice-detainee-in-etowah-county-jail.html">Tennessee journalist now an ICE detainee in Etowah County Jail</a>,” April 5, 2019</li>
+                  <li>Southern Poverty Law Center: “<a href="https://www.splcenter.org/news/2019/04/04/splc-seeks-release-detained-journalist-whose-work-challenged-ice-year-after-he-was-arrested">SPLC seeks release of detained journalist whose work challenged ICE, a year after he was arrested</a>,” April 4, 2019</li>
+                  <li>La Opinión: “<a href="https://laopinion.com/2019/04/03/lleva-mas-de-un-ano-detenido-injustamente-por-ice-mientras-hacia-su-trabajo/">Lleva más de un año detenido “injustamente” por ICE mientras hacía su&nbsp;trabajo</a>,” April 3, 2019</li>
+                  <li>Law360: “<a href="http://adelantealabama.org/wp-content/uploads/2019/04/19-3-27-DHS-Must-Turn-In-Full-Memo-On-ICE-Detention-Center-Abuses-Law360.pdf">DHS Must Turn In Full Memo On ICE Detention Center Abuse</a>,” March 27, 2019</li>
+                  <li>TimesDaily: “<a href="https://www.timesdaily.com/news/state-capital/marsh-proposes-check-off-for-building-wall/article_6155fb32-5e38-5ba6-a1ac-9f630ffc9ff9.html">Marsh proposes check-off for building wall</a>,” March 20, 2019</li>
+                  <li>The Gadsden Times: “<a href="https://www.gadsdentimes.com/news/20190124/detention-center-detainees-balk-at-beans">Detention Center detainees balk at beans</a>,” January 24, 2019</li>
+                  <li>New York Post: &nbsp;<a href="https://nypost.com/2018/12/31/alabama-sheriff-pocketed-1-5m-from-illegal-immigrant-fund-report/">“Alabama sheriff pocketed $1.5M from illegal immigrant fund: report”</a>&nbsp;December 31, 2018</li>
+                  <li>The Hill: <a href="https://thehill.com/latino/423293-alabama-sheriff-has-personally-kept-over-15-million-through-federal-contract-to-house">“Alabama sheriff has personally kept over $1.5M through contract to house undocumented immigrants: report”</a>&nbsp;December 31, 2018</li>
+                  <li>AL.com: <a href="https://www.al.com/news/2018/12/heres-how-federal-inmates-made-an-alabama-sheriff-15-million.html">“Here’s how federal inmates made an Alabama sheriff $1.5 million”</a>&nbsp;December 30, 2018</li>
+                  <li>The Guardian: “<a href="https://www.theguardian.com/us-news/2018/dec/02/etowah-the-ice-detention-center-with-the-goal-to-make-your-life-miserable">Etowah: The Ice detention center with the goal to ‘make your life miserable’</a>” December 2, 2018</li>
+                  <li>AL.com: “<a href="https://www.al.com/news/index.ssf/2018/10/national_local_advocates_urge.html">National, local advocates urge feds to investigate Alabama sheriffs over jail food money</a>,” October 17, 2018</li>
+                  <li>AL.com: “<a href="https://www.al.com/news/birmingham/index.ssf/2018/08/groups_call_on_birmingham_mayo.html">Groups call on Birmingham mayor to not enforce federal immigration policies</a>,” August 3, 2018</li>
+                  <li>CBS 42: “<a href="https://www.cbs42.com/news/local/more-than-a-dozen-groups-call-for-birmingham-mayor-woodfin-to-take-action/1337605697">More than a dozen groups call for Birmingham Mayor Woodfin to take action</a>,” July 31, 2018</li>
+                  <li>Alabama Today: “<a href="http://altoday.com/archives/25483-16-coalition-groups-call-on-randall-woodfin-to-take-action-on-trust-and-public-safety-order">16 coalition groups call on Randall Woodfin to take action on ‘trust and public safety’ order</a>,” July 31, 2018</li>
+                  <li>AL.com: “<a href="https://www.al.com/news/birmingham/index.ssf/2018/06/communities_of_color_encourage.html">Communities of color encourage voting following court decision to uphold travel ban</a>,” June 27, 2018</li>
+                  <li>Editorial by Jessica Vosburgh on AL.com on a <a href="http://www.al.com/opinion/index.ssf/2018/01/americans_have_an_obligation_t.html">reparations-based immigration policy</a>, Jan. 16, 2018</li>
+                  <li>AL.com: “<a href="http://www.al.com/news/anniston-gadsden/index.ssf/2017/12/federal_lawsuit_filed_against_2.html">Alabama group sues DHS for failing to provide information about detention center</a>,” December 6, 2017</li>
+                  <li>Trussville Tribune: “<a href="http://www.trussvilletribune.com/2017/10/17/birmingham-city-council-hears-advocates-of-sanctuary-city-ordinance/">Birmingham City Council hears advocates of sanctuary city ordinance</a>,” October 17, 2017</li>
+                  <li>The Intercept: “<a href="https://theintercept.com/2017/09/19/gay-ghana-asylum-us-immigration-ice-deportation/">Asylum-seeker says he’s being deported because ICE mishandled evidence of anti-gay attack</a>,” September 19, 2017</li>
+                  <li>AL.com: “<a href="http://www.al.com/news/index.ssf/2017/09/we_feel_attacked_protesters_de.html">‘We feel attacked’: Protestors decry immigration enforcement tactics at Gardendale court</a>,” September 15, 2017</li>
+                  <li>WBHM: “<a href="https://news.wbhm.org/feature/2017/marchers-urge-birmingham-to-become-sanctuary-city/">Marchers urge Birmingham to become sanctuary city</a>,” July 1, 2017</li>
+                  <li>WBRC Fox 6: “<a href="http://www.wbrc.com/story/35796259/birmingham-marches-in-support-of-sanctuary-city-ordinance">Birmingham marches in support of sanctuary city ordinance</a>,” July 1, 2017</li>
+                  <li>AL.com: “<a href="http://www.al.com/news/birmingham/index.ssf/2017/07/birmingham_group_marches_throu.html">Birmingham group marches to city hall, rallies for sanctuary city ordinance</a>,” July 1, 2017</li>
+                  <li>AL.com: “<a href="http://www.al.com/news/index.ssf/2017/06/a_whole_nightmare_alabama_fath.html">‘A whole nightmare’: Alabama father of 7 out on bond after detention by ICE</a>,” June 17, 2017</li>
+                  <li>Alabama Public Radio: “<a href="http://apr.org/post/activists-urge-birmingham-become-sanctuary-city#stream/0">Activists Urge Birmingham to Become Sanctuary City</a>,” June 14, 2017</li>
+                  <li>AL.com: “<a href="http://www.al.com/news/birmingham/index.ssf/2017/06/immigrant_group_asks_birmingha.html">Immigrant group asks Birmingham to declare itself sanctuary city</a>,” June 13, 2017</li>
+                  <li>AL.com: “<a href="http://www.al.com/news/index.ssf/2017/05/ice_watch_event_teaches_what_t.html">‘ICE Watch’ event teaches what to do if immigration officers raid your neighbors</a>,” May 25, 2017</li>
+                  <li>Style Blueprint: “<a href="https://styleblueprint.com/birmingham/everyday/remedios-perez-of-adelante-alabama-faces-of-birmingham/">FACES of Birmingham: Remedios Perez of Adelante Alabama</a>,” May 22, 2017</li>
+                  <li>AL.com: “<a href="http://www.al.com/sports/index.ssf/2017/05/smuggled_to_the_us_at_15_socce.html">Smuggled into U.S. at 15, soccer player finds refuge in Alabama</a>,” May 17, 2017</li>
+                  <li>AL.com: “<a href="http://www.al.com/news/index.ssf/2017/05/black_and_white_alabama_prison.html">Black and White: Alabama prisons don’t count Hispanic inmates</a>,” May 16, 2017</li>
+                  <li>AL.com: “<a href="http://www.al.com/news/birmingham/index.ssf/2017/03/hb_56_alabamas_2011_anti-immig.html">Alabama’s 2011 anti-immigrant law H.B. 56 still on books, gets new life under Trump</a>,” March 24, 2017</li>
+                  <li>NBC News: “<a href="http://www.nbcnews.com/news/latino/trump-strongholds-effort-underway-keep-immigrants-safe-n731941">In Trump Strongholds, An Effort is Underway to Keep Immigrants Safe</a>,” March 10, 2017</li>
+                  <li>Weld for Birmingham: “<a href="http://weldbham.com/blog/2017/02/21/waiting-for-the-crackdown/">Waiting for the Crackdown: How might the Trump Administration’s immigration policies play out in Alabama?</a>” February 21, 2017</li>
+                  <li>AL.com: “<a href="http://www.al.com/news/birmingham/index.ssf/2017/02/how_an_undocumented_mexican_im.html">How an undocumented Mexican immigrant in Alabama feels about Trump’s border wall</a>,” February 2, 2017</li>
+                  <li>Weld for Birmingham: “<a href="http://weldbham.com/blog/2017/01/31/bell-trumps-immigration-policy-misguided/">Bell: ‘Trump’s immigration policy misguided</a>,'” January 31, 2017</li>
+                  <li>AL.com: “<a href="http://www.al.com/news/index.ssf/2016/11/no_natural_light_no_healthy_fo.html">No natural light, no healthy food, detained immigrants in Alabama face harsh conditions</a>,” November 22, 2016</li>
+                  <li>AL.com: “‘<a href="http://www.al.com/news/birmingham/index.ssf/2016/11/unwavering_strength_alabama_im.html">Unwavering Strength’: Alabama immigrants, advocates vow to fight Trump policies</a>,” November 11, 2016</li>
+                  <li>AL.com: “<a href="http://www.al.com/news/anniston-gadsden/index.ssf/2016/11/activists_stage_day_of_the_dea.html">Activists stage ‘Day of the Dead’ protest outside Etowah County Jail</a>,” November 4, 2016</li>
+                  <li>AL.com: “<a href="http://www.al.com/news/anniston-gadsden/index.ssf/2016/09/immigrant_rights_advocates_wan.html">Immigrant rights advocates want DHS document on Etowah center released</a>,” September 8, 2016</li>
+                  <li>Gadsden Times: “<a href="http://www.gadsdentimes.com/news/20160908/immigrants-rights-activists-to-seek-documents">Immigrants’ rights activists to seek documents</a>,” September 8, 2016</li>
+                  <li>Marketplace on NPR: “<a href="https://www.marketplace.org/2016/08/24/wealth-poverty/alabama-detention">Immigrants in Alabama wait years for deportation</a>,” August 31, 2016</li>
+                  <li>WBHM: “<a href="https://news.wbhm.org/feature/2016/local-organizers-take-a-stand-against-wage-theft/">Alabama Organizers File Federal Lawsuit, Take Stand Against&nbsp;Wage Theft</a>,” June 20, 2016</li>
+                  <li>Weld for Birmingham: “<a href="http://weldbham.com/blog/2016/04/06/marooned-in-the-system-etowah-detention-center/">Marooned in the System</a>,” April 6, 2016</li>
+                  <li>AL.com: “<a href="http://www.al.com/news/anniston-gadsden/index.ssf/2016/04/weekend_protest_at_etowah_coun.html">Weekend immigration detainee protest at Etowah jail draws activists</a>,” April 4, 2016</li>
+                  <li>Weld for Birmingham: “<a href="http://weldbham.com/blog/2016/03/01/freed-too-late-ice-detention-death/">Freed too late</a>,” March 31, 2016</li>
+                  <li>Equal Voice Magazine: “<a href="http://adelantealabama.org/wp-content/uploads/2019/04/16-03-18-AL.com-Special-Series_-A-Young-Latina.pdf">Special Series: A Young Latina is Making Change in Ala.</a>,” March 18, 2016</li>
+                  <li>AL.com: “<a href="http://www.al.com/news/birmingham/index.ssf/2016/03/19_groups_seek_dismissal_of_la.html">19 groups push dismissal of lawsuit aimed at blocking refugee relocation to Alabama</a>,” March 18, 2016</li>
+                  <li>AL.com: “‘<a href="http://www.al.com/news/anniston-gadsden/index.ssf/2016/02/one_who_could_have_been_you_gr.html">One who could have been you’: Group protests former detainee’s death</a>,” February 28, 2016</li>
+                  <li>Workers World: “<a href="http://www.workers.org/2015/12/02/detained-immigrants-defy-with-hunger-strikes/#.V9hSp5MrLfY">Detained immigrants defy with hunger strikes</a>,” December 2, 2015</li>
+                  <li>ABC 33/40 News: “<a href="http://abc3340.com/news/local/protestors-support-detainee-hunger-strike">Protesters Support Detainee Hunger Strike</a>” November 30, 2015</li>
+                  <li>Workers World: “<a href="http://www.workers.org/2015/11/25/free-immigrant-detainees/#.V9hS7pMrLfY">Free immigrant detainees!</a>” November 25, 2015</li>
+                  <li>Weld for Birmingham, “<a href="http://weldbham.com/blog/2015/09/23/thoughts-on-the-racial-divide-part-3/">Thoughts on the Racial Divide – Part 3</a>,” September 23, 2015</li>
+                  <li>Alabama Public Radio: “<a href="http://apr.org/post/awful-lot-prison-immigrant-detainees-etowah-county">An Awful Lot Like Prison: Immigrant Detainees in Etowah County</a>,” September 3, 2015</li>
+                  <li>Workers World: “<a href="http://www.workers.org/articles/2015/06/24/black-and-brown-unity-in-alabama/" target="_blank" rel="noopener noreferrer">Black and Brown unity in Alabama</a>,” June 24, 2015</li>
+                  <li>AL.com: “<a href="https://www.al.com/news/anniston-gadsden/2015/06/chant_down_the_walls_brings_mu.html">Chant Down the Walls brings music, mission to Etowah County Jail</a>,” June 20, 2015</li>
+                  <li>AL.com: “<a href="http://www.al.com/news/birmingham/index.ssf/2015/06/honduran_migrants_seek_audienc.html">Honduran migrants seek audience with Obama following dismemberment aboard freight train, ‘The Beast,’</a>” June 17, 2015</li>
+                  <li>AL.com: “<a href="http://www.al.com/news/birmingham/index.ssf/2015/05/city_of_tuskegee_immigration_s.html">City of Tuskegee: Immigration status should have no bearing on police officers’ decisions,</a>” May 27, 2015</li>
+                  <li>AL.com: “<a href="http://www.al.com/news/birmingham/index.ssf/2015/03/parents_of_missing_mexican_stu.html">Parents of missing Mexican students, the Ayotzinapa 43, to speak in Birmingham Wednesday</a>,” March 24, 2015</li>
+                  </ul>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/In the News modal-->
+        <!--In the News tab-->
+        <div class="tab-pane fade sidebar-content" id="v-pills-news" role="tabpanel" aria-labelledby="v-pills-news-tab">
+          <h2>In The News</h2>
+          <br> 
+          <em>For media inquiries, email info@adelantealabama.org or call (205) 317-1481.</em>
+          <br>
+          <br>
+          <h3><a href="https://www.motherjones.com/politics/2020/07/seven-detainees-sued-ice-then-they-were-transferred-to-a-notorious-alabama-jail/">7 Detainees Sued ICE. Then They Were Transferred to a Notorious Alabama Jail.</a></h3>
+          <p><strong>Mother Jones</strong></p>
+            <p>July 21, 2020</p>
+            <p>On June 29, Stephen Brown was woken up around 4 a.m. and told that he was about to be moved from the jail in Clinton County, Pennsylvania. He didn’t know where he was heading. Brown, who came to the United States from Jamaica as a teenager 40 years ago, learned that six other immigrant detainees were being transferred from the jail. He realized that the seven of them had something in common: They were all suing Immigration and Customs Enforcement.
+              </p>
+              <hr>
+              <h3><a href="https://www.al.com/news/2020/07/alabama-power-sees-112-million-surplus-advocates-push-for-refund.html">Alabama Power sees $112 million surplus, advocates push for refund.
+              </a></h3>
+              <p><strong>AL.com</strong></p>
+              <p>July 17, 2020</p>              
+              <p>Alabama Power Company has collected from customers’ electric bills $112 million more than it needed to cover its fuel costs, and several advocacy groups have petitioned the state to order that surplus be refunded to customers immediately rather than waiting until next year.                
+                </p>
+                <hr>
+                <h3><a href="https://www.vice.com/en_us/article/pkypjz/securus-technologies-is-cashing-in-on-immigrant-detention">Securus Technologies Is Cashing in on Immigrant Detention.
+                </a></h3>
+                <p><strong>VICE News</strong></p>
+                <p>June 12, 2020</p>
+                <p>Securus Technologies, a prison telecommunications firm notorious for its predatory business practices, has quietly joined the ranks of companies profiting from immigrant detention.
+                  </p>
+                  <hr>
+                  <h3><a href="https://www.nepr.net/post/connecticut-wife-prays-ice-will-release-husband-amid-covid-19#stream/0">Connecticut Wife Prays ICE Will Release Husband Amid COVID-19
+                  </a></h3>
+                  <p><strong>New England Public Radio</strong></p>
+                  <p>May 7, 2020</p>
+                  <p><a href="https://www.commondreams.org/newswire/2020/04/29/medically-vulnerable-immigrants-seek-emergency-release-ice-detention-alabama" target="_blank">Eighteen immigrants at an ICE detention center in Alabama sued for emergency release last week.</a> The plaintiffs claim their pre-existing health conditions put them at high risk for COVID-19. 
+                    One of those detainees is Connecticut father of three Bakhodir Madjitov. He came to the U.S. from Uzbekistan in 2006 on an artist visa. He applied for asylum, and while he waited for a decision on his claim, he married a U.S. citizen named Madina Mamadjonova. 
+                    </p>
+                    <hr>
+                    <h3><a href="https://www.al.com/opinion/2020/05/egregious-violations-are-not-new-to-ice.html">‘Egregious violations’ are not new to ICE
+                    </a></h3>
+                    <p><strong>AL.com</strong></p>
+                    <p>May 5, 2020</p>
+                    <p>Nearly two months ago the Department of Homeland Security’s own medical experts warned that the continued jailing of immigrants during the COVID-19 pandemic would put all of us in danger.
+                      The doctors wrote to Representatives Mike Rogers (R-Alabama) and Bennie Thompson (D-Mississippi) of the House Committee on Homeland Security that our system of immigration detention is "a frighteningly efficient mechanism for rapid spread of the virus to otherwise remote areas of the country."
+                      </p>
+                      <button type="button" class="btn btn-info pull-right" data-toggle="modal" data-target="#newsModal" style="margin-bottom: 10px;">
+                        Previous ->
+                      </button>
+        </div>
+        <!--/In the News tab-->
+        <!--T.V. & Video tab-->
+        <div class="tab-pane fade sidebar-content" id="v-pills-tv" role="tabpanel" aria-labelledby="v-pills-tv-tab">
+          <h2>T.V. & Videos</h2>
+          <br> 
+          <em>For media inquiries, email info@adelantealabama.org or call (205) 317-1481.</em>
+          <br>
+          <br>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quisquam debitis porro eum earum ab similique temporibus, labore nemo sint blanditiis, fugiat nobis delectus, sit dolorem sequi voluptatem nulla praesentium!</p>
+        </div>
+        <!--/T.V. & Video tab-->
+      </div>
+    </div>
+  </div>  
+</div>
+<!--/Media & Press-->
+
 <!--Resources-->
 <div class="tab-pane" id="resources" role="tabpanel" aria-labelledby="resources-tab">
-    <section class="features-icons bg-light text-center">
-      <img src="../img/photos/5th-anniversary-aztec-dance.jpeg" class="img-fluid resources-img">
-        <br>
-        <div class="container">
-          <div class="row">
-            <div class="col-12"><h2>Worker's Rights</h2></div>
-          </div>
-        </div>
-        <br>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <h3>Know Your Rights</h3>
-                      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta nam quae voluptatum impedit laboriosam corporis ex dolorum? Accusamus quod, reiciendis, porro iste perferendis sapiente beatae incidunt repudiandae expedita optio repellat!</p>
-                  </div>                
-                <div class="col-sm-4">
-                      <h3>Videos</h3>
-                        <p>Insert Video Player</p>
-                    </div>
-            </div>
-        </div>
-        </section>
-        <div class="divider py-1 bg-dark"><hr></div>
-        <section class="bg-dark text-white text-center">
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-            <h2>Detention</h2>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <h3>Know Your Rights</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta nam quae voluptatum impedit laboriosam corporis ex dolorum? Accusamus quod, reiciendis, porro iste perferendis sapiente beatae incidunt repudiandae expedita optio repellat!</p>
-              </div>                
-            <div class="col-sm-4">
-                  <h3>Videos</h3>
-                    <p>Insert Video Player</p>
-                </div>
-        </div>
-    </div>
-        </section>
-        <hr>
-        <section class="bg-light text-center">
-          <div class="container">
-            <div class="row">
-            <div class="col-12">
-            <h2>Legal Resources</h2>
-          </div>
-        </div>
-      </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-6">
-                <h3>Community Resources</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur facilis, sit suscipit voluptatem voluptas nostrum necessitatibus eius ab deserunt optio esse, provident inventore libero eveniet, enim voluptatibus iure harum! Similique!</p>
-              </div>
-              <div class="col-sm-6">
-                <h3>Local Attorneys</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit quis id atque vero ad, quas perferendis asperiores earum tempora non, reprehenderit repudiandae sequi quod mollitia natus ipsam! Obcaecati, dolore blanditiis?</p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <div class="divider py-1 bg-dark"><hr></div>
-        <section class="bg-dark text-white text-center">
-          <div class="container"><div class="row"><div class="col-12">
-            <h2>COVID-19</h2>
-          </div>
-        </div>
-      </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-6">
-                <h3>Organizers & Advocats</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur facilis, sit suscipit voluptatem voluptas nostrum necessitatibus eius ab deserunt optio esse, provident inventore libero eveniet, enim voluptatibus iure harum! Similique!</p>
-              </div>
-              <div class="col-sm-6">
-                <h3>Training & Facilitation</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit quis id atque vero ad, quas perferendis asperiores earum tempora non, reprehenderit repudiandae sequi quod mollitia natus ipsam! Obcaecati, dolore blanditiis?</p>
-              </div>
-            </div>
-          </div>
-        </section>
-</div>
-<!--/Resources-->
-<!--Store-->
-<div class="tab-pane" id="store" role="tabpanel" aria-labelledby="store-tab">
-    <br>
-    <br>
-    <br>
-    <div class="container">
 
-        <div class="row">
-    
-          <div class="col-lg-3">
-    
-            <h1 class="my-4" style="color: #000;">Adel<br>ante.</h1>
-            <div class="list-group">
-              <a href="#" class="list-group-item">Shirts</a>
-              <a href="#" class="list-group-item">Hoodies</a>
-              <a href="#" class="list-group-item">Sweaters</a>
-            </div>
-    
-          </div>
-          <!-- /.col-lg-3 -->
-    
-          <div class="col-lg-9">
-    
-            <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-              </ol>
-              <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                  <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                  <img class="d-block img-fluid" src="http://placehold.it/900x350" alt="Third slide">
-                </div>
-              </div>
-              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-    
-            <div class="row">
-    
-              <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card h-100">
-                  <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                  <div class="card-body">
-                    <h4 class="card-title">
-                      <a href="#">Item One</a>
-                    </h4>
-                    <h5>$24.99</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-                  </div>
-                  </div>
-              </div>
-    
-              <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card h-100">
-                  <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                  <div class="card-body">
-                    <h4 class="card-title">
-                      <a href="#">Item Two</a>
-                    </h4>
-                    <h5>$24.99</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
-                  </div>
-                </div>
-              </div>
-    
-              <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card h-100">
-                  <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                  <div class="card-body">
-                    <h4 class="card-title">
-                      <a href="#">Item Three</a>
-                    </h4>
-                    <h5>$24.99</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-                  </div>
-                </div>
-              </div>
-    
-              <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card h-100">
-                  <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                  <div class="card-body">
-                    <h4 class="card-title">
-                      <a href="#">Item Four</a>
-                    </h4>
-                    <h5>$24.99</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-                  </div>
-                </div>
-              </div>
-    
-              <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card h-100">
-                  <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                  <div class="card-body">
-                    <h4 class="card-title">
-                      <a href="#">Item Five</a>
-                    </h4>
-                    <h5>$24.99</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur! Lorem ipsum dolor sit amet.</p>
-                  </div>
-                </div>
-              </div>
-    
-              <div class="col-lg-4 col-md-6 mb-4">
-                <div class="card h-100">
-                  <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                  <div class="card-body">
-                    <h4 class="card-title">
-                      <a href="#">Item Six</a>
-                    </h4>
-                    <h5>$24.99</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
-                  </div>
-                </div>
-              </div>
-    
-            </div>
-            <!-- /.row -->
-    
-          </div>
-          <!-- /.col-lg-9 -->
-    
-        </div>
-        <!-- /.row -->
-    
+  <div class="row">
+    <div class="col-sm-3">
+      <div class="nav navbar flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical"   style="margin-top: 102px; margin-bottom: 0; right: 50px; border: solid 4px;">
+        <a class="nav-link active" id="v-pills-kyr-tab" data-toggle="pill" href="#v-pills-kyr" role="tab" aria-controls="v-pills-kyr" aria-selected="true">Know Your Rights</a>
+        <a class="nav-link" id="v-pills-publications-tab" data-toggle="pill" href="#v-pills-publications" role="tab" aria-controls="v-pills-publications" aria-selected="false">Publications</a>
+        <a class="nav-link" id="v-pills-covid-tab" data-toggle="pill" href="#v-pills-covid" role="tab" aria-controls="v-pills-covid" aria-selected="false">COVID-19</a>
+        <a class="nav-link" id="v-pills-community-tab" data-toggle="pill" href="#v-pills-community" role="tab" aria-controls="v-pills-community" aria-selected="false">Community</a>
       </div>
-      <!-- /.container -->
+    </div>
+    <div class="col-sm-9">
+      <div class="tab-content" id="v-pills-tabContent">
+        <div class="tab-pane fade show active sidebar-content" id="v-pills-kyr" role="tabpanel" aria-labelledby="v-pills-kyr-tab">
+          <h2>Know Your Rights</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, asperiores totam! Asperiores, quaerat numquam aperiam, velit fuga cupiditate excepturi unde atque veritatis ut ab magnam! Iusto nostrum quidem molestiae voluptatem!</p>
+        </div>
+        <div class="tab-pane fade sidebar-content" id="v-pills-publications" role="tabpanel" aria-labelledby="v-pills-publications-tab">
+          <h2>Publications</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum saepe sunt ducimus repellendus tenetur. Neque reprehenderit fugiat nihil dolor, debitis culpa nostrum quae modi possimus ut omnis a eius fugit.</p>
+        </div>
+        <div class="tab-pane fade sidebar-content" id="v-pills-covid" role="tabpanel" aria-labelledby="v-pills-covid-tab">
+          <h2>COVID-19</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quisquam debitis porro eum earum ab similique temporibus, labore nemo sint blanditiis, fugiat nobis delectus, sit dolorem sequi voluptatem nulla praesentium!</p>
+        </div>
+        <div class="tab-pane fade sidebar-content" id="v-pills-community" role="tabpanel" aria-labelledby="v-pills-community-tab">
+          <h2>Community</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam quisquam debitis porro eum earum ab similique temporibus, labore nemo sint blanditiis, fugiat nobis delectus, sit dolorem sequi voluptatem nulla praesentium!</p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
 </div>
-<!--/Store-->
+
+<!--/Resources-->
+<!--Contact us-->
+<div class="tab-pane" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+  <section class="bg-light text-center">
+    <div class="container">
+      <div class="row" style="margin-top: 110px;">
+        <div class="col-12">
+          <h3>Contact Us</h3>
+          <br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6"><img class="img-fluid contact-img" src="../img/photos/5th-anniversary-aztec-dance.jpeg"></img-fluid></div>
+        <div class="col-lg-6" style="text-align: center;">
+          <p><i class="omsc-icon fa fa-map-marker omsc-icon-color-theme omsc-with-border omsc-border-color-theme"></i> 2104 Chapel Hill Rd, Hoover, AL 35216<br>
+          <i class="omsc-icon fa fa-phone omsc-icon-color-theme omsc-with-border omsc-border-color-theme"></i> (205) 317-1481</p>
+          <h3>Hours</h3>
+          <p><strong>Monday:</strong>&nbsp;9am – 5pm</p>
+          <p><strong>Tuesday:</strong>&nbsp;9am – 8pm</p>
+          <p><strong>Wednesday: </strong>9am – 5pm</p>
+          <p><strong>Thursday</strong>: Open for Appointments Only</p>
+          <p><strong>Friday:&nbsp;</strong>Open for Appointments Only</p>
+          <p><strong>Saturday &amp;</strong>&nbsp;<strong>Sunday: </strong>Closed, unless special event</p>
+          </div>
+      </div>
+    </div>
+  </section>
+<hr>
+<section class="bg-dark text-white">
+  <div class="container">
+    <div class="row">
+<div class="col-sm-6">
+<p><a href="https://goo.gl/maps/yFcfQ9tcDRSBM35d9" target="_blank"><i class="fa fa-map-marker"></i></a> 2104 Chapel Hill Rd, Hoover, AL 35216</p>
+<p><a href="tel:2053171481" target="_blank"><i class="fa fa-phone"></i></a> (205) 317-1481</p>
+<div class="map-responsive">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3331.0571568663486!2d-86.8007197!3d33.395673!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88892275bdd02d67%3A0x3672cca73087adec!2sAdelante%20Alabama%20Worker%20Center!5e0!3m2!1sen!2sus!4v1606918434228!5m2!1sen!2sus" width="550" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+</div>
+</div>
+<div class="col-sm-6">
+ <SCRIPT LANGUAGE="JavaScript" SRC="https://adelantealabama.z2systems.com/np/js/calendar.js"></SCRIPT><form name="pShoppingCartFormBean" method="post" action="https://adelantealabama.z2systems.com/np/publicaccess/survey.do" onsubmit="return snippet_validateNeonForm();"><input type=password autocomplete='new-password' style='display:none'><input type=hidden name="skipDuplicateRequestCheck" value="1"><input type=hidden name="surveyId" value="13" /><input type=hidden name="currentPage" value="1" /><input type=hidden name="direction" id="snippet_direction" value="next" /><div id=snippet_surveyForm class=snippet_tbmain><table border=0 width=520 cellpadding=5 cellspacing=0> <tbody><tr>    <td colspan=2 align="right" >            </td></tr><script>    if(typeof jQuery != "undefined"){        var oldjQuery = jQuery.noConflict();    }</script><script src="https://adelantealabama.z2systems.com/np/js/jquery/3.4.1/jquery-3.4.1.min.js" type=text/javascript></script><script>    var jQuery19 = jQuery;    if(oldjQuery){        jQuery = oldjQuery;        $ = oldjQuery;    }</script>  <tr id="snippet_null1">    <td colspan=2 class=control_head>      <h5>Sign up to receive news alerts and messages from Adelante</h5>    </td>  </tr><script>if(jQuery19){jQuery19(document).ready(function(){jQuery19('input[type="password"]').attr('autocomplete','new-password')});}</script>  <tr id="snippet_person.firstName1">    <td width=150 class=leftLabel>      <label>Name </label>    </td>    <td class=rightField>      <input type="text" name="person.firstName" maxlength="100" size="20" value="" id="snippet_person.firstName" class="control_textbox">    </td>  </tr><script>if(jQuery19){jQuery19(document).ready(function(){jQuery19('input[type="password"]').attr('autocomplete','new-password')});}</script>  <tr id="snippet_person.email11">    <td width=150 class=leftLabel>      <label>Email </label>    </td>    <td class=rightField>      <input type="text" name="person.email1" maxlength="100" size="20" value="" id="snippet_person.email1" class="control_textbox">    </td>  </tr><script>if(jQuery19){jQuery19(document).ready(function(){jQuery19('input[type="password"]').attr('autocomplete','new-password')});}</script>  <tr id="snippet_address.phone11">    <td width=150 class=leftLabel>      <label>Phone </label>    </td>    <td class=rightField>      <input type="text" name="address.phone1" maxlength="100" size="20" value="" id="snippet_address.phone1" class="control_textbox">    </td>  </tr><script>if(jQuery19){jQuery19(document).ready(function(){jQuery19('input[type="password"]').attr('autocomplete','new-password')});}</script>  <tr id="snippet_address.zip1">    <td width=150 class=leftLabel>      <label>Zip </label>    </td>    <td class=rightField>      <input type="text" name="address.zip" maxlength="100" size="20" value="" id="snippet_address.zip" class="control_textbox">    </td>  </tr><script>if(jQuery19){jQuery19(document).ready(function(){jQuery19('input[type="password"]').attr('autocomplete','new-password')});}</script>  <tr id="snippet_customDataBean.86.optionId1">    <td width=150 class=leftLabel>      <label>Consent to mass text about volunteer opportunities? </label>    </td>    <td class=rightField>      <select name="customDataBean.86.optionId" size="1" id="snippet_customDataBean.86.optionId" class="control_dropdown"><option value=""></option><option value="27">Yes</option> <option value="28">No</option></select>    </td>  </tr><script>if(jQuery19){jQuery19(document).ready(function(){jQuery19('input[type="password"]').attr('autocomplete','new-password')});}</script>  <tr id="snippet_customDataBean.84.optionIds1">    <td width=150 class=leftLabel>      <label>Volunteer opportunities </label>    </td>    <td class=rightField>      <input type="checkbox" name="customDataBean.84.optionIds" value="21" id="snippet_customDataBean.84.optionIds" class="control_checkbox snippet_nsc_customDataBean.84.optionIds"><span class=control_text>Accompaniment Program / Programa de Acompañamiento</span><br>      <input type="checkbox" name="customDataBean.84.optionIds" value="32" id="snippet_customDataBean.84.optionIds" class="control_checkbox snippet_nsc_customDataBean.84.optionIds"><span class=control_text>Fundraising / Recaudando Fondos</span><br>      <input type="checkbox" name="customDataBean.84.optionIds" value="23" id="snippet_customDataBean.84.optionIds" class="control_checkbox snippet_nsc_customDataBean.84.optionIds"><span class=control_text>Giving Rides / Compartiendo Raites</span><br>      <input type="checkbox" name="customDataBean.84.optionIds" value="25" id="snippet_customDataBean.84.optionIds" class="control_checkbox snippet_nsc_customDataBean.84.optionIds"><span class=control_text>Office Work / Trabajo de Oficina</span><br>      <input type="checkbox" name="customDataBean.84.optionIds" value="22" id="snippet_customDataBean.84.optionIds" class="control_checkbox snippet_nsc_customDataBean.84.optionIds"><span class=control_text>Verifiers Program / Programa de Verificadores</span><br>      <input type="checkbox" name="customDataBean.84.optionIds" value="24" id="snippet_customDataBean.84.optionIds" class="control_checkbox snippet_nsc_customDataBean.84.optionIds"><span class=control_text>Working During Events / Trabajando Durante Eventos</span><br>      <input type="checkbox" name="customDataBean.84.optionIds" value="26" id="snippet_customDataBean.84.optionIds" class="control_checkbox snippet_nsc_customDataBean.84.optionIds"><span class=control_text>Other / Otro</span><br>    </td>  </tr><script>if(jQuery19){jQuery19(document).ready(function(){jQuery19('input[type="password"]').attr('autocomplete','new-password')});}</script>  <tr id="snippet_customDataBean.77.optionIds1">    <td width=150 class=leftLabel>      <label>Language(s) </label>    </td>    <td class=rightField>      <input type="checkbox" name="customDataBean.77.optionIds" value="10" id="snippet_customDataBean.77.optionIds" class="control_checkbox snippet_nsc_customDataBean.77.optionIds"><span class=control_text>Arabic</span><br>      <input type="checkbox" name="customDataBean.77.optionIds" value="4" id="snippet_customDataBean.77.optionIds" class="control_checkbox snippet_nsc_customDataBean.77.optionIds"><span class=control_text>Bengali</span><br>      <input type="checkbox" name="customDataBean.77.optionIds" value="8" id="snippet_customDataBean.77.optionIds" class="control_checkbox snippet_nsc_customDataBean.77.optionIds"><span class=control_text>Chinese</span><br>      <input type="checkbox" name="customDataBean.77.optionIds" value="3" id="snippet_customDataBean.77.optionIds" class="control_checkbox snippet_nsc_customDataBean.77.optionIds"><span class=control_text>English</span><br>      <input type="checkbox" name="customDataBean.77.optionIds" value="5" id="snippet_customDataBean.77.optionIds" class="control_checkbox snippet_nsc_customDataBean.77.optionIds"><span class=control_text>Español</span><br>      <input type="checkbox" name="customDataBean.77.optionIds" value="15" id="snippet_customDataBean.77.optionIds" class="control_checkbox snippet_nsc_customDataBean.77.optionIds"><span class=control_text>French</span><br>      <input type="checkbox" name="customDataBean.77.optionIds" value="29" id="snippet_customDataBean.77.optionIds" class="control_checkbox snippet_nsc_customDataBean.77.optionIds"><span class=control_text>German</span><br>      <input type="checkbox" name="customDataBean.77.optionIds" value="9" id="snippet_customDataBean.77.optionIds" class="control_checkbox snippet_nsc_customDataBean.77.optionIds"><span class=control_text>Hindi</span><br>      <input type="checkbox" name="customDataBean.77.optionIds" value="16" id="snippet_customDataBean.77.optionIds" class="control_checkbox snippet_nsc_customDataBean.77.optionIds"><span class=control_text>Indonesian</span><br>      <input type="checkbox" name="customDataBean.77.optionIds" value="30" id="snippet_customDataBean.77.optionIds" class="control_checkbox snippet_nsc_customDataBean.77.optionIds"><span class=control_text>Italian</span><br>      <input type="checkbox" name="customDataBean.77.optionIds" value="13" id="snippet_customDataBean.77.optionIds" class="control_checkbox snippet_nsc_customDataBean.77.optionIds"><span class=control_text>Japanese</span><br>      <input type="checkbox" name="customDataBean.77.optionIds" value="31" id="snippet_customDataBean.77.optionIds" class="control_checkbox snippet_nsc_customDataBean.77.optionIds"><span class=control_text>Korean</span><br>      <input type="checkbox" name="customDataBean.77.optionIds" value="11" id="snippet_customDataBean.77.optionIds" class="control_checkbox snippet_nsc_customDataBean.77.optionIds"><span class=control_text>Portuguese</span><br>      <input type="checkbox" name="customDataBean.77.optionIds" value="14" id="snippet_customDataBean.77.optionIds" class="control_checkbox snippet_nsc_customDataBean.77.optionIds"><span class=control_text>Punjabi</span><br>      <input type="checkbox" name="customDataBean.77.optionIds" value="12" id="snippet_customDataBean.77.optionIds" class="control_checkbox snippet_nsc_customDataBean.77.optionIds"><span class=control_text>Russian</span><br>      <input type="checkbox" name="customDataBean.77.optionIds" value="72" id="snippet_customDataBean.77.optionIds" class="control_checkbox snippet_nsc_customDataBean.77.optionIds"><span class=control_text>Other / Otro</span><br>    </td>  </tr><script>if(jQuery19){jQuery19(document).ready(function(){jQuery19('input[type="password"]').attr('autocomplete','new-password')});}</script>  <tr id="snippet_null1">    <td colspan=2 align=center>      <input type="submit" name="null" class="control_button snippet_control_button" value="Submit" id="snippet_null">    </td>  </tr><script>if(jQuery19){jQuery19(document).ready(function(){jQuery19('input[type="password"]').attr('autocomplete','new-password')});}</script> </tbody></table></div><input type=hidden name=orgId value=adelantealabama></form>
+ <SCRIPT src="https://adelantealabama.z2systems.com/np/js/regExpValidate.js" type=text/javascript></SCRIPT><script>var minimumAmount = 5;var minimumRecurring = 5;function validateNeonStandardEmail(){if(document.getElementById("snippet_person.email1") && document.getElementById("snippet_person.email1").value.trim().length>0){return validateSurveyEmail(document.getElementById("snippet_person.email1").value);}return true;}</script><SCRIPT language=javascript type=text/javascript>function snippet_validateNeonForm() { if(document.getElementById("snippet_direction").value=="previous"){  return true;}if (!checkDOBDate()) {return false;}if(!validatePwd('account.loginPassword')){return false;}if(!validateNeonStandardEmail()){   alert("The Email Address is invalid.");    document.getElementById("snippet_person.email1").focus();    return false;}var input = document.getElementsByTagName("input");var select = document.getElementsByTagName("select");var textarea = document.getElementsByTagName("textarea");var allNodes = [];allNodes.push.apply(allNodes,input);allNodes.push.apply(allNodes,select);allNodes.push.apply(allNodes,textarea);for (var i = 0; i < allNodes.length; i++){    allNodes[i].disabled = false;}  var buttons = document.getElementsByClassName("snippet_control_button");  for(var i=0;i<buttons.length;i++){      buttons[i].disabled = true;   }  return true;}function checkDOBDate(){    var month = document.getElementById("snippet_person.dobMM");    var day = document.getElementById("snippet_person.dobDD");    var year = document.getElementById("snippet_person.dobYYYY");    if (!(month && day && year) || (!year.value && !month.value && !day.value) ) {return true;}    var dayV = day.value;    var monthV = month.value;    var yearV = year.value;    var date = dayV + monthV + yearV;    if(dayV.length<=2 && dayV.length >=1 && monthV.length<=2 && monthV.length >=1 && yearV.length == 4){        var reg = /^\d+$/;        var r = date.match(reg);        if(r==null){            alert("Birth Date is invalid.");            return false;        }else{            var d = new Date(year.value, month.value - 1, day.value);            var c=(d.getFullYear() == year.value && (d.getMonth() + 1) == month.value && d.getDate() == day.value);            if(!c){                alert("Birth Date is invalid.");                return false;            }        }        return true;    }    alert("Birth Date is invalid.");    return false;}</SCRIPT><SCRIPT language=javascript type=text/javascript>function populateValueFromRadio(textBoxId,radioId,hiddenObjId){var radios=document.getElementsByClassName(radioId);var hiddenObj = document.getElementById(hiddenObjId);var txtboxObj = document.getElementById(textBoxId);for(var i=0;i<radios.length;i++){  if(radios[i].checked){      hiddenObj.value=radios[i].value;  }}if( txtboxObj != undefined && (hiddenObj.value == null || hiddenObj.value == "") ) {   var dAmt = trimAll(removeCurrency(txtboxObj.value));   if (dAmt==""){      txtboxObj.focus();   } else {      hiddenObj.value = dAmt;   }}}function leavingTextBox(textBoxId,radioId,hiddenObjId){var radios=document.getElementsByClassName(radioId);var hiddenObj = document.getElementById(hiddenObjId);var txtboxObj = document.getElementById(textBoxId);for(var i=0;i<radios.length;i++){  if(radios[i].checked){    hiddenObj.value=radios[i].value;	if(txtboxObj != undefined && (radios[i].value == null || radios[i].value == "")) {   	var dAmt = trimAll(removeCurrency(txtboxObj.value));   	if (dAmt==""){      		alert("Please enter donation amount");      		txtboxObj.focus();      		return false;   	} else if (validateNumeric(dAmt)==false) {      		alert("The donation amount should be a number.");      		txtboxObj.focus();      		return false;   	} else if (validatePositiveAndZero(dAmt) == false){			alert("The donation amount should be bigger than 0.");			return false;		} else if(validateNumeric(dAmt)==true){			var numdAmt = dAmt;			numdAmt=numdAmt.replace(',','');			while(numdAmt.indexOf(',')!=-1){				numdAmt=numdAmt.replace(',','');			}			numdAmt = numdAmt.split('.');			if(numdAmt[0].length>13){				alert('Your donation amount is too large.');				return false;			}			if(isChecked('recurringFlag', '1')){   			if(validateMinimumRecurring(dAmt) == false){	   				alert("You have not entered the minimum recurring donation amount of $"+Number(minimumRecurring).toFixed(2)+'.');	   				return false;   			}			}else{				if(validateMinimumAmount(dAmt)==false){					alert('You have not entered the minimum donation amount of  $'+Number(minimumAmount).toFixed(2)+'.');					return false;				}			}      		hiddenObj.value = dAmt;      		return true;   	}	}     return true;  }}}function validatePositiveAndZero(val){	 if(Number(val) <= 0){		return false;	 }}function validateMinimumAmount(val){	if(minimumAmount && minimumAmount > 0 && minimumAmount > val){		return false;   }	return true;}function validateMinimumRecurring(val){	if(minimumRecurring && minimumRecurring > 0 && minimumRecurring > val){		return false;   }	return true;}function isChecked(name, value){  var list = getAllByName(name);  for(var i=0; i<list.length; i++){	   if(list[i].checked==true && list[i].value==value){		   return true;	   }   }   return false;}function getAllByName(name){  return document.getElementsByName(name);}function validateAmount(){   var txtboxObj = document.getElementById('snippet_donation.amount');	if(txtboxObj != undefined){		var dAmt = trimAll(removeCurrency(txtboxObj.value));   		if (dAmt==""){      			alert("Please enter donation amount");      			txtboxObj.focus();      			return false;   		} else if (validateNumeric(dAmt)==false) {      			alert("The donation amount should be a number.");      			txtboxObj.focus();      			return false;   		} else if (validatePositiveAndZero(dAmt) == false){				alert("The donation amount should be bigger than 0.");				return false;			} else if (validateNumeric(dAmt)==true){				var numdAmt = dAmt;				numdAmt=numdAmt.replace(',','');				while(numdAmt.indexOf(',')!=-1){					numdAmt=numdAmt.replace(',','');				}			 	numdAmt = numdAmt.split('.');				if(numdAmt[0].length>13){					alert('Your donation amount is too large.');					return false;				}				if(isChecked('recurringFlag', '1')){   				if(validateMinimumRecurring(dAmt) == false){	   					alert("You have not entered the minimum recurring donation amount of $"+Number(minimumRecurring).toFixed(2)+'.');	   					return false;   				}				}else{					if(validateMinimumAmount(dAmt)==false){						alert('You have not entered the minimum donation amount of $'+Number(minimumAmount).toFixed(2)+'.');						return false;					}				}				}	}	return true;}function associateToggle(val, elem){var elem = document.getElementById(elem);if(elem == null) return;if(val == 1){	elem.style.display="";}else if(val == 0){	elem.style.display="none";}}associateToggle(0, 'snippet_recurringDonation.recurringInterval1');function validatePwd(property){ var item = document.getElementById(property);if(item != null && 'account.loginPassword' === property){var loginName = document.getElementById('snippet_account.loginName');if(loginName != null && loginName.value.trim() != ''){ var regexp = /(?=\S*\d)\S{8,}$/; var blankRegexp = /\s/;  if(!regexp.test(item.value) || blankRegexp.test(item.value)){   alert('Your password requires at least 8 characters, including at least one number. Spaces are not allowed.');	   return false;   }   var retypePwd = document.getElementById('snippet_loginPasswordRetype').value;   if(item.value != retypePwd){	   alert('The re-typed password doesn\'t match your original password');	   return false;   } } }   return true;}</SCRIPT><!--NEON FORM END-->    
+
+</div>
+ </div>
+ </div>
+</section>
+</div>
+</div>
+<!--/Contact us-->
 <!--Footer-->
 <footer class="footer">
   <div class="footer-left col-md-4 col-sm-6">
