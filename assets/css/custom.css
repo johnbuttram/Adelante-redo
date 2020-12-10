@@ -277,6 +277,93 @@ button:focus {
 /* /Button */
 /* /Hero page */
 /*Home*/
+.parallax-1 {
+  /* The image used */
+  background-image: url("../img/photos/selma-bridge-crossing-parallax.jpeg");
+
+  /* Set a specific height */
+  min-height: 450px; 
+
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+
+.parallax-2 {
+  /* The image used */
+  background-image: url("../img/photos/Selma-2015.jpg");
+
+  /* Set a specific height */
+  min-height: 450px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.parallax-3 {
+  /* The image used */
+  background-image: url("../img/photos/ICE-out-of-Bham-Protest.jpg");
+
+  /* Set a specific height */
+  min-height: 450px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.mission {
+  width: autox;
+  height: 350px;
+ overflow:hidden;
+ position:relative;
+}
+.container-bg-1 {
+  background: rgb(4,215,248);
+  background: -moz-linear-gradient(144deg, rgba(4,215,248,1) 11%, rgba(67,193,186,1) 16%, rgba(153,163,101,1) 43%, rgba(255,128,0,1) 74%, rgba(164,75,13,1) 91%, rgba(100,37,22,1) 100%);
+  background: -webkit-linear-gradient(144deg, rgba(4,215,248,1) 11%, rgba(67,193,186,1) 16%, rgba(153,163,101,1) 43%, rgba(255,128,0,1) 74%, rgba(164,75,13,1) 91%, rgba(100,37,22,1) 100%);
+  background: linear-gradient(144deg, rgba(4,215,248,1) 11%, rgba(67,193,186,1) 16%, rgba(153,163,101,1) 43%, rgba(255,128,0,1) 74%, rgba(164,75,13,1) 91%, rgba(100,37,22,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#04d7f8",endColorstr="#642516",GradientType=1);
+}
+
+.container-bg-2 {
+  background: rgb(4,215,248);
+  background: -moz-linear-gradient(308deg, rgba(4,215,248,1) 11%, rgba(255,128,0,1) 74%, rgba(164,75,13,1) 91%, rgba(100,37,22,1) 100%);
+  background: -webkit-linear-gradient(308deg, rgba(4,215,248,1) 11%, rgba(255,128,0,1) 74%, rgba(164,75,13,1) 91%, rgba(100,37,22,1) 100%);
+  background: linear-gradient(308deg, rgba(4,215,248,1) 11%, rgba(255,128,0,1) 74%, rgba(164,75,13,1) 91%, rgba(100,37,22,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#04d7f8",endColorstr="#642516",GradientType=1);
+}
+
+.container-bg-3 {
+  background: rgb(255,141,26);
+  background: -moz-linear-gradient(0deg, rgba(255,141,26,1) 12%, rgba(4,215,248,1) 54%, rgba(100,37,22,1) 98%);
+  background: -webkit-linear-gradient(0deg, rgba(255,141,26,1) 12%, rgba(4,215,248,1) 54%, rgba(100,37,22,1) 98%);
+  background: linear-gradient(0deg, rgba(255,141,26,1) 12%, rgba(4,215,248,1) 54%, rgba(100,37,22,1) 98%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff8d1a",endColorstr="#642516",GradientType=1);
+}
+
+.imgborder {
+  display:inline-block;
+  position:relative;
+  border:1px solid #ccc;
+  padding:5px;
+  background:#f2f2f2;
+}
+.s1 {
+   -webkit-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
+   -moz-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
+   box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
+}
+
 .mission {
   width: autox;
   height: 350px;
