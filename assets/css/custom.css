@@ -277,12 +277,14 @@ button:focus {
 /* /Button */
 /* /Hero page */
 /*Home*/
+
 .parallax-1 {
   /* The image used */
   background-image: url("../img/photos/selma-bridge-crossing-parallax.jpeg");
 
   /* Set a specific height */
   min-height: 450px; 
+ 
 
 
   /* Create the parallax scrolling effect */
@@ -305,7 +307,7 @@ button:focus {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 
 .parallax-3 {
@@ -319,7 +321,7 @@ button:focus {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 .mission {
   width: autox;
