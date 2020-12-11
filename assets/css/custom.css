@@ -189,17 +189,19 @@ a.active.nav-link {
   }
   /*/Footer*/
 
-  /*Border*/
+  /*Border
   .border{
     display: inline-block;
     top: 0;
     left: 0;
-    height: 20px;
+    height: 25px;
     width: 100%;
     background: url(../img/logos/pattern.svg) bottom center;
     padding: 0px, 0px, 0px, 0px;
     margin: 0;
+    border-style: outset;
 }
+*/
 
 
   /*/Border*/
@@ -335,7 +337,12 @@ button:focus {
   background: linear-gradient(144deg, rgba(4,215,248,1) 11%, rgba(67,193,186,1) 16%, rgba(153,163,101,1) 43%, rgba(255,128,0,1) 74%, rgba(164,75,13,1) 91%, rgba(100,37,22,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#04d7f8",endColorstr="#642516",GradientType=1);
 }
-
+.border-container {
+background-image: url(../img/logos/pattern-long-64.png);
+background-size: cover;
+background-position: bottom;
+height: 40px;
+}
 .container-bg-2 {
   background: rgb(4,215,248);
   background: -moz-linear-gradient(308deg, rgba(4,215,248,1) 11%, rgba(255,128,0,1) 74%, rgba(164,75,13,1) 91%, rgba(100,37,22,1) 100%);
