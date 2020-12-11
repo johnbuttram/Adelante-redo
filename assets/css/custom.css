@@ -1,5 +1,12 @@
 
 /* All Pages */
+h1 {
+  text-align: center; 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9); 
+  margin-top: 25px; 
+  margin-bottom: 15px; 
+  font-size: 9vmin;
+}
 #navlogo {
     align-self: left;
     height: 75px;
@@ -358,6 +365,13 @@ height: 40px;
   background: linear-gradient(0deg, rgba(255,141,26,1) 12%, rgba(4,215,248,1) 54%, rgba(100,37,22,1) 98%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff8d1a",endColorstr="#642516",GradientType=1);
 }
+.container-bg-4 {
+  background: rgb(255,128,0);
+background: -moz-linear-gradient(180deg, rgba(255,128,0,1) 11%, rgba(4,215,248,1) 74%, rgba(100,37,22,1) 100%);
+background: -webkit-linear-gradient(180deg, rgba(255,128,0,1) 11%, rgba(4,215,248,1) 74%, rgba(100,37,22,1) 100%);
+background: linear-gradient(180deg, rgba(255,128,0,1) 11%, rgba(4,215,248,1) 74%, rgba(100,37,22,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff8000",endColorstr="#642516",GradientType=1);
+}
 
 .imgborder {
   display:inline-block;
@@ -435,11 +449,13 @@ height: 40px;
     display: block;
     font-family: 'FontAwesome';
     font-size: 1.1rem;
+    
 }
 
 .collapsible-link[aria-expanded='true']::before {
     content: '\f106';
 }
+
 
 
   /*/Our work*/
