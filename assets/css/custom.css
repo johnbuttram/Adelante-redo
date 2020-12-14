@@ -1,9 +1,9 @@
 
 /* All Pages */
-a {
+.a-links {
    color: white; 
   } 
-a:hover {
+.a-links:hover {
    color: white; 
   } 
 h1 {
