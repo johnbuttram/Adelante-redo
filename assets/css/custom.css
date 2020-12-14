@@ -474,7 +474,10 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff8000",endCo
 }
 /*/Accordian*/
 
-
+.our-work-img {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
   /*/Our work*/
 
   /*Get involved*/
@@ -518,7 +521,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff8000",endCo
 
 .contact-img {
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
-  margin: 20px;
   -webkit-box-shadow: -6px 8px 5px 0px rgba(50, 50, 50, 1);
   -moz-box-shadow:    -6px 8px 5px 0px rgba(50, 50, 50, 1);
   box-shadow:         -6px 8px 5px 0px rgba(50, 50, 50, 1);
