@@ -1,11 +1,24 @@
 
 /* All Pages */
+a {
+   color: white; 
+  } 
+a:hover {
+   color: white; 
+  } 
 h1 {
   text-align: center; 
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9); 
   margin-top: 25px; 
   margin-bottom: 15px; 
   font-size: 9vmin;
+}
+.h3-resources {
+  font-size: 7vmin;
+  text-align: center; 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9); 
+  margin-top: 25px; 
+  margin-bottom: 15px; 
 }
 #navlogo {
     align-self: left;
@@ -18,6 +31,12 @@ h1 {
 a.active.nav-link {
     background-color: #04D7F8 !important;
 }
+.border-container {
+  background-image: url(../img/logos/pattern-long-64.png);
+  background-size: cover;
+  background-position: bottom;
+  height: 40px;
+  }
 .navbar-text {
     color: #642516
     
@@ -33,12 +52,13 @@ a.active.nav-link {
 .footer {
     background-color: #FF8D1A;
     width: 100%;
+    height: auto;
     text-align: left;
     font-family: sans-serif;
     font-weight: bold;
     font-size: 16px;
     padding: 50px;
-  }
+ }
   
   .footer .footer-left,
   .footer .footer-center,
@@ -328,6 +348,7 @@ button:focus {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .mission {
   width: autox;
   height: 350px;
@@ -344,12 +365,7 @@ button:focus {
   background: linear-gradient(144deg, rgba(4,215,248,1) 11%, rgba(67,193,186,1) 16%, rgba(153,163,101,1) 43%, rgba(255,128,0,1) 74%, rgba(164,75,13,1) 91%, rgba(100,37,22,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#04d7f8",endColorstr="#642516",GradientType=1);
 }
-.border-container {
-background-image: url(../img/logos/pattern-long-64.png);
-background-size: cover;
-background-position: bottom;
-height: 40px;
-}
+
 .container-bg-2 {
   background: rgb(4,215,248);
   background: -moz-linear-gradient(308deg, rgba(4,215,248,1) 11%, rgba(255,128,0,1) 74%, rgba(164,75,13,1) 91%, rgba(100,37,22,1) 100%);
@@ -434,6 +450,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff8000",endCo
   /*/About*/
 
   /*Our work*/
+  /*Accordian*/
   .collapsible-link {
     width: 100%;
     position: relative;
@@ -455,7 +472,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff8000",endCo
 .collapsible-link[aria-expanded='true']::before {
     content: '\f106';
 }
-
+/*/Accordian*/
 
 
   /*/Our work*/
@@ -465,6 +482,13 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff8000",endCo
   /*/Get involved*/
 
   /*Publications*/
+
+  .sidebar {
+    margin-top: 110px;
+    margin-bottom: 0; 
+    left: 10px; 
+    background: rgba(255, 255, 255, 0.25);
+  }
 .sidebar-content {
 margin-top: 100px;
 }
@@ -497,8 +521,11 @@ margin-top: 100px;
 
 .contact-img {
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  margin: 20px;
+  -webkit-box-shadow: -6px 8px 5px 0px rgba(50, 50, 50, 1);
+  -moz-box-shadow:    -6px 8px 5px 0px rgba(50, 50, 50, 1);
+  box-shadow:         -6px 8px 5px 0px rgba(50, 50, 50, 1);
 }
-
 .map-responsive{
 
   overflow:hidden;
