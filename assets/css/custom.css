@@ -489,9 +489,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff8000",endCo
     left: 10px; 
     background: rgba(255, 255, 255, 0.25);
   }
-.sidebar-content {
-margin-top: 100px;
-}
 .video-container { 
   position: relative; 
   padding-bottom: 56.25%; 
