@@ -1,42 +1,69 @@
 
 /* All Pages */
+
+body {
+  background-color: #C8F0FD;
+}
+p {
+  color: #642516;
+  margin-bottom: 0 !important;
+}
+em {
+  color: #642516;
+}
+.latoBold {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 .a-links {
-   color: white; 
+   color: #642516;
+   text-decoration: underline;
   } 
 .a-links:hover {
-   color: white; 
+   color: #642516;
   } 
+
 h1 {
   text-align: center; 
+  color: #642516 !important;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9); 
   margin-top: 25px; 
   margin-bottom: 15px; 
   font-size: 9vmin;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  
 }
+
 .h3-resources {
   font-size: 7vmin;
   text-align: center; 
+  color: #642516 !important;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9); 
   margin-top: 25px; 
   margin-bottom: 15px; 
+  font-weight: bold;
 }
 #navlogo {
     align-self: left;
     height: 75px;
 }
 .navbar {
-    background-color: #04D7F8;
+    background-color: #fff;
     color: #FF8000 !important;
 }
 a.active.nav-link {
     background-color: #04D7F8 !important;
 }
+/*/
 .border-container {
   background-image: url(../img/logos/pattern-long-64.png);
   background-size: cover;
   background-position: bottom;
   height: 40px;
   }
+  */
 .navbar-text {
     color: #642516
     
@@ -248,14 +275,6 @@ a.active.nav-link {
     background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(../img/photos/hero.jpeg) no-repeat center center scroll;
 }
 
-h1 {
-    font-style: normal;
-    font-weight: bold;
-    color: #FFF;
-    font-size: 11vmin;
-    letter-spacing: 0.03em;
-    line-height: 1;
-    }
 
 /* Buttons on Hero */
 #button1 {
@@ -321,33 +340,7 @@ button:focus {
 /* /Button */
 /* /Hero page */
 /*Home*/
-.parallax-2 {
-  /* The image used */
-  background-image: url("../img/photos/Selma-2015.jpg");
 
-  /* Set a specific height */
-  min-height: 450px; 
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.parallax-3 {
-  /* The image used */
-  background-image: url("../img/photos/ICE-out-of-Bham-Protest.jpg");
-
-  /* Set a specific height */
-  min-height: 450px; 
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 
 .mission {
   width: autox;
@@ -357,36 +350,6 @@ button:focus {
 }
 #mission-text {
   text-align: justify;
-}
-.container-bg-1 {
-  background: rgb(4,215,248);
-  background: -moz-linear-gradient(144deg, rgba(4,215,248,1) 11%, rgba(67,193,186,1) 16%, rgba(153,163,101,1) 43%, rgba(255,128,0,1) 74%, rgba(164,75,13,1) 91%, rgba(100,37,22,1) 100%);
-  background: -webkit-linear-gradient(144deg, rgba(4,215,248,1) 11%, rgba(67,193,186,1) 16%, rgba(153,163,101,1) 43%, rgba(255,128,0,1) 74%, rgba(164,75,13,1) 91%, rgba(100,37,22,1) 100%);
-  background: linear-gradient(144deg, rgba(4,215,248,1) 11%, rgba(67,193,186,1) 16%, rgba(153,163,101,1) 43%, rgba(255,128,0,1) 74%, rgba(164,75,13,1) 91%, rgba(100,37,22,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#04d7f8",endColorstr="#642516",GradientType=1);
-}
-
-.container-bg-2 {
-  background: rgb(4,215,248);
-  background: -moz-linear-gradient(308deg, rgba(4,215,248,1) 11%, rgba(255,128,0,1) 74%, rgba(164,75,13,1) 91%, rgba(100,37,22,1) 100%);
-  background: -webkit-linear-gradient(308deg, rgba(4,215,248,1) 11%, rgba(255,128,0,1) 74%, rgba(164,75,13,1) 91%, rgba(100,37,22,1) 100%);
-  background: linear-gradient(308deg, rgba(4,215,248,1) 11%, rgba(255,128,0,1) 74%, rgba(164,75,13,1) 91%, rgba(100,37,22,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#04d7f8",endColorstr="#642516",GradientType=1);
-}
-
-.container-bg-3 {
-  background: rgb(255,141,26);
-  background: -moz-linear-gradient(0deg, rgba(255,141,26,1) 12%, rgba(4,215,248,1) 54%, rgba(100,37,22,1) 98%);
-  background: -webkit-linear-gradient(0deg, rgba(255,141,26,1) 12%, rgba(4,215,248,1) 54%, rgba(100,37,22,1) 98%);
-  background: linear-gradient(0deg, rgba(255,141,26,1) 12%, rgba(4,215,248,1) 54%, rgba(100,37,22,1) 98%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff8d1a",endColorstr="#642516",GradientType=1);
-}
-.container-bg-4 {
-  background: rgb(255,128,0);
-background: -moz-linear-gradient(180deg, rgba(255,128,0,1) 11%, rgba(4,215,248,1) 74%, rgba(100,37,22,1) 100%);
-background: -webkit-linear-gradient(180deg, rgba(255,128,0,1) 11%, rgba(4,215,248,1) 74%, rgba(100,37,22,1) 100%);
-background: linear-gradient(180deg, rgba(255,128,0,1) 11%, rgba(4,215,248,1) 74%, rgba(100,37,22,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff8000",endColorstr="#642516",GradientType=1);
 }
 
 .imgborder {
@@ -410,7 +373,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff8000",endCo
 }
 
 .mission img {
-
   position: absolute;
   left:-10000%; right: -10000%; 
   top: -10000%; bottom: -10000%;
@@ -425,10 +387,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff8000",endCo
 
 /*About*/
 .about-img {
-    margin-top: -50px;
     width: 100%;
+    height: 50vh;
     /*background: url('../img/photos/language-justice-training.jpeg');*/
-    background-size: cover;
   }
 
   .b-o-d {
@@ -437,18 +398,27 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff8000",endCo
     height: 250px;
     }
 
-.staff {
-    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-    width: 150px;
-    height: 150px;
-}
+
 .fb-page, 
 .fb-page span, 
 .fb-page span iframe[style] { 
     width: 100% !important; 
 }
-  /*/About*/
 
+
+  /*/About*/
+/*Staff*/
+.staffImg {
+
+  width: 150px;
+  height: 150px;
+}
+.staffName {
+  font-size: 22px;
+  margin-top: 20px;
+  color: #FF8000
+}
+/*/Staff*/
   /*Our work*/
   /*Accordian*/
   .collapsible-link {
