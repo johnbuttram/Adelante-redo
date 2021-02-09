@@ -53,6 +53,7 @@ h1 {
 .navbar {
     background-color: #460286;
     color: #Fff !important;
+    width: 100vw;
 }
 a.active.nav-link {
     background-color: #04D7F8 !important;
@@ -73,14 +74,14 @@ a.active.nav-link {
   padding: 20px;
   color: #C8F0FD !important;
   font-size: 25px;
+
 }
 /*Footer*/
 .footer {
     background-color: #FF8D1A;
     width: 100vw;
     height: auto;
-    text-align: left;
-    font-family: sans-serif;
+    text-align: center;
     font-weight: bold;
     font-size: 16px;
     padding: 50px;
@@ -98,7 +99,7 @@ a.active.nav-link {
   #footlogo {
     width: 125px;
     height: 125px;
-  }
+     }
   .footer .footer-left {
     width: 33vw;
     padding-right: 15px;
@@ -106,7 +107,7 @@ a.active.nav-link {
   
   .footer .about {
     line-height: 20px;
-    color: #000;
+    color: #642516;
     font-size: 13px;
     font-weight: normal;
     margin: 0;
@@ -114,7 +115,7 @@ a.active.nav-link {
   
   .footer .about span {
     display: block;
-    color: #000;
+    color: #642516;
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 20px;
@@ -130,8 +131,8 @@ a.active.nav-link {
     background-color: #04D7F8;
     border-radius: 2px;
     font-size: 20px;
-    color: #000;
-    text-align: center;
+    color: #642516;
+    text-align: left;
     line-height: 35px;
     margin-right: 3px;
     margin-bottom: 5px;
@@ -146,7 +147,7 @@ a.active.nav-link {
   
   .footer .footer-center i {
     background-color: #04D7F8;
-    color: #000;
+    color: #642516;
     font-size: 25px;
     width: 38px;
     height: 38px;
@@ -164,7 +165,7 @@ a.active.nav-link {
   
   .footer .footer-center p {
     display: inline-block;
-    color: #000;
+    color: #642516;
     vertical-align: middle;
     margin: 0;
   }
@@ -226,13 +227,13 @@ a.active.nav-link {
   @media (max-width: 767px) {
     .footer {
       font-size: 14px;
+      width: 100%;
     }
     .footer .footer-left,
     .footer .footer-center,
     .footer .footer-right {
       display: inline-block;
-      width: 100vw;
-      text-align: center;
+      text-align: left;
     }
     .footer .footer-center i {
       margin-left: 0;
@@ -274,8 +275,8 @@ a.active.nav-link {
     -webkit-appearance: none;
     -moz-appearance: none;
     position: absolute;
-    top: 75%;
-    left: 25%;
+    top: 97%;
+    left: 75%;
     transform: translate(-50%, -50%);
 }
 
@@ -304,7 +305,7 @@ button:focus {
     -webkit-appearance: none;
     -moz-appearance: none;
     position: absolute;
-    top: 75%;
+    top: 90%;
     left: 75%;
     transform: translate(-50%, -50%);
 }
@@ -323,13 +324,23 @@ button:focus {
 
 /*About*/
 .about-img {
-    width: 100%;
-    height: 50vh;
+  display: flex;
+    width: 99vw;
+    height: 99vh;
+    margin-top: 160px;
+    align-items: center;
+  }
+  @media (max-width: 767px) {
+  .about-img {
+    margin-top: 10vh;
+    width: 100% !important;
+  }
   }
 
   .parallax {
     /* The image used */
-    background-image: url("../img/photos/selma-bridge-crossing-parallax.jpeg");
+    background-image: url("../img/photos/parallax.jpeg");
+    width: 100vw;
   
     /* Set a specific height */
     min-height: 450px; 
@@ -339,20 +350,50 @@ button:focus {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100vw;
   }
 
   .parallax > p{
-    font-size: 25px;
+    font-size: 30px;
     color: #642516;
     font: bold 24px/45px;
     letter-spacing: -1px;  
     background: rgb(0, 0, 0); /* fallback color */
     background: rgba(200, 240, 253, .9);
     width: 50vw;
-    top: 20vh;
+    top: 17vh;
     left: 25vw;
     position: relative;
+    font-weight: bold;
+    padding: 15px;
+  }
+  @media (max-width: 767px) {
+  .parallax {
+    display: block;
+    box-sizing: content-box;
+    background-size: 100vw;
+    width: 100vw;
+    }
+  .parallax > p {
+    font-size: 14px;
+    width: 100vw;
+    top: 1;
+    left: 0;
+  }
+  }
+
+  .aboutContact
+  {
+    left: 35vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+  @media (max-width: 767px) {
+.aboutContact {
+  display: inline-block;
+left: 0;
+  font-size: 14px;
+}
   }
   /*/About*/
 /*Staff*/
