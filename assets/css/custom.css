@@ -73,7 +73,6 @@ a.active.nav-link {
   padding: 20px;
   color: #C8F0FD !important;
   font-size: 25px;
-
 }
 /*Footer*/
 .footer {
@@ -224,15 +223,18 @@ a.active.nav-link {
   }
   
   @media (max-width: 767px) {
+ 
     .footer {
       font-size: 14px;
-      width: 100%;
+      width: 100vw;
     }
     .footer .footer-left,
     .footer .footer-center,
     .footer .footer-right {
-      display: inline-block;
-      text-align: left;
+      display: grid;
+      align-items: center;
+      vertical-align: middle;
+      width: 75vw;
     }
     .footer .footer-center i {
       margin-left: 0;
@@ -323,7 +325,7 @@ button:focus {
 
 /*About*/
 .about-img {
-  display: flex;
+  display: block;
     width: 99vw;
     height: 99vh;
     margin-top: 160px;
@@ -331,8 +333,10 @@ button:focus {
   }
   @media (max-width: 767px) {
   .about-img {
-    margin-top: 10vh;
-    width: 100% !important;
+    margin-top: 7vh;
+    width: 90vw;
+    height: 50vh;
+    margin-bottom: 15vh;
   }
   }
 
@@ -368,14 +372,15 @@ button:focus {
   }
   @media (max-width: 767px) {
   .parallax {
-    display: block;
-    box-sizing: content-box;
-    background-size: 100vw;
-    width: 100vw;
+
+    background-size: 95vw;
+    width: 95vw;
+    overflow-y: hidden;
+    max-height: 50vw;
     }
   .parallax > p {
     font-size: 14px;
-    width: 100vw;
+    width: 95vw;
     top: 1;
     left: 0;
   }
@@ -390,8 +395,9 @@ button:focus {
   @media (max-width: 767px) {
 .aboutContact {
   display: inline-block;
-left: 0;
+  left: 0;
   font-size: 14px;
+  width: 75vw;
 }
   }
   /*/About*/
