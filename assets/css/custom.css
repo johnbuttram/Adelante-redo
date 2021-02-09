@@ -74,6 +74,14 @@ a.active.nav-link {
   color: #C8F0FD !important;
   font-size: 25px;
 }
+
+@media (max-width: 767px) {
+  .navbar {
+    max-width: 75vw;
+    display: flex;
+    vertical-align: middle;;
+  }
+}
 /*Footer*/
 .footer {
     background-color: #FF8D1A;
@@ -226,7 +234,7 @@ a.active.nav-link {
  
     .footer {
       font-size: 14px;
-      width: 100vw;
+      width: 78vw;
     }
     .footer .footer-left,
     .footer .footer-center,
@@ -234,7 +242,7 @@ a.active.nav-link {
       display: grid;
       align-items: center;
       vertical-align: middle;
-      width: 75vw;
+      width: 35vw;
     }
     .footer .footer-center i {
       margin-left: 0;
@@ -334,7 +342,7 @@ button:focus {
   @media (max-width: 767px) {
   .about-img {
     margin-top: 7vh;
-    width: 90vw;
+    width: 75vw;
     height: 50vh;
     margin-bottom: 15vh;
   }
@@ -369,20 +377,21 @@ button:focus {
     position: relative;
     font-weight: bold;
     padding: 15px;
+    text-align: center;
   }
   @media (max-width: 767px) {
   .parallax {
-
-    background-size: 95vw;
-    width: 95vw;
+    background-size: 100vw;
+    width: 75vw;
     overflow-y: hidden;
     max-height: 50vw;
     }
   .parallax > p {
     font-size: 14px;
-    width: 95vw;
+    width: 75vw;
     top: 1;
     left: 0;
+    text-align: center;
   }
   }
 
