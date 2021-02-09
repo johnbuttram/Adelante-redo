@@ -33,8 +33,7 @@ h1 {
   margin-bottom: 15px; 
   font-size: 9vmin;
   font-family: 'Lato', sans-serif;
-  font-weight: bold;
-  
+  font-weight: bold;  
 }
 
 .h3-resources {
@@ -53,7 +52,7 @@ h1 {
 .navbar {
     background-color: #460286;
     color: #Fff !important;
-    width: 100vw;
+ 
 }
 a.active.nav-link {
     background-color: #04D7F8 !important;
