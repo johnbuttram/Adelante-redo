@@ -62,7 +62,7 @@ a.active.nav-link {
     
 }
 .navbar-text:hover {
-    color: #642516
+    color: #ff8000;
 }
 .navbar-toggler {
     background-color: #ff8000;
