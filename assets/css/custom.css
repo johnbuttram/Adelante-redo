@@ -71,12 +71,6 @@ a.active.nav-link {
     background-color: #ff8000;
     border: solid 1px #642516;
 }
-.navbar   .icons {
-  margin: 25px;
-  padding: 20px;
-  color: #C8F0FD !important;
-  font-size: 25px;
-}
 
 @media (max-width: 767px) {
   .navbar {
@@ -272,7 +266,7 @@ a.active.nav-link {
 
 /* Buttons on Hero */
 #button1 {
-    background: #04D7F8;
+    background: #FF8000;
     transition: background ease .25s;
     border-radius: 25px;
     display: inline-block;
@@ -287,23 +281,22 @@ a.active.nav-link {
     -webkit-appearance: none;
     -moz-appearance: none;
     position: absolute;
-    top: 97%;
-    left: 75%;
+    top: 82%;
+    left: 70%;
     transform: translate(-50%, -50%);
 }
 
-button:hover {
-    background: #FF8021;
+#button1:hover {
+    background: #04D7F8;
 }
 
-button:focus {
+#button1:focus {
     outline: 1px solid #fff;
     outline-offset: -4px;
 }
 
 #button2 {
-    background: #04D7F8;
-    transition: background ease .25s;
+    background: #FF8000;
     border-radius: 25px;
     display: inline-block;
     border: none;
@@ -317,16 +310,16 @@ button:focus {
     -webkit-appearance: none;
     -moz-appearance: none;
     position: absolute;
-    top: 90%;
-    left: 75%;
+    top: 74%;
+    left: 70%;
     transform: translate(-50%, -50%);
 }
 
-button:hover {
-    background: #FF8021;;
+#button2:hover {
+    background: #04D7F8;
 }
 
-button:focus {
+#button2:focus {
     outline: 1px solid #fff;
     outline-offset: -4px;
 }
@@ -335,6 +328,43 @@ button:focus {
 /* /Hero page */
 
 /*About*/
+.icons {
+  color: #fff !important;
+  font-size: 5vmin;
+}
+.icons:hover {
+  transform: rotate(360deg);
+  transition: transform 1s ease 0s;
+}
+.iconFloat {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  vertical-align: middle;
+  float: right !important;
+  z-index: 2;
+  margin-top: 15vh;
+  margin-right: 15vh;
+  line-height: 8vh;
+  height: 15vh;
+}
+@media (max-width: 767px) {
+  .icons {
+    font-size: 10vmin;
+  }
+.iconFloat {
+  position: static;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  float: none;
+  margin-top: 2vh;
+  margin-right: 5vw;
+  width: 40vw;
+}
+}
+
+
 .about-img {
   display: block;
     width: 99vw;
@@ -357,11 +387,13 @@ button:focus {
   #aboutImageGradient {
     background-image:
     linear-gradient(to bottom, rgba(59, 21, 10, 0.52), rgba(213, 87, 36, 0.73)),
-    url('../img/photos/about.jpg');
+    url('../img/photos/about.jpeg');
     width: 100%;
     height: 100vh;
     background-size: cover;
     margin-top: 10vh;
+    position: static;
+    z-index: -1;
     }
 #aboutImageGradient > p {
     font-size: 30px;
