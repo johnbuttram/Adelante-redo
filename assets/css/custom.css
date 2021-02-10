@@ -1,8 +1,11 @@
 
 /* All Pages */
-
+html {
+  max-width: 100vw !important;
+}
 body {
   background-color: #C8F0FD;
+  max-width: 100vw !important;
 }
 p {
   color: #642516;
@@ -31,7 +34,7 @@ h1 {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9); 
   margin-top: 25px; 
   margin-bottom: 15px; 
-  font-size: 9vmin;
+  font-size: 8vmin !important;
   font-family: 'Lato', sans-serif;
   font-weight: bold;  
 }
@@ -50,9 +53,9 @@ h1 {
     height: 75px;
 }
 .navbar {
-    background-color: #460286;
+    background-color: #000;
     color: #Fff !important;
- 
+    
 }
 a.active.nav-link {
     background-color: #04D7F8 !important;
@@ -77,9 +80,9 @@ a.active.nav-link {
 
 @media (max-width: 767px) {
   .navbar {
-    max-width: 75vw;
+    max-width: 100vw;
     display: flex;
-    vertical-align: middle;;
+    vertical-align: middle;
   }
 }
 /*Footer*/
@@ -91,6 +94,7 @@ a.active.nav-link {
     font-weight: bold;
     font-size: 16px;
     padding: 50px;
+    margin: 0 !important;
  }
   
   .footer .footer-left,
@@ -124,7 +128,7 @@ a.active.nav-link {
     color: #642516;
     font-size: 14px;
     font-weight: bold;
-    margin-bottom: 20px;
+   
   }
   
 
@@ -141,7 +145,6 @@ a.active.nav-link {
     text-align: left;
     line-height: 35px;
     margin-right: 3px;
-    margin-bottom: 5px;
   }
   
   
@@ -234,7 +237,7 @@ a.active.nav-link {
  
     .footer {
       font-size: 14px;
-      width: 78vw;
+      width: 100vw;
     }
     .footer .footer-left,
     .footer .footer-center,
@@ -242,7 +245,7 @@ a.active.nav-link {
       display: grid;
       align-items: center;
       vertical-align: middle;
-      width: 35vw;
+      width: 50vw;
     }
     .footer .footer-center i {
       margin-left: 0;
@@ -346,25 +349,21 @@ button:focus {
     height: 50vh;
     margin-bottom: 15vh;
   }
-  }
+.colOneHundred {
+  height: 100vh !important;
+}
 
-  .parallax {
-    /* The image used */
-    background-image: url("../img/photos/parallax.jpeg");
-    width: 100vw;
-  
-    /* Set a specific height */
-    min-height: 450px; 
-  
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100vw;
   }
-
-  .parallax > p{
+  #aboutImageGradient {
+    background-image:
+    linear-gradient(to bottom, rgba(59, 21, 10, 0.52), rgba(213, 87, 36, 0.73)),
+    url('../img/photos/about.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    margin-top: 10vh;
+    }
+#aboutImageGradient > p {
     font-size: 30px;
     color: #642516;
     font: bold 24px/45px;
@@ -372,43 +371,59 @@ button:focus {
     background: rgb(0, 0, 0); /* fallback color */
     background: rgba(200, 240, 253, .9);
     width: 50vw;
-    top: 17vh;
+    top: 83vh;
     left: 25vw;
-    position: relative;
+    position: absolute;
     font-weight: bold;
-    padding: 15px;
     text-align: center;
   }
   @media (max-width: 767px) {
-  .parallax {
-    background-size: 100vw;
-    width: 75vw;
-    overflow-y: hidden;
-    max-height: 50vw;
-    }
-  .parallax > p {
-    font-size: 14px;
-    width: 75vw;
-    top: 1;
-    left: 0;
-    text-align: center;
+  #aboutImageGradient {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25vh;
+    width: 100vw;
+    margin-top: 6vh;
+    margin-bottom: 0vh;
   }
+  }
+
+  .aboutTextBox {
+    background: rgb(213,87,36);
+    background: -moz-linear-gradient(90deg, rgba(213,87,36,1) 65%, rgba(59,21,10,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(213,87,36,1) 65%, rgba(59,21,10,1) 100%);
+    background: linear-gradient(90deg, rgba(213,87,36,1) 65%, rgba(59,21,10,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d55724",endColorstr="#3b150a",GradientType=1);
   }
 
   .aboutContact
   {
-    left: 35vw;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    margin-top: 17vh;
+    text-align: justify;
   }
   @media (max-width: 767px) {
-.aboutContact {
-  display: inline-block;
-  left: 0;
-  font-size: 14px;
-  width: 75vw;
+    .aboutContact {
+      margin: 5vh;
+      display: inline-block;
+      left: 0;
+      font-size: 14px;
+    }
+  }
+  .aboutSpan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    align-self: center;
+    margin-top: 15vh;
+  }
+  @media (max-width: 767px) {
+.aboutSpan {
+margin: 5vh;
 }
   }
+
   /*/About*/
 /*Staff*/
 .staffImg {
