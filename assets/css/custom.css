@@ -457,7 +457,7 @@ margin: 5vh;
 
   /*/Get involved*/
 
-  /*Publications*/
+  /*Media & Press*/
 
   .sidebar {
     margin-top: 110px;
@@ -465,6 +465,11 @@ margin: 5vh;
     left: 10px; 
     background: rgba(255, 255, 255, 0.25);
   }
+
+.modalBg {
+  background-color: #DEF7FF;
+}
+
 .video-container { 
   position: relative; 
   padding-bottom: 56.25%; 
@@ -480,7 +485,7 @@ margin: 5vh;
     width: 100%;
      height: 100%; 
 }
-  /*/Publications*/
+  /*/Media & Press*/
 
   /*Resources*/
   .resources-img {
