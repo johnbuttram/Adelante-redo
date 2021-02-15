@@ -11,6 +11,9 @@ p {
   color: #642516;
   margin-bottom: 0 !important;
 }
+ul {
+  color: #642516
+}
 em {
   color: #642516;
 }
@@ -428,11 +431,17 @@ margin: 5vh;
     
 }
 
+
 .collapsible-link[aria-expanded='true']::before {
     content: '\f106';
 }
 /*/Accordian*/
 
+.ourWorkDiv {
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+}
 .our-work-img {
   margin-top: 15px;
   margin-bottom: 15px;
