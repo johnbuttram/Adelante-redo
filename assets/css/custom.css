@@ -1,11 +1,11 @@
 
 /* All Pages */
 html {
-  max-width: 100vw !important;
+  max-width: 99vw !important;
 }
 body {
   background-color: #C8F0FD;
-  max-width: 100vw !important;
+  max-width: 99vw !important;
 }
 p {
   color: #642516;
@@ -49,13 +49,16 @@ h1 {
   font-weight: bold;
 }
 #navlogo {
-    align-self: left;
-    height: 75px;
+   display: flex;
+   flex-direction: column;
+   vertical-align: middle;
+   float: left;
+   height: 75px;
 }
 .navbar {
     background-color: #000;
     color: #Fff !important;
-    
+    font-size: 3vmin;
 }
 a.active.nav-link {
     background-color: #04D7F8 !important;
@@ -82,7 +85,7 @@ a.active.nav-link {
 /*Footer*/
 .footer {
     background-color: #FF8D1A;
-    width: 100vw;
+    width: auto;
     height: auto;
     text-align: center;
     font-weight: bold;
@@ -249,87 +252,25 @@ a.active.nav-link {
 
 /*/All pages*/
 
-/* Hero page */
-.hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    width: 100%;
-    height: 100vh;/* Required for full screen */
-    overflow: hidden;
-    background-size: cover !important;
-    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 37%, rgba(0,0,0,0.65) 100%), url(../img/photos/hero.jpeg) no-repeat center center scroll;
-}
 
-
-/* Buttons on Hero */
-#button1 {
-    background: #FF8000;
-    transition: background ease .25s;
-    border-radius: 25px;
-    display: inline-block;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    margin: 0;
-    text-decoration: none;
-    color: #000;
-    font-size: 1.2rem;
-    cursor: pointer;
-    text-align: center;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    position: absolute;
-    top: 82%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-}
-
-#button1:hover {
-    background: #04D7F8;
-}
-
-#button1:focus {
-    outline: 1px solid #fff;
-    outline-offset: -4px;
-}
-
-#button2 {
-    background: #FF8000;
-    border-radius: 25px;
-    display: inline-block;
-    border: none;
-    padding: 0.75rem 1.5rem;
-    margin: 0;
-    text-decoration: none;
-    color: #000;
-    font-size: 1.2rem;
-    cursor: pointer;
-    text-align: center;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    position: absolute;
-    top: 74%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-}
-
-#button2:hover {
-    background: #04D7F8;
-}
-
-#button2:focus {
-    outline: 1px solid #fff;
-    outline-offset: -4px;
-}
-
-/* /Button */
-/* /Hero page */
 
 /*About*/
+.pulse {
+  animation: pulse-animation 2s;
+  animation-iteration-count: 5;
+}
+
+@keyframes pulse-animation {
+  0% {
+    box-shadow:  0 0 0px rgba(255, 255, 255, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+  }
+}
+
 .icons {
-  color: #fff !important;
+  color: #04D7F8 !important;
   font-size: 5vmin;
 }
 .icons:hover {
@@ -343,10 +284,9 @@ a.active.nav-link {
   vertical-align: middle;
   float: right !important;
   z-index: 2;
-  margin-top: 15vh;
+  margin-top: 1vh;
   margin-right: 15vh;
   line-height: 8vh;
-  height: 15vh;
 }
 @media (max-width: 767px) {
   .icons {
@@ -358,7 +298,7 @@ a.active.nav-link {
   flex-direction: row;
   justify-content: space-between;
   float: none;
-  margin-top: 2vh;
+  margin-top: 7vh;
   margin-right: 5vw;
   width: 40vw;
 }
@@ -375,7 +315,7 @@ a.active.nav-link {
   @media (max-width: 767px) {
   .about-img {
     margin-top: 7vh;
-    width: 75vw;
+    width: 100vw;
     height: 50vh;
     margin-bottom: 15vh;
   }

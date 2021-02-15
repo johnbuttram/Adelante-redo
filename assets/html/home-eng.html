@@ -11,12 +11,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
     <link rel="stylesheet" href="../fonts/font-awesome.min.css">
     <link rel="stylesheet" href="../fonts/simple-line-icons.min.css">
-    <link rel="stylesheet" href="../css/custom.css">
-   
+    <link rel="stylesheet" href="../css/custom.css">   
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://d3j0obqug1y7um.cloudfront.net/np/clients/adelantealabama/resources/neon_responsive.css" type="text/css">
     <link type="text/css" rel="stylesheet" href="https://d3j0obqug1y7um.cloudfront.net/np/clients/adelantealabama/customCss.css" type="text/css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../node_modules/aos/dist/aos.css" />
 
     <!--/Stylesheets-->
 </head>
@@ -3498,7 +3497,12 @@ require('blog/wp-blog-header.php');
 ?>
 -->
 <!--Navbar-->
-<nav data-aos="fade-right" class="navbar navbar-fluid navbar-expand-lg fixed-top">
+<nav data-aos="fade-right" class="navbar flex-row navbar-fluid navbar-expand-lg clearfix fixed-top justify-content-center">
+  <!--Brand-->
+  <a class="navbar-brand mx-5 " href="#">
+    <img src="../img/logos/Adelante-Alabama-Logo-150.png" id=navlogo>
+  </a>
+<!--/Brand-->
 <!-- Button for toggling the visibility of the menu -->
 <button type="button" data-target="#collapseNavbar" data-toggle="collapse" class="navbar-toggler">
     <span class="navbar-toggler-icon">
@@ -3510,15 +3514,10 @@ require('blog/wp-blog-header.php');
     </span>
 </button>
 <!-- Navigation menu container -->
-<div class="navbar-collapse collapse" id="collapseNavbar">
-<!--Brand-->
-        <div class="container navbar">
-          <a class="navbar-brand" href="#">
-            <img src="../img/logos/Adelante-Alabama-Logo-150.png" id=navlogo>
-          </a>
-<!--/Brand-->
+<div class="navbar-collapse collapse align-items-center" id="collapseNavbar">
+
 <!-- Nav tabs -->
-<ul class="nav nav-tabs justify-content-center nav-js" id="myTab" role="tablist">
+<ul class="nav navbar-nav nav-tabs nav-js mx-auto" id="myTab" role="tablist">
     <li class="nav-item">
       <a class="nav-link active navbar-text" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
     </li>
@@ -3549,6 +3548,7 @@ require('blog/wp-blog-header.php');
   Donate!
 </button>
 </div>
+
 <!--/Donate-->
     </nav>
 <!--/Navbar-->
@@ -3560,16 +3560,16 @@ require('blog/wp-blog-header.php');
           <div class="col-sm-12">
           <div data-aos="fade-up" data-aos-easing="ease" id="aboutImageGradient">
             <div data-aos="fade-up-left" class="iconFloat">
-              <a href="http://www.facebook.com/adelantealabama" target="_blank"><i class="icons fa fa-facebook"></i></a>
-              <a href="http://twitter.com/AdelanteAlabama" target="_blank"><i class="icons fa fa-twitter"></i></a>
-              <a href="https://www.youtube.com/channel/UCF8SwmEsKxw29YcxPQZ82Kw" target="_blank"><i class="icons fa fa-youtube"></i></a>
-              <a href="http://instagram.com/AdelanteAlabama" target="_blank"><i class="icons fa fa-instagram"></i></a>
+              <a href="http://www.facebook.com/adelantealabama" target="_blank"><i class="pulse icons fa fa-facebook-official"></i></a>
+              <a href="http://twitter.com/AdelanteAlabama" target="_blank"><i class="pulse icons fa fa-twitter"></i></a>
+              <a href="https://www.youtube.com/channel/UCF8SwmEsKxw29YcxPQZ82Kw" target="_blank"><i class="pulse icons fa fa-youtube"></i></a>
+              <a href="http://instagram.com/AdelanteAlabama" target="_blank"><i class="pulse icons fa fa-instagram"></i></a>
             </div>
         </div>
     </div>
     </div>
 <div class="container-fluid" style="padding: 0;">
-    <div class="row no-gutters" style="width: 100vw;">
+    <div class="row no-gutters">
     <div data-aos="fade-right" data-aos-easing="ease" aos-duration="500" class="col-sm-3 text-center aboutContact"><p>Adelante Alabama Worker Center unites low-wage and immigrant workers and their families in the Birmingham area to defend our rights, promote our dignity, and pursue justice for all.
     </p></div>
     <div data-aos="fade-down" data-aos-easing="ease" aos-duration="500" class="col-sm-5 text-center aboutTextBox">
@@ -4613,10 +4613,13 @@ Join the hundreds of people who have already made Colwal Fund possible and DONAT
         </div>
   </div>
 </footer>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
+<script src="../../node_modules/aos/dist/aos.js"></script>
+
+
+  <script>
+    AOS.init();
+  </script>
+
     <script src="../js/jquery.min.js"></script>
     <script src="../js/bs-init.js"></script>
     <script src="../bootstrap/js/bootstrap.min.js"></script>
