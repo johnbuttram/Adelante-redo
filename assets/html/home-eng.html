@@ -3517,9 +3517,9 @@ require('blog/wp-blog-header.php');
 <div class="navbar-collapse collapse align-items-center" id="collapseNavbar">
 
 <!-- Nav tabs -->
-<ul class="nav navbar-nav nav-tabs nav-js mx-auto" id="myTab" role="tablist">
+<ul class="nav navbar-nav nav-pills nav-js mx-auto" id="myTab" role="tablist">
     <li class="nav-item">
-      <a class="nav-link active navbar-text" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+      <a class="nav-link active navbar-text navHome" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
     </li>
     <li class="nav-item">
       <a class="nav-link navbar-text" id="staff-tab" data-toggle="tab" href="#staff" role="tab" aria-controls="staff" aria-selected="false">Our Team</a>
@@ -3539,15 +3539,18 @@ require('blog/wp-blog-header.php');
       <li class="nav-item">
         <a class="nav-link navbar-text" id="store-tab" data-toggle="tab" href="#store" role="tab" aria-controls="settings" aria-selected="false">Store</a>
       </li>
+      <li>
+        <button type="button" class="btn btn-danger donateButton" data-toggle="modal" data-target="#donationModal">
+          Donate!
+        </button>
+        </div>
+      </li>
   </ul>
 <!--/Tabs-->
 <!--Donate-->
-<div class="justify-content-end no-wrap"></div>
+<div class="no-wrap"></div>
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#donationModal">
-  Donate!
-</button>
-</div>
+
 
 <!--/Donate-->
     </nav>
@@ -3695,7 +3698,7 @@ require('blog/wp-blog-header.php');
                 <br>
                 <em>Adelante is the only worker center in Alabama. Our members and staff lead the fight for economic justice and work hard to ensure that every person, no matter their job or wage is treated with dignity.</em>
                 <br>
-                <div class="ourWorkDiv">                
+                <div class="verticalAlign">                
                 <img src="../img/photos/Wage-Theft-Victory.jpg" class="img-fluid our-work-img">
                 </div>
                 <br>
@@ -3761,7 +3764,7 @@ require('blog/wp-blog-header.php');
             <br>
             <em>Every person, regardless of citizenship status, should be able to thrive and feel safe in our communities. Our immigrant justice work focuses on ending the pipeline from jails/prisons to ICE custody and working to dismantle our carceral system in order to achieve freedom for all people.</em>
             <br>
-            <div class="ourWorkDiv">
+            <div class="verticalAlign">
             <img src="../img/photos/Habeas-win-family-hug.jpg" class="img-fluid our-work-img">
           </div>
             <br>
@@ -3825,7 +3828,7 @@ require('blog/wp-blog-header.php');
           </div>
           <div class="tab-pane fade sidebar-content " id="v-pills-arts" role="tabpanel" aria-labelledby="v-pills-arts-tab">
             <h3 class="h3-resources">Arts & Culture</h3>
-            <div class="ourWorkDiv">
+            <div class="verticalAlign">
             <img src="../img/photos/Day-of-the-Dead.jpg" class="img-fluid our-work-img">
             </div>
             <em>
@@ -3843,7 +3846,7 @@ require('blog/wp-blog-header.php');
           </div>
           <div class="tab-pane fade sidebar-content " id="v-pills-litigation" role="tabpanel" aria-labelledby="v-pills-litigation-tab">
             <h2 class="latoBold h3-resources">Litigation & Legal Advocacy</h2>
-            <div class="ourWorkDiv">
+            <div class="verticalAlign">
             <img src="../img/photos/Legal-Photo-at-Courthouse.jpg" class="img-fluid our-work-img">
             </div>
             <br>
@@ -3872,7 +3875,7 @@ require('blog/wp-blog-header.php');
                <hr>
                <h3 class="latoBold h3-resources">Breaking Cages Leadership Institute</h3>
                <p>In 2020 we hosted our first ever multi-week training for formerly detained and incarcerated individuals with the goal of channeling participants into the movement to abolish detention centers and prisons in Alabama and across the country.</p>
-               <div class="ourWorkDiv">
+               <div class="verticalAlign">
                <img src="../img/photos/Shut-Down-Etowah.jpg" class="img-fluid" style="margin-bottom: 10px;">
                </div>
           </div>          
@@ -4252,7 +4255,9 @@ require('blog/wp-blog-header.php');
         </div>
         <div class="tab-pane fade sidebar-content" id="v-pills-publications" role="tabpanel" aria-labelledby="v-pills-publications-tab">
           <h3 class="latoBold h3-resources">Publications</h3>
-
+          <div class="verticalAlign">
+          <img src="../img/photos/publications.jpeg" class="img-fluid our-work-img">
+          </div>
           <p><a href="https://fliphtml5.com/vybzb/pmea" class="a-links">2019 Annual Recap</a>//<a href="https://online.fliphtml5.com/vybzb/nsmj/" class="a-links">Resumen de 2019</a></p>
 <p>
   <a href="../press-releases/Adelante-Bham-Sanctuary-Briefing-FINAL-17-3-6.pdf" class="a-links">Legal &amp; Policy Briefing: Making Birmingham a Sanctuary City</a>, March 6, 2017 // <a href="../press-releases/Adelante-Bham-Sanctuary-Briefing-FINAL-17-3-6_Spanish.pdf" class="a-links">Informe Jurídico y Político: Convertir a Birmingham en Ciudad Santuario</a>, 6 marzo 2017</p>
