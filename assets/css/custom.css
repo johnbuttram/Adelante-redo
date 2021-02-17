@@ -55,7 +55,7 @@ h1 {
   left: 0%;
   top: 0%;
   float: left;
-  height: 103px;
+  height: 11vh;
   width: 225px;
   background-color: #DEF7FF;
 }
@@ -69,11 +69,19 @@ h1 {
 .navbar {
     background-color: #1F2022;
     color: #Fff !important;
-    font-size: 3vmin;
-}
+    }
+    .navFontSize {
+      font-size: 2.5vmin;
+    }
 .navHeight {
   height: 11vh;
   max-width: 100vw;
+}
+@media (min-width: 992px){
+  .navbar li {
+      margin-left : 1em;
+      margin-right : 1em;
+  }
 }
 a.active.nav-link {
     background-color: #04D7F8 !important;
@@ -118,7 +126,8 @@ a.active.nav-link {
 
 .donateButton {
   position: absolute;
-  top: 34px;
+  top: 3vh;
+
 }
 @media (max-width: 767px) {
 .donateButton {
@@ -339,32 +348,13 @@ a.active.nav-link {
     font-size: 5vmin;
   }
 .iconFloat {
-  position: static;
+  position: relative;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  float: none;
-  margin-top: 7vh;
-  margin-right: 5vw;
-  width: 40vw;
+  flex-direction: column;
+  float: right;
+  line-height: 6vh;
 }
 }
-.about-img {
-  display: block;
-    width: 99vw;
-    height: 99vh;
-    margin-top: 160px;
-    align-items: center;
-  }
-  @media (max-width: 767px) {
-  .about-img {
-    margin-top: 7vh;
-    width: 100vw;
-    height: 50vh;
-    margin-bottom: 15vh;
-  }
-}
-
   #aboutImageGradient {
     background-image:
     linear-gradient(to bottom, rgba(59, 21, 10, 0.52), rgba(213, 87, 36, 0.73)),
@@ -396,7 +386,7 @@ a.active.nav-link {
     background-repeat: no-repeat;
     height: 25vh;
     width: 100vw;
-    margin-top: 14vh;
+    margin-top: 5vh;
     margin-bottom: 0vh;
   }
   }
@@ -446,7 +436,7 @@ margin: 5vh;
 .staffName {
   font-size: 22px;
   margin-top: 20px;
-  color: #FF8000
+  color: #FF8000;
 }
 /*/Staff*/
 
