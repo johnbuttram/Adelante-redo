@@ -3497,14 +3497,14 @@ require('blog/wp-blog-header.php');
 ?>
 -->
 <!--Navbar-->
-<nav data-aos="fade-right" class="navbar navHeight flex-row navbar-fluid navbar-expand-lg fixed-top">
+<nav data-aos="fade-right" class="navbar d-flex navHeight flex-row navbar-fluid navbar-expand-lg fixed-top">
   <!--Brand-->
   <a class="navbar-brand" href="#">
     <img src="../img/logos/Adelante-Alabama-Logo-150.png" id="navlogo" class="img-fluid">
   </a>
 <!--/Brand-->
 <!-- Button for toggling the visibility of the menu -->
-<button type="button" data-target="#collapseNavbar" data-toggle="collapse" class="navbar-toggler">
+<button type="button" data-target="#collapseNavbar" data-toggle="collapse" class="navbar-toggler justify-content-end">
     <span class="navbar-toggler-icon">
       <svg viewBox="0 0 100 80" width="30" height="30" fill="#04D7F8">
         <rect width="100" height="15"></rect>
@@ -3517,7 +3517,7 @@ require('blog/wp-blog-header.php');
 <div class="navbar-collapse collapse align-items-center" id="collapseNavbar">
 
 <!-- Nav tabs -->
-<ul class="nav navbar-nav nav-pills nav-js mx-auto" id="myTab" role="tablist">
+<ul class="nav navbar-nav nav-pills nav-js mx-auto mobileDrop" id="myTab" role="tablist">
     <li class="nav-item">
       <a class="nav-link active navbar-text navHome" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
     </li>
