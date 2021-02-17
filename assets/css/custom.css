@@ -60,21 +60,34 @@ h1 {
 
 #navlogo {
   position: absolute;
-  left: 0%;
+  left: 20%;
   top: 0%;
   float: left;
-  height: 11vh;
-  width: 225px;
+  height: 103px;
+  width: 155px;
   background-color: #DEF7FF;
 }
-
 @media (max-width: 767px) {
   #navlogo {
-    width: 63px;
-    height: 42px;
+    width: 75px;
+    height: 50px;
+    left: 0%;
   }
 }
-
+.wideLogo {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 300px;
+  height: 103px;
+  background-color: #DEF7FF;
+}
+@media (max-width: 767px) {
+  .wideLogo {
+    width: 63px;
+    height: 6vh;
+  }
+}
 .navbar {
   background-color: #1F2022;
   color: #Fff !important;
@@ -132,14 +145,14 @@ a.active.nav-link {
     max-width: 100vw;
     display: flex;
     vertical-align: middle;
-    min-height: 5vh;
+    min-height: 6vh;
     height: auto;
   }
 }
 
 @media (max-width: 767px) {
   .mobileDrop {
-    margin-top: 4vh;
+    margin-top: 5vh;
   }
 }
 
