@@ -193,6 +193,7 @@ a.active.navMember {
     top: auto;
     width: auto;
     height: auto;
+    margin-top: 1.5vh;
   }
 }
 
