@@ -117,14 +117,21 @@ h1 {
 
 a.active.nav-link {
   background-color: #04D7F8 !important;
+  margin-left: 3vw;
+  margin-right: 3vw;
+  transition: 250ms;
 }
 
 .navbar-text {
-  color: #fff
+  color: #fff;
+
 }
 
 .navbar-text:hover {
-  color: #ff8000;
+  color: #DEF7FF;
+  background: #04D7F8;
+  border: none;
+  transition: 250ms;
 }
 
 .navbar-toggler {
@@ -156,14 +163,28 @@ a.active.nav-link {
   }
 }
 
-.navHome {
-  margin-right: 5vw;
+a.active.navHome {
+  margin-right: 3vw;
+  transition: 250ms;
+}
+a.active.navMember {
+  margin-left: 3vw;
+  margin-right: 0vw;
+  transition: 250ms;
 }
 
 .donateButton {
   position: absolute;
   top: 3vh;
-
+  background-color: #C53046;
+  border: none;
+  color: #fff;
+}
+.donateButton:hover {
+  color: #FFF;
+  background: #04D7F8;
+  border: 1px #04D7F8 solid;
+  transition: 250ms;
 }
 
 @media (max-width: 767px) {
@@ -486,12 +507,20 @@ a.active.nav-link {
   width: 150px;
   height: 150px;
 }
+@media (max-width: 767px) {
+  .centerMobile {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+  }
+}
 
 .staffName {
   font-size: 22px;
   margin-top: 20px;
   color: #FF8000;
 }
+
 
 /*/Staff*/
 

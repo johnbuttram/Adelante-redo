@@ -2502,7 +2502,7 @@ require('blog/wp-blog-header.php');
 ?>
 -->
   <!--Navbar-->
-  <nav data-aos="fade-right" class="navbar d-flex navHeight flex-row navbar-fluid navbar-expand-lg fixed-top">
+  <nav data-aos="fade-right" data-aos-once="true" class="navbar d-flex navHeight flex-row navbar-fluid navbar-expand-lg fixed-top">
     <!--Brand-->
     <div class="wideLogo">
     <a class="navbar-brand" href="#">
@@ -2552,11 +2552,11 @@ require('blog/wp-blog-header.php');
             aria-controls="settings" aria-selected="false">Tienda</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link navbar-text" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+          <a class="nav-link navbar-text navMember" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
             aria-controls="contact" aria-selected="false">Membership</a>
         </li>
         <li>
-          <button type="button" class="btn-lg btn-danger donateButton" data-toggle="modal" data-target="#donationModal">
+          <button type="button" class="btn-lg donateButton" data-toggle="modal" data-target="#donationModal">
             Donate!
           </button>
     </div>
@@ -2729,6 +2729,7 @@ require('blog/wp-blog-header.php');
           </div>
         </div>
         <div class="container">
+        <div class="centerMobile">
           <div class="row" style="margin-bottom: 5vh;">
             <div class="col mx-1"><img src="../img/staff/Isaac-headshot.jpeg" class="staffImg" alt="Portrait of Isaac">
               <p class="staffName"><strong>Isaac Guazo Estrada</strong></p>
@@ -2767,6 +2768,7 @@ require('blog/wp-blog-header.php');
               <p><b>Administrative Assistan</b></p>
             </div>
           </div>
+        </div>
       </section>
       <hr>
       </section>
@@ -4501,7 +4503,6 @@ require('blog/wp-blog-header.php');
   </script>
 
   <script src="../js/jquery.min.js"></script>
-  <script src="../js/bs-init.js"></script>
   <script src="../bootstrap/js/bootstrap.min.js"></script>
   <script src="../js/custom.js"></script>
 </body>

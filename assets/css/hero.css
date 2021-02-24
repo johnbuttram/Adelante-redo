@@ -28,28 +28,29 @@
 
 /* Buttons on Hero */
 #button1 {
-    background: #FF8000;
-    transition: background ease .25s;
-    border-radius: 25px;
+    background: #C53046;
+ 
+    border-radius: 15px;
     display: inline-block;
     border: none;
-    padding: 0.75rem 1.5rem;
+    padding: .75rem 3.5rem;
     margin: 0;
     text-decoration: none;
-    color: #000;
-    font-size: 1.2rem;
+    color: #fff;
+    font-size: 2.75rem;
+    letter-spacing: .3rem;
     cursor: pointer;
     text-align: center;
     -webkit-appearance: none;
     -moz-appearance: none;
     position: absolute;
-    top: 82%;
+    top: 80%;
     left: 70%;
-    transform: translate(-50%, -50%);
+    font-family: 'Alegreya Sans', sans-serif;
 }
 
 #button1:hover {
-    background: #04D7F8;
+    background: #A62030;
 }
 
 #button1:focus {
@@ -77,27 +78,29 @@
 
 
 #button2 {
-    background: #FF8000;
-    border-radius: 25px;
+    background: #C53046;
+    border-radius: 15px;
     display: inline-block;
     border: none;
-    padding: 0.75rem 1.5rem;
+    padding: .75rem 3.3rem;
     margin: 0;
     text-decoration: none;
-    color: #000;
-    font-size: 1.2rem;
+    color: #fff;
+    font-size: 2.75rem;
+    letter-spacing: .3rem;
     cursor: pointer;
     text-align: center;
     -webkit-appearance: none;
     -moz-appearance: none;
     position: absolute;
-    top: 74%;
+    top: 65%;
     left: 70%;
-    transform: translate(-50%, -50%);
+  
+    font-family: 'Alegreya Sans', sans-serif;
 }
 
 #button2:hover {
-    background: #04D7F8;
+    background: #A62030;
 }
 
 #button2:focus {
