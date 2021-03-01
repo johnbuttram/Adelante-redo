@@ -1,7 +1,13 @@
 /* All Pages */
-h1, h2, h3, h4, p, em  {
+h1,
+h2,
+h3,
+h4,
+p,
+em {
   color: #642516;
 }
+
 html {
   max-width: 100vw !important;
 }
@@ -10,6 +16,7 @@ a {
   color: #642516;
   text-decoration: none;
 }
+
 a:hover {
   color: #642516;
   text-decoration: underline;
@@ -64,6 +71,7 @@ h1 {
   width: 155px;
   background-color: #DEF7FF;
 }
+
 @media (max-width: 767px) {
   #navlogo {
     width: 75px;
@@ -71,6 +79,7 @@ h1 {
     left: 0%;
   }
 }
+
 .wideLogo {
   position: absolute;
   top: 0%;
@@ -79,12 +88,14 @@ h1 {
   height: 103px;
   background-color: #DEF7FF;
 }
+
 @media (max-width: 767px) {
   .wideLogo {
     width: 63px;
     height: 6vh;
   }
 }
+
 .navbar {
   background-color: #1F2022;
   color: #Fff !important;
@@ -164,6 +175,7 @@ a.active.navHome {
   margin-right: 3vw;
   transition: 250ms;
 }
+
 a.active.navMember {
   margin-left: 3vw;
   margin-right: 0vw;
@@ -177,6 +189,7 @@ a.active.navMember {
   border: none;
   color: #fff;
 }
+
 .donateButton:hover {
   color: #FFF;
   background: #04D7F8;
@@ -505,6 +518,7 @@ a.active.navMember {
   width: 150px;
   height: 150px;
 }
+
 @media (max-width: 767px) {
   .centerMobile {
     margin: auto;
@@ -610,15 +624,17 @@ a.active.navMember {
 .colwalFund {
   left: 180%;
 }
+
 @media (max-width: 1287px) {
   .colwalFund {
     left: 105%;
   }
-  }
-@media (max-width: 767px) {
-.colwalFund {
-  left: 25%;
 }
+
+@media (max-width: 767px) {
+  .colwalFund {
+    left: 25%;
+  }
 }
 
 /*/Publications*/
