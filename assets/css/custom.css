@@ -1,14 +1,24 @@
 /* All Pages */
+h1, h2, h3, h4, p, em  {
+  color: #642516;
+}
 html {
   max-width: 100vw !important;
 }
-h1, h2, h3, h4 {
+
+a {
   color: #642516;
+  text-decoration: none;
+}
+a:hover {
+  color: #642516;
+  text-decoration: underline;
 }
 
 body {
   background-color: #C8F0FD;
   max-width: 100vw !important;
+  color: #642516;
 }
 
 p {
@@ -16,29 +26,13 @@ p {
   margin-bottom: 0 !important;
 }
 
-ul {
-  color: #642516
-}
-
-em {
-  color: #642516;
-}
-
 .latoBold {
   font-family: 'Lato', sans-serif;
   font-weight: bold;
   text-transform: uppercase;
-  color: #642516
-}
-
-.a-links {
-  color: #642516;
-  text-decoration: underline;
-}
-
-.a-links:hover {
   color: #642516;
 }
+
 
 h1 {
   text-align: center;
@@ -534,6 +528,7 @@ a.active.navMember {
   width: 100%;
   position: relative;
   text-align: left;
+  color: black;
 }
 
 .collapsible-link::before {
@@ -545,7 +540,7 @@ a.active.navMember {
   display: block;
   font-family: 'FontAwesome';
   font-size: 1.1rem;
-
+  color: black;
 }
 
 
@@ -610,6 +605,20 @@ a.active.navMember {
   margin-top: -50px;
   width: 100%;
   background-size: cover;
+}
+
+.colwalFund {
+  left: 180%;
+}
+@media (max-width: 1287px) {
+  .colwalFund {
+    left: 105%;
+  }
+  }
+@media (max-width: 767px) {
+.colwalFund {
+  left: 25%;
+}
 }
 
 /*/Publications*/
