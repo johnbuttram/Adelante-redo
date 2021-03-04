@@ -2502,7 +2502,7 @@ require('blog/wp-blog-header.php');
 ?>
 -->
   <!--Navbar-->
-  <nav data-aos="fade-right" data-aos-once="true" class="navbar d-flex navHeight flex-row navbar-expand-lg fixed-top">
+  <nav data-aos="fade-right" data-aos-once="true" class="navbar d-flex navHeight flex-row navbar-expand-xl fixed-top">
     <!--Brand-->
     <div class="wideLogo">
       <a class="navbar-brand" href="#">
@@ -2573,7 +2573,7 @@ require('blog/wp-blog-header.php');
     <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
       <section>
         <div class="row">
-          <div class="col-sm-12">
+          <div class="col-md-12">
             <div data-aos="fade-up" data-aos-easing="ease" id="aboutImageGradient">
               <div data-aos="fade-up-left" class="iconFloat">
                 <a href="http://www.facebook.com/adelantealabama" target="_blank"><i
@@ -4481,7 +4481,10 @@ require('blog/wp-blog-header.php');
   </footer>
   <script src="../../node_modules/aos/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({
+      disable: 'mobile'
+    });
+   
   </script>
   <script src="../js/jquery.min.js"></script>
   <script src="../bootstrap/js/bootstrap.min.js"></script>

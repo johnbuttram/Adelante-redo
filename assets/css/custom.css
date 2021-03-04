@@ -105,12 +105,26 @@ h1 {
   font-size: 2.5vmin;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1581px) {
   .navFontSize {
-    font-size: 3vmin;
+    font-size: 2vmin;
   }
 }
-
+@media (max-width: 1400px) {
+  .navFontSize {
+    font-size: 1.5vmin;
+  }
+}
+@media (max-width: 1250px) {
+  .navFontSize {
+    font-size: 2vmin;
+  }
+}
+@media (max-width: 540px) {
+  .navFontSize {
+    font-size: 2.5vmin;
+  }
+}
 .navHeight {
   height: 11vh;
   max-width: 100vw;
@@ -146,11 +160,40 @@ a.active.nav-link {
   border: solid 1px #642516;
 }
 
+@media (max-width: 1200px) {
+  .navbar-toggler {
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    width: 5vw;
+    height: 5vh;
+  }
+}
+@media (max-width: 1000px) {
+  .navbar-toggler {
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    width: 6vw;
+    height: 6vh;
+  }
+}
 @media (max-width: 767px) {
   .navbar-toggler {
     position: absolute;
-    right: 0%;
-    top: 0%;
+    right: 1%;
+    top: 1%;
+    width: 7vw;
+    height: 5vh;
+  }
+}
+@media (max-width: 541px) {
+  .navbar-toggler {
+    position: absolute;
+    right: 4%;
+    top: 3%;
+    width: 13vw;
+    height: 5vh;
   }
 }
 
