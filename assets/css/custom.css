@@ -132,7 +132,6 @@ a.active.nav-link {
 
 .navbar-text {
   color: #fff;
-
 }
 
 .navbar-text:hover {
@@ -251,7 +250,6 @@ a.active.navMember {
   color: #642516;
   font-size: 14px;
   font-weight: bold;
-
 }
 
 
@@ -449,7 +447,23 @@ a.active.navMember {
 
 #aboutImageGradient>p {
   font-size: 30px;
-  color: #642516;
+  color: #642516 !important;
+  font: bold 24px/45px;
+  letter-spacing: -1px;
+  background: rgb(0, 0, 0);
+  /* fallback color */
+  background: rgba(200, 240, 253, .9);
+  width: 50vw;
+  top: 83vh;
+  left: 25vw;
+  position: absolute;
+  font-weight: bold;
+  text-align: center;
+}
+
+#aboutImageGradient>tr {
+  font-size: 30px;
+  color: #642516 !important;
   font: bold 24px/45px;
   letter-spacing: -1px;
   background: rgb(0, 0, 0);
