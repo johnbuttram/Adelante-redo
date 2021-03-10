@@ -2736,74 +2736,75 @@ require('blog/wp-blog-header.php');
         <div class="container">
           <div class="centerMobile">
             <div class="row" style="margin-bottom: 5vh;">
-              <div class="col mx-1"><img loading="lazy" src="../img/staff/Isaac-headshot.jpeg" class="staffImg"
-                  alt="Portrait of Isaac">
-                <p class="staffName"><strong>Isaac Guazo Estrada</strong></p>
-                <p>(he/him/his)</p>
-                <p><b>Economic Justice Organizer</b></p>
-              </div>
-              <div class="col mx-1"><img loading="lazy" src="../img/staff/Resha-headshot.jpeg" class="staffImg"
+              <div class="col-md-3"><img loading="lazy" src="../img/staff/Isaac-headshot.jpeg" class="staffImg"
+                      alt="Portrait of Isaac">
+                      <div class="staffBio">
+                    <p class="staffName"><strong>Isaac Guazo Estrada</strong></p>
+                    <p>(he/him/his)</p>
+                    <p><b>Economic Justice Organizer</b></p>
+                  </div>
+                  </div>
+              <div class="col-md-3"><img loading="lazy" src="../img/staff/Resha-headshot.jpeg" class="staffImg"
                   alt="Portrait of Resha">
+                  <div class="staffBio">
                 <p class="staffName"><strong>Resha Swanson</strong></p>
                 <p>(she/her/ella)</p>
                 <p><b>Policy & Communications<br> Coordinator</b></p>
               </div>
-              <div class="col mx-1"><img loading="lazy" src="../img/staff/Jessica-headshot.jpeg" class="staffImg"
+            </div>
+              <div class="col-md-3"><img loading="lazy" src="../img/staff/Jessica-headshot.jpeg" class="staffImg"
                   alt="Portrait of Jessica">
+                  <div class="staffBio">
                 <p class="staffName"><strong>Jessica Vosburgh</strong></p>
                 <p>(she/her/ella)</p>
                 <p><b>Executive Director</b></p>
+                </div>
               </div>
-            </div>
-            <div class="row">
-              <div class="col mx-1"><img loading="lazy" src="../img/staff/Victoria-headshot.jpeg" class="staffImg"
+              <div class="col-md-3"><img loading="lazy" src="../img/staff/Victoria-headshot.jpeg" class="staffImg"
                   alt="Portrait of Victoria">
+                  <div class="staffBio">
                 <p class="staffName"><strong>Victoria Siciliano</strong></p>
                 <p>(she/her/ella)</p>
                 <p><b>Director of Administration <br>& Fundraising</b></p>
               </div>
-              <div class="col mx-1"><img loading="lazy" src="../img/staff/Miriam-headshot.jpeg" class="staffImg"
-                  alt="Portrait of Miriam">
+            </div>
+            </div>
+            <div class="row align-items-start">
+              <div class="col-md-3"><img loading="lazy" src="../img/staff/Miriam-headshot.jpeg" class="staffImg"
+                  alt="Portrait of Miriam">  
+                  <div class="staffBio">                
                 <p class="staffName"><strong>Miriam Nava</strong></p>
                 <p>(she/her/ella)</p>
                 <p><b>Membership Coordinator</b></p>
               </div>
-              <div class="col mx-1"><img loading="lazy" src="../img/staff/Felicia-headshot.jpeg" class="staffImg"
+              </div>
+              <div class="col-md-3"><img loading="lazy" src="../img/staff/Felicia-headshot.jpeg" class="staffImg"
                   alt="Portrait of Felicia">
+                  <div class="staffBio">
                 <p class="staffName"><strong>Felicia Aldana</strong></p>
                 <p>(she/her/ella)</p>
-                <p><b>Administrative Assistan</b></p>
+                <p><b>Administrative Assistant</b></p>
+              </div>
+              </div>
+              <div class="col-md-3"><img loading="lazy" src="../img/staff/melo.jpeg" class="staffImg"
+                  alt="Portrait of Fabio">
+                  <div class="staffBio">
+                <p class="staffName"><strong>Fábio Melo</strong></p>
+                <p>(he/him/his)</p>
+                <p><b>Immigrant Justice Organizer</b></p>
+              </div>
               </div>
             </div>
           </div>
       </section>
       <hr>
       </section>
-      <section class="text-center">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <h3 class="latoBold h3-resources"><strong>Board Members</strong></h3>
-              <p>Adelante is driven and led by our members.<br>
-                Our majority-member Board of Directors reflects our commitment to grassroots work, led by directly
-                impacted people.
-              </p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <h3 class="latoBold h3-resources">Board of Directors</h3>
-            </div>
-            <div class="col-sm-12"><img loading="lazy" src="../img/photos/Board.jpg" class="img-fluid no-gutters"
-                style="height: 400px; margin-bottom: 25px;">
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
+      <section>
+      <div class="container">
+            <div class="col-sm-12 d-flex flex-column text-justify">
               <h2 class="latoBold h3-resources">Board of Directors&nbsp;2020-2021</h2>
-              <p style="text-align: center;">
+              <div class="col-sm-12">
+              <p>
                 <strong>Marisol Aguilar*</strong> - Domestic worker and immigrants’ rights activist; founding Adelante
                 member<br>
                 <strong>Marcos Baltazar*</strong> - Worker and immigrants’ rights activist; day laborer and former
@@ -2822,14 +2823,8 @@ require('blog/wp-blog-header.php');
             </div>
           </div>
         </div>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-12 ">
-            </div>
-          </div>
-        </div>
+</div>
       </section>
-    </div>
     <!--/Staff-->
     <!--Our Work-->
     <div class="tab-pane" id="our-work" role="tabpanel" aria-labelledby="our-work-tab">
@@ -2905,7 +2900,7 @@ require('blog/wp-blog-header.php');
                           class="btn btn-link collapsed text-dark font-weight-bold text-uppercase collapsible-link"
                           data-toggle="collapse" data-target="#collapseTenent" aria-expanded="false"
                           aria-controls="collapseTenent">
-                          Tenent Rights
+                          Housing Justice
                         </button>
                       </h5>
                     </div>
@@ -3209,6 +3204,8 @@ require('blog/wp-blog-header.php');
                 role="tab" aria-controls="v-pills-press" aria-selected="true">Press Releases</a>
               <a class="nav-link a-links" id="v-pills-news-tab" data-toggle="pill" href="#v-pills-news" role="tab"
                 aria-controls="v-pills-news" aria-selected="false">In The News</a>
+                <a class="nav-link a-links" id="v-pills-reports-tab" data-toggle="pill" href="#v-pills-reports" role="tab"
+                aria-controls="v-pills-reports" aria-selected="false">Annual Reports</a>
               <a class="nav-link a-links" id="v-pills-tv-tab" data-toggle="pill" href="#v-pills-tv" role="tab"
                 aria-controls="v-pills-tv" aria-selected="false">T.V. & Video</a>
             </div>
@@ -3743,6 +3740,18 @@ require('blog/wp-blog-header.php');
 
               </div>
               <!--/In the News tab-->
+              <!--Annual Reports tab-->
+              <div class="tab-pane fade " id="v-pills-reports" role="tabpanel" aria-labelledby="v-pills-reports-tab">
+                <h3 class="latoBold h3-resources">Annual Reports</h3>
+                <br>
+                <br>
+                <br>
+                <div class="row"><div class="col-sm-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptas beatae odio quaerat dolores perferendis repellendus architecto libero laborum. Vero ipsam officia quod recusandae tempora, natus reprehenderit dolores pariatur quam.</div></div>
+                <div class="container">
+                  <div class="row">
+                  </div>
+                </div>
+              </div>
               <!--T.V. & Video tab-->
               <div class="tab-pane fade " id="v-pills-tv" role="tabpanel" aria-labelledby="v-pills-tv-tab">
                 <h3 class="latoBold h3-resources">T.V. & Videos</h3>
@@ -3752,89 +3761,23 @@ require('blog/wp-blog-header.php');
                 <br>
                 <div class="container">
                   <div class="row">
+                    <div class="col-sm-4 video-container"><iframe loading="lazy"  width="560" height="315" src="https://www.youtube.com/embed/5jO7earOkCo" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                    <div class="col-sm-4 video-container"><iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/J6Ts9s-aJs4" 
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
                     <div class="col-sm-4 video-container"><iframe loading="lazy" width="560" height="315"
-                        src="https://www.youtube.com/embed/5jO7earOkCo" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe></div>
-                    <div class="col-sm-4 video-container"><iframe loading="lazy" width="560" height="315"
-                        src="https://www.youtube.com/embed/o24bopoAgW0" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe></div>
-                    <div class="col-sm-4 video-container"><iframe loading="lazy" width="560" height="315"
-                        src="https://www.youtube.com/embed/GcQelzSkHFo" frameborder="0"
+                        src="https://www.facebook.com/artsbma/videos/1015965022226543/" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe></div>
                   </div>
-                  <hr>
-                  <div class="row">
-                    <div class="col-sm-4 video-container"><iframe loading="lazy" width="560" height="315"
-                        src="https://www.youtube.com/embed/LIOD4LO0lPI" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe></div>
-                    <div class="col-sm-4 video-container"><iframe loading="lazy" width="560" height="315"
-                        src="https://www.youtube.com/embed/9vYRjnNzyVU" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe></div>
-                    <div class="col-sm-4 video-container"><iframe loading="lazy" width="560" height="315"
-                        src="https://www.youtube.com/embed/fLjuPUDuTjM" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe></div>
-                  </div>
-                  <hr>
-                  <div class="row">
-                    <div class="col-sm-4 video-container"><iframe loading="lazy" width="560" height="315"
-                        src="https://www.youtube.com/embed/k4_0Ij6o9mY" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe></div>
-                    <div class="col-sm-4 video-container"><iframe loading="lazy" width="560" height="315"
-                        src="https://www.youtube.com/embed/-ZQEYMBWYxg" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe></div>
-                    <div class="col-sm-4 video-container"><iframe loading="lazy" width="560" height="315"
-                        src="https://www.youtube.com/embed/tJrc-BgVHzU" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe></div>
-                  </div>
-                  <hr>
-                  <div class="row">
-                    <div class="col-sm-4 video-container"><iframe loading="lazy" width="560" height="315"
-                        src="https://www.youtube.com/embed/uVDW7_3V9I4" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe></div>
-                    <div class="col-sm-4 video-container"><iframe loading="lazy" width="560" height="315"
-                        src="https://www.youtube.com/embed/NgkQL11esO8" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe></div>
-                    <div class="col-sm-4 video-container"><iframe loading="lazy" width="560" height="315"
-                        src="https://www.youtube.com/embed/FKh9iiL1DLY" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe></div>
-                  </div>
-                  <hr>
-                  <div class="row">
-                    <div class="col-sm-6 video-container"><iframe loading="lazy" width="560" height="315"
-                        src="https://www.youtube.com/embed/Q-4BjjRAAG0" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe></div>
-                    <div class="col-sm-6 video-container"><iframe loading="lazy" width="560" height="315"
-                        src="https://www.youtube.com/embed/FVtWpNe3a-k" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe></div>
+                 
                   </div>
                 </div>
               </div>
               <!--/T.V. & Video tab-->
             </div>
           </div>
-        </div>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-12 ">
-            </div>
           </div>
-        </div>
-      </section>
-    </div>
     <!--/Media & Press-->
     <!--Resources-->
     <div class="tab-pane" id="resources" role="tabpanel" aria-labelledby="resources-tab">
@@ -3853,9 +3796,7 @@ require('blog/wp-blog-header.php');
                 aria-controls="v-pills-kyr" aria-selected="true">Know Your Rights</a>
               <a class="nav-link a-links" id="v-pills-publications-tab" data-toggle="pill" href="#v-pills-publications"
                 role="tab" aria-controls="v-pills-publications" aria-selected="false">Publications</a>
-              <a class="nav-link a-links" id="v-pills-covid-tab" data-toggle="pill" href="#v-pills-covid" role="tab"
-                aria-controls="v-pills-covid" aria-selected="false">COVID-19</a>
-              <a class="nav-link a-links" id="v-pills-community-tab" data-toggle="pill" href="#v-pills-community"
+                 <a class="nav-link a-links" id="v-pills-community-tab" data-toggle="pill" href="#v-pills-community"
                 role="tab" aria-controls="v-pills-community" aria-selected="false">Community Resources</a>
             </div>
           </div>
@@ -3883,9 +3824,7 @@ require('blog/wp-blog-header.php');
                   </p>
                 </div>
                 <hr>
-                <p><a rel="noreferrer" href="http://fliphtml5.com/vybzb/pmea">2019 Annual Recap</a>//<a rel="noreferrer"
-                    href="http://online.fliphtml5.com/vybzb/nsmj/">Resumen de 2019</a></p>
-                <p>
+                  <p>
                   <a href="../press-releases/Adelante-Bham-Sanctuary-Briefing-FINAL-17-3-6.pdf">Legal
                     &amp; Policy Briefing: Making Birmingham a Sanctuary City</a>, March 6, 2017 // <a
                     href="../press-releases/Adelante-Bham-Sanctuary-Briefing-FINAL-17-3-6_Spanish.pdf">Informe Jurídico
@@ -3897,218 +3836,12 @@ require('blog/wp-blog-header.php');
                   Guild)</p>
                 </p>
               </div>
-              <div class="tab-pane fade sidebar-content" id="v-pills-covid" role="tabpanel"
-                aria-labelledby="v-pills-covid-tab">
-                <h3 class="latoBold h3-resources">COVID-19</h3>
-                <div class="row">
-                  <div class="col-sm-12 text-center">
-                    <img loading="lazy" src="../img/photos/colwal.png" class="img-fluid"
-                      style="margin-bottom: 25px;"><br>
-                    <h3 class="latoBold">Colwal Fund for Excluded Workers</h3>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-12 text-center">
-                    <h2>WE NEED YOU!</h2><br>
-                    <p>
-                      <b>DONATE</b> and help us reach our goal of $200,000!<br>
-                      Every dollar you put in goes directly back into the community. Consider donating:<br>
-                      $25 saved from that movie date that turned into a “Netflix and chill”<br>
-
-                      $50 in gym membership fees you no longer need because living rooms are the new gyms<br>
-
-                      $100 saved from eating at home instead of at restaurants last month<br>
-
-                      $500 in gas money for commuting to work that you’ve saved since you’ve been working from home<br>
-
-                      $1,000 from that family vacation you had to postpone<br>
-
-                      $5,000 or more you would have paid for your college kid to live on-campus<br>
-
-                      Join the hundreds of people who have already made Colwal Fund possible and DONATE TODAY!<br>
-                    </p>
-                    <hr>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-12 colwalFund">
-                      <!-- BEGIN z2systems.com Campaign Thermometer Code -->
-                      <script language='javascript'
-                        src="https://adelantealabama.z2systems.com/np/publicaccess/campaignThermometerWidget.do?campaignId=1&orgId=adelantealabama">
-                      </script>
-                      <noscript></noscript><br>
-                      <!-- END z2systems.com Campaign Thermometer Code -->
-                      <hr>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-12 text-center" style="margin-top: 25px;">
-                      <p>As the pandemic continues, so does Adelante’s commitment to mutual aid. We believe in mutual
-                        aid—by lending each other a hand, we can support our community through this crisis.</p><br>
-                      <p>That’s why we’ve reopened our Colwal Fund, which will continue to provide direct support in the
-                        form of a one-time cash grant to eligible low-wage workers in the Birmingham area who have been
-                        adversely affected by the COVID-19 pandemic, yet excluded from government relief programs.
-                        Colwal means “help or support” in Q’anjob’al, one of several indigenous languages spoken by
-                        Adelante’s members. Through mutual aid and community support, we hope to continue empowering and
-                        uplifting some of the most vulnerable in our communities.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane fade sidebar-content" id="v-pills-community" role="tabpanel"
+                          <div class="tab-pane fade sidebar-content" id="v-pills-community" role="tabpanel"
                 aria-labelledby="v-pills-community-tab">
                 <h3 class="latoBold h3-resources">Community Resources</h3>
-                <div class="row">
-                  <div class="col-sm-6">
-                    <h3 class="h3-resources"><span style="text-decoration: underline;">Adelante Office Updates</span>
-                    </h3>
-                    <p>Due to COVID-19 (coronavirus), we have decided to CLOSE our office to the public until April 30,
-                      2020. It’s critical that we ensure the health of our members and of the community in this moment
-                      of uncertainty. Also, we are POSTPONING these events until further notice: Annual Membership
-                      Meeting, English classes, Women’s Groups, ALL committee meetings and other events normally held at
-                      Adelante. Adelante staff will continue working from home and can be contacted by phone. For help
-                      with workers’ rights or immigration detention cases, or for other needs or questions, call us at
-                      (205) 317-1481 or email us at info@adelantealabama.org. To stay up-to-date on our office closure
-                      and COVID-19, follow us on Twitter and Instagram @adelantealabama or on Facebook at&nbsp;<a
-                        class="profileLink"
-                        href="http://www.facebook.com/adelantealabama/?__tn__=K-R&amp;eid=ARBy9W6miU6Vb7fgopusV9OoaJr2RjfVZhc3-C3NTvtsXoTO8Hv9SM9tZwKyfVgY2BIDLvSackFTEUG_&amp;fref=mentions&amp;__xts__%5B0%5D=68.ARCFCur4FO1CxDOZDjqJ6OJ0soMi-CjrCPRlDiCg12Hu2VpEVG0rNoPmJgs8y66zzhBjMLXPl-oZQ5Nyk4JLrlnaDnwTlUFRQUXinBqrKxgTiWxN4D-UZ3X7BQwfbNW7I1PXQGya6Z8wZM-iywxUWnAoujE6elSNwr0BD-UAWjU0R1U6UpmsnFh-t9xAbw9FVwbwQcR0ifeiOVl6PDhUsNnLbSeZ8e8poNd6NYFljyuPVl3IWRodkflHAlXlqDtynq0LDygd3qV_koRClrhNCd9ftT1iFJXsr_7sFtFxIZs5g1o2lqlYmgkfxyd0QYuu2mzvLHz1A3bq95_eD_hdDiE82A"
-                        data-hovercard="/ajax/hovercard/page.php?id=725811374116447&amp;extragetparams=%7B%22__tn__%22%3A%22%2CdK-R-R%22%2C%22eid%22%3A%22ARBy9W6miU6Vb7fgopusV9OoaJr2RjfVZhc3-C3NTvtsXoTO8Hv9SM9tZwKyfVgY2BIDLvSackFTEUG_%22%2C%22fref%22%3A%22mentions%22%7D"
-                        data-hovercard-prefer-more-content-show="1">Adelante Alabama Worker Center</a></p>
-                    <p style="text-align: center;"><img loading="lazy" src="../img/photos/community-resources.png"
-                        class="img-fluid">
-                      <p><br>
-                        </a></p>
-                      <h3 class="h3-resources"><span style="text-decoration: underline;">How to Contact Adelante during
-                          COVID-19</span></h3>
-                      <p>We’re working from home but we’re here for you! You can get in touch with us in the following
-                        ways:</p>
-                      <p><strong>Phone: (205) 317-1481</strong> between 9am-5pm. If we don’t respond, <span
-                          style="text-decoration: underline;">please leave us a message with your name, phone number,
-                          and comment</span> and we’ll get back to you!</p>
-                      <p><strong>Email</strong>: info@adelantealabama.org</p>
-                      <p><strong>Facebook Messenger:</strong> <span style="text-decoration: underline;">Message us on
-                          Facebook @adelantealabama with your name, phone number and comment</span>. You will receive an
-                        automatic message and a staff member will follow up with you within one business day.</p>
-                    </p>
-                  </div>
-                  <div class="col-sm-6">
-                    <h3 class="h3-resources"><strong>Resources</strong></h3>
-                    <p><span style="text-decoration: underline;"><strong>Community Resources</strong></span></p>
-                    <ul>
-                      <li><a href="https://adelantealabama.org/covid-19/colwal-fund-english/">Colwal Fund
-                          for Excluded Workers</a></li>
-                      <li><a rel="noreferrer" href="http://legalservicesalabama.org">Legal Servies Alabama</a></li>
-                      <li><a rel="noreferrer"
-                          href="http://docs.google.com/spreadsheets/d/19mLm42KCqbYz28vB-VChxsI9owSrdVsm7ZDgUwO05jQ/edit?ts=5e949a53#gid=1980617098">Community
-                          Resource List&nbsp;</a></li>
-                      <li><a rel="noreferrer"
-                          href="http://docs.google.com/document/d/12wY7BG4wzI0TJ6IHIg231iJX6bZ7T0NqPKRiexCColo/edit">Birmingham
-                          Mutual Aid</a>
-                        <ul>
-                          <li><a rel="noreferrer"
-                              href="http://docs.google.com/forms/d/e/1FAIpQLSeFvxGq9ja7knvfJumuY0VXtKXWY56GmjK6uPVTl9z3qCNq-w/viewform">Offer
-                              Mutual Aid</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                    <p><span style="text-decoration: underline;"><strong>General Information about
-                          COVID-19&nbsp;</strong></span></p>
-                    <ul>
-                      <li><strong><a rel="noreferrer"
-                            href="http://jefferson-county-dept-of-health-coronavirus-response-jcdh.hub.arcgis.com">COVID-19
-                            Testing Locations</a></strong></li>
-                      <li><a rel="noreferrer" href="http://www.cdc.gov/…/201…/downloads/2019-ncov-factsheet.pdf">What
-                          you
-                          need to know about COVID-19</a></li>
-                      <li><a rel="noreferrer"
-                          href="http://www.cdc.gov/coronavirus/2019-ncov/about/share-facts-h.pdf">Coronavirus Rumors
-                          and Facts</a></li>
-                      <li><a rel="noreferrer"
-                          href="http://www.cdc.gov/coronavirus/2019-ncov/downloads/sick-with-2019-nCoV-fact-sheet.pdf">What
-                          to Do if You’re Sick</a></li>
-                      <li><a rel="noreferrer"
-                          href="http://www.cdc.gov/coronavirus/2019-ncov/downloads/stop-the-spread-of-germs.pdf">How
-                          to Stop the Spread of Germs&nbsp;</a></li>
-                      <li><a rel="noreferrer"
-                          href="http://www.cdc.gov/coronavirus/2019-ncov/downloads/COVID19-What-You-Can-Do-High-Risk.pdf">What
-                          You Can Do if You are at Higher Risk of Severe Illness from COVID-19</a>
-                      </li>
-                    </ul>
-                    <p><span style="text-decoration: underline;"><strong>“Shelter in Place”&nbsp;</strong></span></p>
-                    <ul>
-                      <li><a href="https://adelantealabama.org/wp-content/uploads/2013/10/1.png" title="">What does
-                          “shelter in place” mean?</a></li>
-                      <li><a rel="noreferrer"
-                          href="http://go.skimresources.com/?id=126006X1587343&amp;isjs=1&amp;jv=14.0.1-stackpath&amp;sref=https%3A%2F%2Fwww.al.com%2Fnews%2F2020%2F04%2Fgov-kay-ivey-to-give-update-on-coronavirus-response.html&amp;url=https%3A%2F%2Fwww.scribd.com%2Fdocument%2F454872747%2FAlabama-Gov-Kay-Ivey-issues-shelter-in-place-order%23from_embed&amp;xguid=&amp;xs=1&amp;xtz=300&amp;xuuid=17cf46613a2f39321d4681b33c653418&amp;cci=5a41e88ccc2deb5ad2668eb2dbab6daf">State
-                          Shelter in Place Ordinance&nbsp;</a></li>
-                      <li><span style="text-decoration: underline;"><a rel="noreferrer"
-                            href="https://adelantealabama.org/wp-content/uploads/2013/10/Alabama-SIP-ordinance-summary-ENG.pdf">Summary
-                            of the State Shelter in Place Ordinance</a></span></li>
-                    </ul>
-                    <p><span style="text-decoration: underline;"><strong>For Workers&nbsp;</strong></span></p>
-                    <ul>
-                      <li><a rel="noreferrer" href="http://jcdh.org/SitePages/ContactUs/FAQ.aspx">Info about COVID-19
-                          for
-                          Workers&nbsp;</a></li>
-                      <li><a rel="noreferrer" href="http://membership.domesticworkers.org/coronavirus/">Resources for
-                          Domestic Workers</a></li>
-                      <li><a rel="noreferrer"
-                          href="http://s27147.pcdn.co/wp-content/uploads/FAQ-Immigrant-Workers-Rights-COVID-19-Resource-v-2020-04-10.pdf">FAQ:
-                          Immigrant Workers’ Rights and COVID-19—A Resource for Workers and Their
-                          Advocates*</a></li>
-                    </ul>
-                    <p><span style="text-decoration: underline;"><strong>For Children&nbsp;</strong></span></p>
-                    <ul>
-                      <li><a
-                          href="https://adelantealabama.org/wp-content/uploads/2020/04/BCS-Toll-Free-Spanish-Hotline-Flyers-April-16-2020.pdf">Connect
-                          with Birmingham City Schools (Info Hotline)</a></li>
-                      <li><a rel="noreferrer"
-                          href="http://www.al.com/news/2020/03/some-alabama-school-systems-will-close-three-days-earlier-than-planned.html?fbclid=IwAR0HPvNpVvWRnm8NvGkWPYVBnLV7H8q__Tl4KPjYHpXQwsr6lDIsWyYjMnA">School
-                          Closures&nbsp;</a></li>
-                      <li><a
-                          href="https://adelantealabama.org/wp-content/uploads/2020/04/Free-Online-Education-Resources.pdf">Education
-                          Resources for Kids and Teenagers</a></li>
-                      <li><a rel="noreferrer" href="http://forms.gle/teKwvN86gVp5aqe68">Request a Tutor for My Child</a>
-                      </li>
-                      <li><a rel="noreferrer"
-                          href="http://www.cdc.gov/childrenindisasters/helping-children-cope.html">Helping Children
-                          Cope with Emergencies</a></li>
-                      <li><a rel="noreferrer"
-                          href="http://www.cdc.gov/cpr/readywrigley/documents/RW_Coping_After_a_Disaster_508.pdf">Coping
-                          After A Disaster: A Coloring Book</a></li>
-                      <li><a rel="noreferrer"
-                          href="http://www.spectrum.net/support/internet/coronavirus-covid-19-educational-internet-offer">Free
-                          WiFi for Students&nbsp;</a>
-                        <div class="page" title="Page 1"></div>
-                      </li>
-                    </ul>
-                    <p><span style="text-decoration: underline;"><strong>Mental Health Resources</strong></span></p>
-                    <ul>
-                      <li><a rel="noreferrer" href="http://emergency.cdc.gov/coping/index.asp">Coping with a Disaster or
-                          Traumatic Event</a></li>
-                      <li><a rel="noreferrer"
-                          href="http://store.samhsa.gov/sites/default/files/d7/priv/sma14-4885.pdf">Coping With
-                          Stress During Infectious Disease Outbreaks</a></li>
-                      <li><a rel="noreferrer"
-                          href="http://www.samhsa.gov/sites/default/files/tips-social-distancing-quarantine-isolation-031620.pdf">Taking
-                          Care of Your Behavioral Health&nbsp;</a></li>
-                    </ul>
-                    <p><span style="text-decoration: underline;"><b>Interpretation</b></span></p>
-                    <ul>
-                      <li><strong>Point of Contact:</strong> Gabriel Cabán Cubero – (205) 317-1481,
-                        gabri@adelantealabama.org</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-12 ">
-            </div>
-          </div>
-        </div>
+                <div class="row text-center">
+                  <div class="col-sm-12">
+                   <h2>Coming Soon</h2>
       </section>
     </div>
     <!--/Resources-->

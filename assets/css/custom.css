@@ -44,7 +44,7 @@ p {
 h1 {
   text-align: center;
   color: #642516 !important;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+  /*text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);*/
   margin-top: 25px;
   margin-bottom: 15px;
   font-size: 8vmin !important;
@@ -56,7 +56,7 @@ h1 {
   font-size: 7vmin;
   text-align: center;
   color: #642516 !important;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+ /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);*/
   margin-top: 25px;
   margin-bottom: 15px;
   font-weight: bold;
@@ -580,8 +580,20 @@ a.active.navMember {
 /*/About*/
 /*Staff*/
 .staffImg {
-  width: 150px;
-  height: 150px;
+  width: 12vw;
+  height: 24vh;
+}
+.staffBio {
+  line-height: 3.5vmin;
+  background: #1F2022;
+  width: 12vw;
+  height: 18vh;
+  margin-top: -2.1vh;
+  font-size: 1.5vmin;
+  padding: 10px;
+}
+.staffBio>p {
+  color:white;
 }
 
 @media (max-width: 767px) {
@@ -595,7 +607,8 @@ a.active.navMember {
 .staffName {
   font-size: 22px;
   margin-top: 20px;
-  color: #FF8000;
+  padding-top: 1.5vmin;
+  color: #04D7F8 !important;
 }
 
 
