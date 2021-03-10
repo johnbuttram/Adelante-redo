@@ -84,7 +84,7 @@ h1 {
   position: absolute;
   top: 0%;
   left: 0%;
-  width: 300px;
+  width: 250px;
   height: 103px;
   background-color: #DEF7FF;
 }
@@ -102,7 +102,7 @@ h1 {
 }
 
 .navFontSize {
-  font-size: 2.5vmin;
+  font-size: 3vmin;
 }
 
 @media (max-width: 1581px) {
