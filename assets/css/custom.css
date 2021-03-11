@@ -64,35 +64,26 @@ h1 {
 
 #navlogo {
   position: absolute;
-  left: 20%;
-  top: 0%;
+  left: 15%;
+  top: 10%;
   float: left;
-  height: 103px;
-  width: 155px;
+  width: 8vw;
+  height: 8vh; 
   background-color: #DEF7FF;
-}
-
-@media (max-width: 767px) {
-  #navlogo {
-    width: 75px;
-    height: 50px;
-    left: 0%;
-  }
 }
 
 .wideLogo {
   position: absolute;
   top: 0%;
   left: 0%;
-  width: 250px;
-  height: 103px;
+  width: 13vw;
+  height: 11vh;
   background-color: #DEF7FF;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .wideLogo {
-    width: 63px;
-    height: 6vh;
+  display: none;
   }
 }
 
@@ -130,11 +121,15 @@ h1 {
 }
 
 .navHeight {
-  height: 11vh;
+  height: 11vh !important;
   max-width: 100vw;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1199px) {
+  .navheight {
+      height: auto !important;
+}
+
   .navbar li {
     margin-left: 1em;
     margin-right: 1em;
@@ -167,8 +162,8 @@ a.active.nav-link {
 @media (max-width: 1200px) {
   .navbar-toggler {
     position: absolute;
-    right: 1%;
-    top: 1%;
+    left: 2vw;
+    top: 2vh;
     width: 5vw;
     height: 5vh;
   }
@@ -204,7 +199,7 @@ a.active.nav-link {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 76px) {
   .navbar {
     max-width: 100vw;
     display: flex;
@@ -214,9 +209,14 @@ a.active.nav-link {
   }
 }
 
-@media (max-width: 767px) {
+
+.navbar-collapse {
+  background-color: #1F2022;
+
+}
+@media (max-width: 1199px) {
   .mobileDrop {
-    margin-top: 5vh;
+    margin-top: 7vh;
   }
 }
 
@@ -246,7 +246,7 @@ a.active.navMember {
   transition: 250ms;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .donateButton {
     position: relative;
     top: auto;
@@ -545,19 +545,58 @@ a.active.navMember {
   font-weight: bold;
   text-align: center;
 }
-
-
-.aboutContact {
-  margin-top: 17vh;
-  text-align: justify;
+.aboutImg {
+  width: 60vw; 
+  height: 75vh;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1175px) {
+  .aboutImg {
+    width: 59vw;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutImg {
+    width: 100vw;
+  }
+}
+
+.aboutContact {
+   text-align: justify;
+  font-size: 4vmin;
+  background-color: #e85c1f;
+  width: 40vw;
+}
+.aboutContact>p {
+  margin-top: 35%;
+  color: white;
+
+}
+@media (max-width: 1175px) {
   .aboutContact {
-    margin: 5vh;
-    display: inline-block;
+  width: 41vw;
+  height: auto;  
+  }
+  .aboutContact>p {
+    margin: auto;
+    font-size: 4vmin;
+  }
+}
+@media (max-width: 1025px) {
+  .aboutContact>p {
+    font-size: 3vmin;
+  }
+}
+@media (max-width: 768px) {
+  .aboutContact {
+     display: inline-block;
     left: 0;
-    font-size: 14px;
+    width: 100vw;
+  }
+    .aboutContact>p {
+      font-size: 4vmin;
   }
 }
 
@@ -579,34 +618,42 @@ a.active.navMember {
 
 /*/About*/
 /*Staff*/
-.staffImg {
-  width: 12vw;
-  height: 24vh;
-}
+
 .staffBio {
   line-height: 3.5vmin;
   background: #1F2022;
-  width: 12vw;
-  height: 18vh;
-  margin-top: -2.1vh;
+  width: auto;
+  height: 20vh;
   font-size: 1.5vmin;
   padding: 10px;
 }
+@media (max-width: 1556px) {
+  .staffBio {
+    height: auto;
+    margin-top: auto;
+    }
+  }
+  @media (max-width: 750px) {
+    .staffBio {
+      font-size: 2vmin;
+    }
+  }
+  @media (max-width: 524px) {
+    .staffBio {
+      font-size: 4vmin;
+      line-height: normal;
+    }
+  }
+
 .staffBio>p {
   color:white;
 }
 
-@media (max-width: 767px) {
-  .centerMobile {
-    margin: auto;
-    width: 50%;
-    text-align: center;
-  }
-}
 
 .staffName {
-  font-size: 22px;
-  margin-top: 20px;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-size: 4vmin;
+  margin-top: auto;
   padding-top: 1.5vmin;
   color: #04D7F8 !important;
 }
