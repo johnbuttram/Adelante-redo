@@ -759,26 +759,8 @@ a.active.navMember {
 /*/Media & Press*/
 
 /*Resources*/
-.resources-img {
-  margin-top: -50px;
-  width: 100%;
-  background-size: cover;
-}
-
-.colwalFund {
-  left: 180%;
-}
-
-@media (max-width: 1287px) {
-  .colwalFund {
-    left: 105%;
-  }
-}
-
-@media (max-width: 767px) {
-  .colwalFund {
-    left: 25%;
-  }
+.publicationCenter {
+  margin-top: 15vh;
 }
 
 /*/Publications*/
